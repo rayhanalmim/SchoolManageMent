@@ -1,9 +1,16 @@
-import Image from "next/image";
+"use client"
+
+import Header from "@/components/shared/Header/Header";
+import Footer from "@/components/shared/Footer/Footer";
+import Slider from "@/components/shared/Slider";
+
 
 export default function Home() {
   return (
   <main>
-    <h3 className="text-3xl font-bold text-center">Welcome to SoftyEdu </h3>
+    <Header/>
+    <Slider/>
+    <Footer/>
   </main>
   );
 }
