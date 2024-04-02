@@ -7,6 +7,8 @@ import Corner from "@/components/shared/Corner/Corner";
 import EventNotice from "@/components/shared/EventNotice/EventNotice";
 import History from "@/components/shared/History/History";
 import NotificationSlider from "@/components/shared/NotificationSlider/NotificationSlider";
+import ParallaxSec from "@/components/shared/ParallaxSec/ParallaxSec";
+
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
       <Corner />
       <History/>
       <EventNotice/>
+      <ParallaxSec/>   
       <Footer />
     </main>
   );
