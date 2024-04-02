@@ -1,10 +1,10 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import slide1 from "../../../public/assests/s1.jpg";
-import slide2 from "../../../public/assests/s2.jpg";
-import slide3 from "../../../public/assests/s3.jpg";
-import slide4 from "../../../public/assests/s4.jpg";
-import slide5 from "../../../public/assests/s5.jpg";
+import slide1 from "../../../../public/assests/s1.jpg";
+import slide2 from "../../../../public/assests/s2.jpg";
+import slide3 from "../../../../public/assests/s3.jpg";
+import slide4 from "../../../../public/assests/s4.jpg";
+import slide5 from "../../../../public/assests/s5.jpg";
 import Image from 'next/image';
 
 const schools = [
