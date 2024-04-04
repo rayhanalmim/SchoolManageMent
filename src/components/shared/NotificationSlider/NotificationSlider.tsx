@@ -20,8 +20,8 @@ const notifications = [
 
 const NotificationSlider = () => {
   return (
-    <div className="flex justify-center border-black border-2  mt-8 mx-36 rounded ">      
-    <div className="bg-black text-white font-bold w-44 p-2 text-center
+    <div className="flex justify-center border-black border-2  mt-8 mx-1 lg:mx-36 rounded ">      
+    <div className="bg-black text-white text-sm lg:text-base font-bold lg:w-44 lg:p-2 text-center
     ">Latest Notices</div>
       <Marquee pauseOnHover speed={60}>
         I can be a React component, multiple React components, or just some

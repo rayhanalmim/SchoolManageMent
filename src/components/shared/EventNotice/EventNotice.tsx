@@ -44,7 +44,7 @@ const notices = [
 const EventNotice = () => {
   return (
     <div className="container mx-auto px-4 py-10 ">
-      <div className="flex flex-wrap justify-between ">
+      <div className="flex flex-wrap justify-between space-y-5 lg:space-y-0">
         {/* news and events */}
         <div className="w-full md:w-1/2 lg:w-[45%] bg-white rounded shadow-md p-4 border">
           <h2 className="text-xl font-semibold mb-2 text-center">News & Events</h2>
@@ -60,10 +60,10 @@ const EventNotice = () => {
                 <ClockIcon />
                 <h1>June 14, 2024</h1>
               </div>
-              <h2 className="font-bold text-2xl">New movie is released!</h2>
-              <p>Click the button to watch on Jetflix app.</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary bg-gray-300 p-2 rounded">
+              <h2 className="font-bold lg:text-2xl">New movie is released!</h2>
+              <p className="text-sm lg:text-base">Click the button to watch on Jetflix app.</p>
+              <div className="">
+                <button className="btn btn-sm lg:btn-md bg-gray-300 p-2 rounded text-black">
                   Read More
                 </button>
               </div>
@@ -82,10 +82,10 @@ const EventNotice = () => {
                 <ClockIcon />
                 <h1>June 14, 2024</h1>
               </div>
-              <h2 className="font-bold text-2xl">New movie is released!</h2>
-              <p>Click the button to watch on Jetflix app.</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary bg-gray-300 p-2 rounded">
+              <h2 className="font-bold lg:text-2xl">New movie is released!</h2>
+              <p className="text-sm lg:text-base">Click the button to watch on Jetflix app.</p>
+              <div className="">
+                <button className="btn btn-sm lg:btn-md bg-gray-300 p-2 rounded text-black">
                   Read More
                 </button>
               </div>
@@ -93,7 +93,7 @@ const EventNotice = () => {
           </div>
 
           <Divider>
-            <button className="btn btn-primary border p-2 rounded">
+            <button className="btn btn-sm lg:btn-primary border p-2 rounded">
               Load More
             </button>
           </Divider>
