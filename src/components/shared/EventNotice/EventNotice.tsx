@@ -38,7 +38,7 @@ const notices = [
     text: "মৌখিক-পরীক্ষার-নোটিশ-বাংলা-মাধ্যম",
     date: "05-04-2023",
   },
-  
+
 ];
 
 const EventNotice = () => {
@@ -50,7 +50,7 @@ const EventNotice = () => {
           <h2 className="text-xl font-semibold mb-2 text-center">News & Events</h2>
           <Divider />
 
-          <div className=" bg-base-100">
+          <div className=" bg-base-100 lg:pl-6">
             <figure>
               <Image src={scienceimg} className="h-44 w-96" alt="" />
             </figure>
@@ -72,7 +72,7 @@ const EventNotice = () => {
 
           <Divider />
 
-          <div className=" bg-base-100">
+          <div className=" bg-base-100 lg:pl-6">
             <figure>
               <Image src={scienceimg} className="h-44 w-96" alt="" />
             </figure>
@@ -100,24 +100,24 @@ const EventNotice = () => {
         </div>
         {/* notice board */}
         <div className="w-full md:w-1/2 lg:w-[45%] bg-white rounded shadow-md p-4 border">
-        <h2 className="text-xl font-semibold mb-2 text-center">Notice Board</h2>
+          <h2 className="text-xl font-semibold mb-2 text-center">Notice Board</h2>
           <Divider />
           {notices.map((item, index) => (
             <div key={index} >
-              <Link href="#">
-                <p className="text-gray-700">{item.text}</p>
+              <Link href="#" >
+                <p className="text-gray-700 lg:pl-6">{item.text}</p>
               </Link>
-              <div className="flex flex-row item-center h-4 w-auto gap-1 text-sm text-gray-500 mt-[2px]">
+              <div className="flex flex-row item-center h-4 w-auto gap-1 text-sm text-gray-500 mt-[2px] lg:pl-6">
                 <ClockIcon />
                 <h1>June 14, 2024</h1>
               </div>
               <Divider />
             </div>
           ))}
-         <button className="btn bg-gray-200 w-full rounded p-2">View All Notices</button>
+          <button className="btn bg-gray-200 w-full rounded p-2">View All Notices</button>
         </div>
       </div>
-      
+
     </div>
   );
 };

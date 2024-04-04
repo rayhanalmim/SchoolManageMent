@@ -24,31 +24,31 @@ const aboutUs = [
   {
     name: "At a Galance",
     // description: "Get a better understanding of your traffic",
-    href: "#",
+    href: "/ataglance",
     icon: ChartPieIcon,
   },
   {
     name: "History",
     // description: "Speak directly to your customers",
-    href: "#",
+    href: "/history",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Achievement",
     // description: "Your customers’ data will be safe and secure",
-    href: "#",
+    href: "/achievement",
     icon: FingerPrintIcon,
   },
   {
     name: "Why Study at DCMS",
     // description: "Connect with third-party tools",
-    href: "#",
+    href: "/whystudyHere",
     icon: SquaresPlusIcon,
   },
   {
     name: "Events",
     // description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/events",
     icon: ArrowPathIcon,
   },
 ];
@@ -93,40 +93,50 @@ const administrations = [
 const academics = [
   {
     name: "School",
-    // description: "Get a better understanding of your traffic",
-    href: "#",
+    submenus: [
+      { name: "Results", href: "/school/results" },
+      { name: "Rules and Regulations", href: "/school/rules" },
+      { name: "Dress Code", href: "/school/dress-code" },
+    ],
     icon: ChartPieIcon,
   },
   {
     name: "College",
-    // description: "Speak directly to your customers",
-    href: "#",
+    submenus: [
+      { name: "Results", href: "/college/results" },
+      { name: "Rules and Regulations", href: "/college/rules" },
+      { name: "Dress Code", href: "/college/dress-code" },
+    ],
     icon: CursorArrowRaysIcon,
   },
   {
     name: "English Version",
-    // description: "Your customers’ data will be safe and secure",
-    href: "#",
+    submenus: [
+      { name: "Results", href: "/english/results" },
+      { name: "Rules and Regulations", href: "/english/rules" },
+      { name: "Dress Code", href: "/english/dress-code" },
+    ],
     icon: FingerPrintIcon,
   },
 ];
+
 const admissions = [
   {
     name: "School",
     // description: "Get a better understanding of your traffic",
-    // href: "/admissionform",
+    href: "/schoolAdmission",
     icon: ChartPieIcon,
   },
   {
     name: "College",
     // description: "Speak directly to your customers",
-    href: "./admissionform",
+    href: "/collegeAdmission",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "English Version",
     // description: "Your customers’ data will be safe and secure",
-    href: "./admissionform",
+    href: "/englishAdmission",
     icon: FingerPrintIcon,
   },
 ];
@@ -292,6 +302,12 @@ function classNames(...classes: any) {
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState(null);
+
+  // Add a function to handle hover
+  const handleHover = (itemName) => {
+    setHoveredItem(itemName);
+  };
 
   return (
     <header className="bg-white shadow-md pb-1">
@@ -303,7 +319,7 @@ const Header = () => {
         /> */}
       </div>
       <nav
-        className=" mt-2 flex items-center justify-between p-4 lg:px-5 bg-gray-200 rounded mb-2 mx-1"
+        className=" mt-2 flex items-center justify-between p-4 lg:px-5  rounded mb-2 mx-1"
         aria-label="Global"
       >
         <h2 className="font-bold text-2xl px-4">Doctor&apos;s Care</h2>
@@ -324,7 +340,7 @@ const Header = () => {
           {/* About Us */}
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              <Link href={"/about"}>About Us</Link>
+              About Us
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -418,9 +434,13 @@ const Header = () => {
               </Popover.Panel>
             </Transition>
           </Popover>
+
+
           {/* Academics */}
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button
+              className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:opacity-100"
+            >
               Academics
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -440,33 +460,57 @@ const Header = () => {
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
                   {academics.map((item) => (
-                    <div
-                      key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-4 hover:bg-gray-50"
-                    >
-                      <div className="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                          aria-hidden="true"
-                        />
+                    <div key={item.name}>
+                      <div
+                        className="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-4 hover:bg-gray-50"
+                        onMouseEnter={() => handleHover(item.name)}
+                        onMouseLeave={() => setHoveredItem(null)}
+                      >
+                        <div className="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                          <item.icon
+                            className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                            aria-hidden="true"
+                          />
+                        </div>
+                        <div className="flex-auto">
+                          <a
+                            // href={item.href}
+                            className="block font-semibold text-gray-900"
+                          >
+                            {item.name}
+                            <span className="absolute inset-0" />
+                          </a>
+                        </div>
                       </div>
-                      <div className="flex-auto">
-                        <a
-                          href={item.href}
-                          className="block font-semibold text-gray-900"
-                        >
-                          {item.name}
-                          <span className="absolute inset-0" />
-                        </a>
-                        {/* <p className="mt-1 text-gray-600">{item.description}</p> */}
+                      <div className="pl-8">
+                        {/* Conditionally render submenu items on hover */}
+                        {hoveredItem === item.name && (
+                          <div className="space-y-2">
+                            {item.submenus.map((submenu) => (
+                              <Link href={submenu.href}  key={submenu.name}>
+                             <div
+                            
+                           
+                             className="block text-gray-700 hover:text-indigo-600 py-1"
+                           >
+                             {submenu.name}
+                           </div>
+                           </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </div>
                   ))}
                 </div>
               </Popover.Panel>
             </Transition>
+
+
           </Popover>
+
           {/* Admission */}
+
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Admission
@@ -499,7 +543,7 @@ const Header = () => {
                         />
                       </div>
                       <div className="flex-auto">
-                        <Link href={"/admission"}>
+                        <Link href={item.href}>
                           <h2 className="block font-semibold text-gray-900">
                             {item.name}
                             <span className="absolute inset-0" />
