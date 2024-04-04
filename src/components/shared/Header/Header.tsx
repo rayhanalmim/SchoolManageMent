@@ -107,28 +107,28 @@ const academics = [
     name: "English Version",
     // description: "Your customers’ data will be safe and secure",
     href: "#",
-    icon: FingerPrintIcon, 
-  }  
+    icon: FingerPrintIcon,
+  },
 ];
 const admissions = [
   {
     name: "School",
     // description: "Get a better understanding of your traffic",
-    href: "#",
+    // href: "/admissionform",
     icon: ChartPieIcon,
   },
   {
     name: "College",
     // description: "Speak directly to your customers",
-    href: "#",
+    href: "./admissionform",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "English Version",
     // description: "Your customers’ data will be safe and secure",
-    href: "#",
+    href: "./admissionform",
     icon: FingerPrintIcon,
-  },  
+  },
 ];
 const facilities = [
   {
@@ -227,7 +227,7 @@ const clubs = [
     name: "Computer Club",
     // description: "Build strategic funnels that will convert",
     href: "#",
-    icon: ArrowPathIcon,  
+    icon: ArrowPathIcon,
   },
   {
     name: "English Language Club",
@@ -257,7 +257,7 @@ const clubs = [
     name: "Sports Club",
     // description: "Build strategic funnels that will convert",
     href: "#",
-    icon: ArrowPathIcon,  
+    icon: ArrowPathIcon,
   },
   {
     name: "Girl's Guid",
@@ -269,16 +269,14 @@ const clubs = [
     name: "Peach Growing Education (HWPL)",
     // description: "Build strategic funnels that will convert",
     href: "#",
-    icon: ArrowPathIcon,  
+    icon: ArrowPathIcon,
   },
-  
-  
 ];
 const gallerys = [
   {
     name: "Gallary Images",
     // description: "Get a better understanding of your traffic",
-    href: "#", 
+    href: "#",
     icon: ChartPieIcon,
   },
   {
@@ -286,7 +284,7 @@ const gallerys = [
     // description: "Speak directly to your customers",
     href: "#",
     icon: CursorArrowRaysIcon,
-  },  
+  },
 ];
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
@@ -298,7 +296,6 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md pb-1">
       <div className="flex item-center justify-center text-center content-center ">
-        
         {/* <Image
           src={headerImg}
           alt=""
@@ -327,7 +324,7 @@ const Header = () => {
           {/* About Us */}
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              About Us
+              <Link href={"/about"}>About Us</Link>
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -351,7 +348,6 @@ const Header = () => {
                       className="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-4 hover:bg-gray-50"
                     >
                       <div className="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        
                         <item.icon
                           className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
                           aria-hidden="true"
@@ -363,7 +359,7 @@ const Header = () => {
                           className="block font-semibold text-gray-900"
                         >
                           {item.name}
-                      
+
                           <span className="absolute inset-0" />
                         </a>
                         {/* <p className="mt-1 text-gray-600">{item.description}</p> */}
@@ -503,14 +499,12 @@ const Header = () => {
                         />
                       </div>
                       <div className="flex-auto">
-                        <a
-                          href={item.href}
-                          className="block font-semibold text-gray-900"
-                        >
-                          {item.name}
-                          <span className="absolute inset-0" />
-                        </a>
-                        {/* <p className="mt-1 text-gray-600">{item.description}</p> */}
+                        <Link href={"/admission"}>
+                          <h2 className="block font-semibold text-gray-900">
+                            {item.name}
+                            <span className="absolute inset-0" />
+                          </h2>
+                        </Link>
                       </div>
                     </div>
                   ))}
@@ -617,7 +611,7 @@ const Header = () => {
           {/* Gallery */}
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-            Gallery
+              Gallery
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -720,7 +714,7 @@ const Header = () => {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...navName1].map((item) => (
+                        {[...aboutUs].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../../../public/assests/logo.png";
+import logo from "../../../../public/assests/doctors.png";
 const Footer = () => {
   return (
     <footer className="px-4 divide-white divide-y bg-gray-200  text-gray-800">
@@ -8,10 +8,10 @@ const Footer = () => {
           <a
             rel="noopener noreferrer"
             href="#"
-            className="flex justify-center space-x-3 lg:justify-start"
+            className="flex justify-center space-x-3 lg:justify-center"
           >
-            <div className="flex items-center justify-center  ">
-              <Image src={logo} className="h-28 w-60" alt="This is Logo"/>
+            <div className="flex content-center  ">
+              <Image src={logo} className="h-32 w-32" alt="This is Logo"/>
             </div>
             
           </a>
