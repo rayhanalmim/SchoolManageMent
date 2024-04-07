@@ -1,15 +1,15 @@
 const History = () => {
   return (
-    <div>
+    <div className="lg:w-[1260px] mx-auto">
       <div className="w-64 mx-auto py-10">
         <h3 className="text-xl font-semibold border-y-4 text-center py-3">
           History
         </h3>
       </div>
-      <h1 className="justify-center text-center font-bold text-2xl pb-3">
+      <h1 className="justify-center text-center font-bold text-xl lg:text-2xl pb-3">
         ডক্টরস কেয়ার মডেল স্কুল এর ইতিবৃত্ত
       </h1>
-      <h2 className="mx-8 text-justify space-y-4">
+      <h2 className="mx-4 lg:mx-0 text-justify space-y-4">
         দেশসেরা ডক্টরস কেয়ার মডেল স্কুল মাতুয়াইলবাসীর আগ্রহ ও দাবির প্রেক্ষিতে
         বিশিষ্ট সমাজহিতৈষী ও বিদ্যোৎসাহী আলহাজ্ব সামসুল হক খানের উদ্যোগে ১৯৮৯
         খ্রি. প্রতিষ্ঠিত হয়। প্রতিষ্ঠানের আত্মপ্রকাশ ঘটে সামসুল হক খান জুনিয়র
