@@ -7,16 +7,16 @@ import Image from "next/image";
 
 const ParallaxSec = () => {
   return (
-    <div className="relative">
+    <div className="relative ">
       <Parallax strength={400}>
-        <Background className="w-[1400px]">
+        <Background className="w-[1200px] md:w-[1400px] lg:w-[1600px]">
           <Image src={studentImage} className="w-full" alt="image" />
         </Background>
 
-        <div className="h-[800px] w-full ">
+        <div className="h-[800px] lg:w-[1260px] mx-auto ">
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-            <div className="space-y-3 mb-3">
+          <div className=" mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+            <div className="mx-full space-y-3 mb-3">
               <h2 className="text-lg lg:text-4xl font-bold  ">
                 Doctors Care School
               </h2>
@@ -26,8 +26,8 @@ const ParallaxSec = () => {
                 heart like mine.
               </h2>
             </div>
-            <div className="grid gird-cols-1 lg:grid-cols-2 lg:gap-20">
-              <div className="lg:w-96 lg:h-96">
+            <div className="lg:w-[1260px] grid gird-cols-1 lg:grid-cols-2 lg:mt-10 ">
+              <div className="lg:w-auto lg:h-auto">
                 <Image
                   src={studentImage}
                   className="lg:h-full lg:w-auto"
@@ -35,10 +35,10 @@ const ParallaxSec = () => {
                 />
               </div>
               {/* count */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 ml-5 space-y-5 lg:space-y-0">
-              {/* <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-5 text-white space-y-5 lg:space-y-0  mt-4 lg:mt-0 lg:ml-5 "> */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 lg:mx-10 lg:mr-32 space-y-5 lg:space-y-0 lg:gap-y-4">
+              
                 
-                  <div className="lg:h-44 lg:w-52 px-1 lg:px-0 py-5 lg:mr-32 lg:py-0 bg-black border border-white text-center mt-5 lg:mt-0 content-center">
+                  <div className="lg:h-56 lg:w-72 px-1 lg:px-0 py-5  lg:py-0 bg-black border border-white text-center mt-5 lg:mt-0 content-center rounded-ss-lg rounded-ee-xl">
                     <h2 className="font-bold lg:text-2xl text-white ">Teacher</h2>
                     <CountUp
                       start={-875.039}
@@ -59,7 +59,7 @@ const ParallaxSec = () => {
                       )}
                     </CountUp>
                   </div>
-                  <div className="lg:h-44 lg:w-52 lg:mx-20  py-5 lg:mr-32 lg:py-0 bg-black border border-white text-center content-center">
+                  <div className="lg:h-56 lg:w-72 lg:mx-20  py-5  lg:py-0 bg-black border border-white text-center content-center rounded-ss-lg rounded-ee-xl">
                     <h2 className="font-bold lg:text-2xl text-white ">Student</h2>
                     <CountUp
                       start={-875.039}
@@ -81,7 +81,7 @@ const ParallaxSec = () => {
                     </CountUp>
                   </div>              
                 
-                  <div className="lg:h-44 lg:w-52 px-1 lg:px-0 py-5 lg:mr-32 lg:py-0 bg-black border border-white text-center  content-center">
+                  <div className="lg:h-56 lg:w-72 px-1 lg:px-0 py-5  lg:py-0 bg-black border border-white text-center  content-center rounded-ss-lg rounded-ee-xl">
                     <h2 className="font-bold lg:text-2xl text-white ">Staff</h2>
                     <CountUp
                       start={-875.039}
@@ -102,7 +102,7 @@ const ParallaxSec = () => {
                       )}
                     </CountUp>
                   </div>
-                  <div className="lg:h-44 lg:w-52 lg:mx-20 py-5 lg:mr-32 lg:py-0 bg-black border border-white text-center content-center">
+                  <div className="lg:h-56 lg:w-72 lg:mx-20 py-5  lg:py-0 bg-black border border-white text-center content-center rounded-ss-lg rounded-ee-xl">
                     <h2 className="font-bold lg:text-2xl text-white ">
                       Supporting Staff
                     </h2>

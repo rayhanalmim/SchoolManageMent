@@ -1,20 +1,7 @@
-"use client"; // This indicates that this file is a client component
-
-import { useState } from "react";
-import { Menu, Transition } from "@headlessui/react";
-import { Fragment, useEffect, useRef } from "react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import Link from "next/link";
-import {
-  FaEdit,
-  FaLongArrowAltLeft,
-  FaLongArrowAltRight,
-  FaTrashAlt,
-} from "react-icons/fa";
-import { Divider } from "antd";
 import Header from "@/components/shared/Header/Header";
 import Footer from "@/components/shared/Footer/Footer";
-const Admission = () => {
+
+const collegeAdmission = () => {
   return (
     <>
       <Header />
@@ -257,4 +244,4 @@ const Admission = () => {
   );
 };
 
-export default Admission;
+export default collegeAdmission;

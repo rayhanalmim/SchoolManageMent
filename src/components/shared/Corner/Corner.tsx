@@ -42,8 +42,8 @@ const corners = [
 
 const Corner = () => {
   return (
-    <div className="flex justify-center mt-5 lg:mt-20 ">
-      <div className="grid grid-cols-1 lg:grid-cols-6 lg:gap-6 mx-8 justify-between my-4 space-y-3 lg:space-y-0">
+    <div className=" lg:w-[1260px] mx-4 lg:mx-auto flex justify-center mt-5 lg:mt-20 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 lg:gap-6 mx-auto justify-between my-4 space-y-3 lg:space-y-0">
         {corners.map((item) => (
           <div
             className="border border-gray-500 rounded-3xl shadow-md p-2 h-48 w-48 bg-opacity-20 glas bg-gray-300  flex flex-col items-center justify-center gap-3 "
