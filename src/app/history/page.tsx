@@ -5,7 +5,7 @@ const history = () => {
   return (
     <div>
       <Header />
-      <div className="mb-10">
+      <div className="w-[1260px] mx-auto mb-10 text-center justify-center">
         <div className="w-64 mx-auto py-10">
           <h3 className="text-xl font-semibold border-y-4 text-center py-3">
             History
@@ -14,7 +14,7 @@ const history = () => {
         <h1 className="justify-center text-center font-bold text-2xl pb-3">
           ডক্টরস কেয়ার মডেল স্কুল এর ইতিবৃত্ত
         </h1>
-        <h2 className="mx-32 text-justify space-y-4">
+        <h2 className="justify-center text-center ">
           দেশসেরা ডক্টরস কেয়ার মডেল স্কুল মাতুয়াইলবাসীর আগ্রহ ও দাবির
           প্রেক্ষিতে বিশিষ্ট সমাজহিতৈষী ও বিদ্যোৎসাহী আলহাজ্ব সামসুল হক খানের
           উদ্যোগে ১৯৮৯ খ্রি. প্রতিষ্ঠিত হয়। প্রতিষ্ঠানের আত্মপ্রকাশ ঘটে সামসুল

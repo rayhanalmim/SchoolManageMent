@@ -90,33 +90,24 @@ const administrations = [
     icon: ArrowPathIcon,
   },
 ];
-const academics = [
+const results = [
   {
-    name: "School",
-    submenus: [
-      { name: "Results", href: "/school/results" },
-      { name: "Rules and Regulations", href: "/school/rules" },
-      { name: "Dress Code", href: "/school/dress-code" },
-    ],
-    icon: ChartPieIcon,
+    name: "School Result",
+    // description: "Connect with third-party tools",
+    href: "#",
+    icon: SquaresPlusIcon,
   },
   {
-    name: "College",
-    submenus: [
-      { name: "Results", href: "/college/results" },
-      { name: "Rules and Regulations", href: "/college/rules" },
-      { name: "Dress Code", href: "/college/dress-code" },
-    ],
-    icon: CursorArrowRaysIcon,
+    name: "College Result",
+    // description: "Build strategic funnels that will convert",
+    href: "#",
+    icon: ArrowPathIcon,
   },
   {
     name: "English Version",
-    submenus: [
-      { name: "Results", href: "/english/results" },
-      { name: "Rules and Regulations", href: "/english/rules" },
-      { name: "Dress Code", href: "/english/dress-code" },
-    ],
-    icon: FingerPrintIcon,
+    // description: "Build strategic funnels that will convert",
+    href: "#",
+    icon: ArrowPathIcon,
   },
 ];
 
@@ -310,7 +301,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md pb-1">
+    <header className=" bg-white shadow-md pb-1">
       <div className="flex item-center justify-center text-center content-center ">
         {/* <Image
           src={headerImg}
@@ -322,7 +313,7 @@ const Header = () => {
         className=" mt-2 flex items-center justify-between p-4 lg:px-5  rounded mb-2 mx-1"
         aria-label="Global"
       >
-        <h2 className="font-bold text-2xl px-4">Doctor&apos;s Care</h2>
+        <h2 className="font-bold text-2xl px-4">SoftEdu</h2>
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -370,14 +361,14 @@ const Header = () => {
                         />
                       </div>
                       <div className="flex-auto">
-                        <a
+                        <Link
                           href={item.href}
                           className="block font-semibold text-gray-900"
                         >
                           {item.name}
 
                           <span className="absolute inset-0" />
-                        </a>
+                        </Link>
                         {/* <p className="mt-1 text-gray-600">{item.description}</p> */}
                       </div>
                     </div>
@@ -438,10 +429,8 @@ const Header = () => {
 
           {/* Academics */}
           <Popover className="relative">
-            <Popover.Button
-              className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:opacity-100"
-            >
-              Academics
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+              Results
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -459,54 +448,32 @@ const Header = () => {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
-                  {academics.map((item) => (
-                    <div key={item.name}>
-                      <div
-                        className="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-4 hover:bg-gray-50"
-                        onMouseEnter={() => handleHover(item.name)}
-                        onMouseLeave={() => setHoveredItem(null)}
-                      >
-                        <div className="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                          <item.icon
-                            className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                            aria-hidden="true"
-                          />
-                        </div>
-                        <div className="flex-auto">
-                          <a
-                            // href={item.href}
-                            className="block font-semibold text-gray-900"
-                          >
-                            {item.name}
-                            <span className="absolute inset-0" />
-                          </a>
-                        </div>
+                  {results.map((item) => (
+                    <div
+                      key={item.name}
+                      className="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-4 hover:bg-gray-50"
+                    >
+                      <div className="flex h-8 w-8 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                        <item.icon
+                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          aria-hidden="true"
+                        />
                       </div>
-                      <div className="pl-8">
-                        {/* Conditionally render submenu items on hover */}
-                        {hoveredItem === item.name && (
-                          <div className="space-y-2">
-                            {item.submenus.map((submenu) => (
-                              <Link href={submenu.href}  key={submenu.name}>
-                             <div
-                            
-                           
-                             className="block text-gray-700 hover:text-indigo-600 py-1"
-                           >
-                             {submenu.name}
-                           </div>
-                           </Link>
-                            ))}
-                          </div>
-                        )}
+                      <div className="flex-auto">
+                        <a
+                          href={item.href}
+                          className="block font-semibold text-gray-900"
+                        >
+                          {item.name}
+                          <span className="absolute inset-0" />
+                        </a>
+                        {/* <p className="mt-1 text-gray-600">{item.description}</p> */}
                       </div>
                     </div>
                   ))}
                 </div>
               </Popover.Panel>
             </Transition>
-
-
           </Popover>
 
           {/* Admission */}

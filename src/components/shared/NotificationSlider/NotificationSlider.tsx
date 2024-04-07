@@ -20,7 +20,7 @@ const notifications = [
 
 const NotificationSlider = () => {
   return (
-    <div className="flex justify-center border-black border-2  mt-8 mx-1 lg:mx-36 rounded ">      
+    <div className="lg:w-[1260px] flex justify-center border-black border-2  mt-8 mx-1 lg:mx-auto rounded ">      
     <div className="bg-black text-white text-sm lg:text-base font-bold lg:w-44 lg:p-2 text-center
     ">Latest Notices</div>
       <Marquee pauseOnHover speed={60}>
