@@ -6,7 +6,7 @@ const achievement = () => {
     <div>
       <Header />
       <div className="mb-10 items-center">
-        <div className="w-64 mx-auto py-10">
+        <div className="w-64 mx-auto py-10 lg:pt-28">
           <h3 className="text-xl font-semibold border-y-4 text-center py-3">
             Achievement
           </h3>

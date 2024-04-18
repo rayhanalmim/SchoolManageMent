@@ -44,7 +44,7 @@ const notices = [
 const EventNotice = () => {
   return (
     <div className="lg:w-[1260px] mx-4 lg:mx-auto  py-10 ">
-      <div className="lg:flex mx-auto space-y-5 lg:space-y-0 lg:justify-center lg:gap-5">
+      <div className="md:flex lg:flex mx-auto space-y-5 md:space-y-0 lg:space-y-0 lg:justify-center md:gap-3 lg:gap-5">
         {/* news and events */}
         <div className="w-full md:w-1/2 lg:w-[45%] bg-white rounded shadow-md p-4 border">
           <h2 className="text-xl font-semibold mb-2 text-center">News & Events</h2>

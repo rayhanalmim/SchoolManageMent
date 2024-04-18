@@ -1,6 +1,6 @@
 const History = () => {
   return (
-    <div className="lg:w-[1260px] mx-auto">
+    <div className="lg:w-[1260px] mx-auto lg:px-5">
       <div className="w-64 mx-auto py-10">
         <h3 className="text-xl font-semibold border-y-4 text-center py-3">
           History

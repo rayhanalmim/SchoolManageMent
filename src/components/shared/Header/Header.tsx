@@ -301,7 +301,7 @@ const Header = () => {
   };
 
   return (
-    <header className=" bg-white shadow-md pb-1">
+    <header className=" bg-white shadow-md pb-1  lg:w-full lg:fixed lg:z-10 ">
       <div className="flex item-center justify-center text-center content-center ">
         {/* <Image
           src={headerImg}
@@ -310,10 +310,10 @@ const Header = () => {
         /> */}
       </div>
       <nav
-        className=" mt-2 flex items-center justify-between p-4 lg:px-5  rounded mb-2 mx-1"
+        className=" mt-2 flex items-center justify-between p-4 lg:px-5  rounded mb-2 mx-1 "
         aria-label="Global"
       >
-        <h2 className="font-bold text-2xl px-4">SoftEdu</h2>
+        <Link href={"/"}><h2 className="font-bold text-2xl px-4">SoftEdu</h2></Link>
         <div className="flex lg:hidden">
           <button
             type="button"

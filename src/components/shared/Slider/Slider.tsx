@@ -36,16 +36,16 @@ const schools = [
 ];
 const Slider = () => {
   return (
-    <div className="flex justify-center align-middle items-center w-auto ">
+    <div className="flex justify-center align-middle items-center w-auto  ">
       <Carousel autoPlay infiniteLoop showStatus={false} showThumbs={false}>
         {/* first slide */}
         {schools.map((item) => (
-          <div className="h-40 lg:h-full" key={item.name}>
+          <div className="h-52 md:h-72 lg:h-full lg:mt-20" key={item.name}>
 
             <Image src={item.img}
-              alt="Image 1" className="h-40 lg:h-auto w-auto" />
+              alt="Image 1" className="h-52 md:h-full lg:h-auto w-auto" />
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-            <div className="absolute top-1/2 lg:left-1/2 transform lg:-translate-x-1/2 -translate-y-1/2 text-center pl-8 lg:pl-0">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center lg:pl-0">
               <h2 className="text-lg lg:text-4xl font-bold lg:mb-4 text-white">
                 {item.name}
               </h2>
