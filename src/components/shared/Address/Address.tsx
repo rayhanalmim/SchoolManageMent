@@ -11,7 +11,7 @@ const Address = () => {
                 Our Address
               </h3>
             </div>
-            <div className="flex lg:gap-5 justify-between lg:mx-24 items-center content-center text-center  mb-5 lg:mb-0 space-y-4 lg:space-y-0 border border-gray-300 rounded-3xl shadow-md">
+            <div className=" md:flex lg:flex lg:gap-5 justify-between  lg:mx-24 items-center content-center text-center  mb-5 lg:mb-0 space-y-4 lg:space-y-0 border border-gray-300 rounded-3xl shadow-md md:px-10  lg:px-10">
               {/* first */}
               <div className=" lg:px-10 py-6 lg:pt-7  space-y-2 lg:space-y-0 ">
                 <div className="flex content-center items-center justify-center text-center">
@@ -28,7 +28,7 @@ const Address = () => {
                     ></path>
                   </svg>
                 </div>
-                <h1 className="text-2xl font-bold text-blue-500 lg:mb-10 text-center">
+                <h1 className="lg:text-2xl font-bold text-blue-500 lg:mb-10 text-center">
                   Address
                 </h1>
                 <div className="space-y-4 ">
@@ -39,7 +39,7 @@ const Address = () => {
                 </div>
 
               </div>
-              <Divider type="vertical" className=" h-16 bg-gray-400 w-[2px] " />
+              <Divider type="vertical" className=" h-8 md:h-10 lg:h-16 bg-gray-400 w-[2px] " />
               {/* second */}
               <div className="lg:px-10 py-6 lg:pt-7    space-y-4 lg:space-y-0">
                 <div className="flex content-center items-center justify-center text-center">
@@ -52,7 +52,7 @@ const Address = () => {
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                   </svg>
                 </div>
-                <h1 className="text-2xl font-bold text-blue-500 lg:mb-10 text-center">
+                <h1 className="lg:text-2xl font-bold text-blue-500 lg:mb-10 text-center">
                   Phone Number
                 </h1>
                 <div className="space-y-4">
@@ -62,7 +62,7 @@ const Address = () => {
                   </p>
                 </div>
               </div>
-              <Divider type="vertical" className=" h-16 bg-gray-400 w-[2px] " />
+              <Divider type="vertical" className="h-8 md:h-10 lg:h-16 bg-gray-400 w-[2px] " />
               {/* third */}
               <div className="lg:px-10 py-6 lg:pt-7 space-y-2 lg:space-y-0">
                 <div className="flex content-center items-center justify-center text-center">
@@ -76,7 +76,7 @@ const Address = () => {
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                   </svg>
                 </div>
-                <h1 className="text-2xl font-bold text-blue-500 lg:mb-10 text-center">
+                <h1 className="lg:text-2xl font-bold text-blue-500 lg:mb-10 text-center">
                   E-Mail
                 </h1>
                 <div className="space-y-4">
