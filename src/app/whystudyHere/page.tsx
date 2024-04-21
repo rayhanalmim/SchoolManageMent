@@ -59,7 +59,7 @@ const whystudyHere = () => {
             <div className="grid items-center gap-4 xl:grid-cols-5">
               <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
                 <h2 className="text-4xl font-bold">Our Benefits</h2>
-                <p className="dark:text-gray-600">
+                <p className=" text-gray-600">
                   Pri ex magna scaevola moderatius. Nullam accommodare no vix,
                   est ei diceret alienum, et sit cetero malorum. Et sea iudico
                   consequat, est sanctus adipisci ex.
@@ -68,7 +68,7 @@ const whystudyHere = () => {
               <div className="p-6 xl:col-span-3">
                 <div className="grid gap-4 md:grid-cols-2">
                   <div className="grid content-center gap-4">
-                    <div className="p-8 rounded  shadow-md dark:bg-gray-50 border">
+                    <div className="p-8 rounded  shadow-md  bg-gray-50 border">
                       <div className="flex items-center mt-2 mb-2 space-x-4">
                         <Image src={logo1} className="h-auto w-auto" alt="" />
                       </div>
@@ -83,7 +83,7 @@ const whystudyHere = () => {
                         democritum intellegam ne.
                       </p>
                     </div>
-                    <div className="p-8 rounded shadow-md dark:bg-gray-50 border">
+                    <div className="p-8 rounded shadow-md  bg-gray-50 border">
                       <div className="flex items-center mt-4 space-x-4">
                         <Image src={logo4} className="h-auto w-auto" alt="" />
                       </div>
@@ -98,7 +98,7 @@ const whystudyHere = () => {
                     </div>
                   </div>
                   <div className="grid content-center gap-4">
-                    <div className="p-6 rounded shadow-md dark:bg-gray-50 border">
+                    <div className="p-6 rounded shadow-md  bg-gray-50 border">
                       <div className="flex items-center mt-4 space-x-4">
                         <Image src={logo2} className="h-auto w-auto" alt="" />
                       </div>
@@ -114,7 +114,7 @@ const whystudyHere = () => {
                         movet ad est, sed tota vocent appetere ea.
                       </p>
                     </div>
-                    <div className="p-6 rounded shadow-md dark:bg-gray-50 border">
+                    <div className="p-6 rounded shadow-md  bg-gray-50 border">
                       <div className="flex items-center mt-4 space-x-4">
                         <Image src={logo3} className="h-auto w-auto" alt="" />
                       </div>
