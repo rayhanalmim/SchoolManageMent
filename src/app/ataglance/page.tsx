@@ -45,7 +45,7 @@ const ataglance = () => {
         </p>
         <div className="space-y-4">
          
-          <section className="py-6  dark:text-gray-900">
+          <section className="py-6   text-gray-900">
             <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
               
 

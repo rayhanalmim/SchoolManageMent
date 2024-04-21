@@ -22,33 +22,34 @@ import headerImg from "../../../../public/assests/Header.png";
 
 const aboutUs = [
   {
-    name: "At a Galance",
-    // description: "Get a better understanding of your traffic",
-    href: "/ataglance",
-    icon: ChartPieIcon,
-  },
-  {
     name: "History",
     // description: "Speak directly to your customers",
-    href: "/history",
+    href: "/about/history",
     icon: CursorArrowRaysIcon,
   },
   {
+    name: "At a Galance",
+    // description: "Get a better understanding of your traffic",
+    href: "/about/ataglance",
+    icon: ChartPieIcon,
+  },
+  
+  {
     name: "Achievement",
     // description: "Your customers’ data will be safe and secure",
-    href: "/achievement",
+    href: "/about/achievement",
     icon: FingerPrintIcon,
   },
   {
     name: "Why Study at DCMS",
     // description: "Connect with third-party tools",
-    href: "/whystudyHere",
+    href: "/about/whystudyHere",
     icon: SquaresPlusIcon,
   },
   {
     name: "Events",
     // description: "Build strategic funnels that will convert",
-    href: "/events",
+    href: "/about/events",
     icon: ArrowPathIcon,
   },
 ];
@@ -325,13 +326,15 @@ const Header = () => {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-5">
-          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">
             Home
-          </a>
+          </Link>
           {/* About Us */}
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+              {/* <Link href={""}> */}
               About Us
+              {/* </Link> */}
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"

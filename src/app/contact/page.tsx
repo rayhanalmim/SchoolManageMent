@@ -32,7 +32,7 @@ const contact = () => {
                 id="name"
                 type="text"
                 placeholder=""
-                className="w-full p-3 rounded dark:bg-gray-100"
+                className="w-full p-3 rounded  bg-gray-100"
               />
             </div>
             <div>
@@ -40,7 +40,7 @@ const contact = () => {
               <input
                 id="email"
                 type="email"
-                className="w-full p-3 rounded dark:bg-gray-100"
+                className="w-full p-3 rounded  bg-gray-100"
               />
             </div>
             <div>
@@ -48,7 +48,7 @@ const contact = () => {
               <input
                 id="text"
                 type="text"
-                className="w-full p-3 rounded dark:bg-gray-100"
+                className="w-full p-3 rounded  bg-gray-100"
               />
             </div>
             <div>
@@ -56,12 +56,12 @@ const contact = () => {
               <textarea
                 id="message"
                 rows="3"
-                className="w-full p-3 rounded dark:bg-gray-100"
+                className="w-full p-3 rounded  bg-gray-100"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-violet-600 dark:text-gray-50"
+              className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded  bg-violet-600  text-gray-50"
             >
               Send Message
             </button>

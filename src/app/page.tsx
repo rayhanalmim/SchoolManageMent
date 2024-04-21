@@ -19,7 +19,7 @@ export default function Home() {
       <Slider />
       <NotificationSlider/>
       <Corner />
-      <History/>
+      {/* <History/> */}
       <EventNotice/>
       <ParallaxSec/>   
       {/* <Address/> */}
