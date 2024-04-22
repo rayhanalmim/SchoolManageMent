@@ -14,13 +14,13 @@ const whystudyHere = () => {
   return (
     <>
       <Header />
-      <section className="py-20  bg-gray-100  text-gray-800 ">
-        <div className="w-[1260px] container flex  mt-10 px-20 mx-auto">
-          <div className="p-5">
+      <section className=" bg-gray-100  py-20 text-gray-800">
+        <div className="w-[1260px] mx-auto grid grid-cols-12 gap-14   mt-10 px-20">
+          <div className="p-5 col-span-3">
             <AboutSidebar />
           </div>
-          <div className=" grid w-full  ">
-            <div className="lg:w-auto pb-5 mx-auto lg:px-4">
+          <div className=" grid w-full  col-span-9">
+            <div className="lg:w-auto pb-5 mx-auto ">
               <div className="w-64 pt-5">
                 <h3 className="text-2xl font-semibold py-4">
                   Why Study Here
@@ -62,21 +62,21 @@ const whystudyHere = () => {
                 </div>
 
                 <section>
-                  <div className="container px-6 py-12 mx-auto">
-                    <div className="grid items-center gap-4 xl:grid-cols-5">
+                  <div className="container px-2 py-8 mx-auto">
+                    <div className="grid items-center gap-2 xl:grid-cols-5">
                       <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
-                        <h2 className="text-4xl font-bold">Our Benefits</h2>
-                        <p className=" text-gray-600">
+                        <h2 className="text-2xl font-bold">Our Benefits</h2>
+                        <p className="text-sm text-gray-500 text-justify">
                           Pri ex magna scaevola moderatius. Nullam accommodare no vix,
                           est ei diceret alienum, et sit cetero malorum. Et sea iudico
                           consequat, est sanctus adipisci ex.
                         </p>
                       </div>
-                      <div className="p-6 xl:col-span-3">
+                      <div className="p-2 xl:col-span-3">
                         <div className="grid gap-4 md:grid-cols-2">
                           <div className="grid content-center gap-4">
-                            <div className="p-8 rounded  shadow-md  bg-gray-50 border">
-                              <div className="flex items-center mt-2 mb-2 space-x-4">
+                            <div className="p-4 rounded  shadow-md  bg-gray-50 border">
+                              <div className="flex items-center mb-2 space-x-3">
                                 <Image src={logo1} className="h-auto w-auto" alt="" />
                               </div>
                               <div>
@@ -84,20 +84,20 @@ const whystudyHere = () => {
                                   Awesome Teachers
                                 </p>
                               </div>
-                              <p className="mt-2 text-sm font-light text-justify">
+                              <p className="text-sm font-light text-justify">
                                 An audire commodo habemus cum. Ne sed corrumpit
                                 repudiandae. Tota aliquip democritum pro in, nec
                                 democritum intellegam ne.
                               </p>
                             </div>
-                            <div className="p-8 rounded shadow-md  bg-gray-50 border">
-                              <div className="flex items-center mt-4 space-x-4">
+                            <div className="p-4 rounded shadow-md  bg-gray-50 border">
+                              <div className="flex items-center space-x-4">
                                 <Image src={logo4} className="h-auto w-auto" alt="" />
                               </div>
                               <div>
                                 <p className="text-lg font-semibold">Student Support Service</p>
                               </div>
-                              <p className="mt-2 text-sm font-light text-justify">
+                              <p className="text-sm font-light text-justify">
                                 Sit wisi sapientem ut, pri civibus temporibus
                                 voluptatibus et, ius cu hinc fabulas. Nam meliore
                                 minimum et, regione convenire cum id.
@@ -105,14 +105,14 @@ const whystudyHere = () => {
                             </div>
                           </div>
                           <div className="grid content-center gap-4">
-                            <div className="p-6 rounded shadow-md  bg-gray-50 border">
-                              <div className="flex items-center mt-4 space-x-4">
+                            <div className="p-4 rounded shadow-md  bg-gray-50 border">
+                              <div className="flex items-center space-x-4">
                                 <Image src={logo2} className="h-auto w-auto" alt="" />
                               </div>
                               <div>
                                 <p className="text-lg font-semibold">Global Certificate</p>
                               </div>
-                              <p className="mt-2 text-sm font-light text-justify">
+                              <p className="text-sm font-light text-justify">
                                 Putant omnium elaboraret per ut. Id dicta tritani
                                 nominavi quo, mea id justo errem elaboraret. Agam mollis
                                 scripserit ea his, ut nec postea verear persecuti. Ea
@@ -121,14 +121,14 @@ const whystudyHere = () => {
                                 movet ad est, sed tota vocent appetere ea.
                               </p>
                             </div>
-                            <div className="p-6 rounded shadow-md  bg-gray-50 border">
-                              <div className="flex items-center mt-4 space-x-4">
+                            <div className="p-4 rounded shadow-md  bg-gray-50 border">
+                              <div className="flex items-center space-x-4">
                                 <Image src={logo3} className="h-auto w-auto" alt="" />
                               </div>
                               <div>
                                 <p className="text-lg font-semibold">Best Program</p>
                               </div>
-                              <p className="mt-2 text-sm font-light text-justify">
+                              <p className="text-sm font-light text-justify">
                                 Te omnes virtute volutpat sed. Ei esse eros interesset
                                 vel, ei populo denique ocurreret vix, eu cum pertinax
                                 mandamus vituperatoribus. Solum nihil luptatum per ex,
