@@ -1,0 +1,6 @@
+#slide1, #slide2, #slide3, #slide4{
+  width:700px !important;
+  background:red;
+  height:800px !important;
+  overflow:hidden;
+}
