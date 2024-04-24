@@ -5,7 +5,7 @@ import scienceimg from "../../../../public/assests/scienceclub.jpg";
 import historyImg from "../../../../public/assests/historyImg.jpg";
 import student from "../../../../public/assests/student.jpg";
 import AboutSidebar from "@/components/shared/AboutSidebar/AboutSidebar";
-
+import { Divider } from "antd";
 
 const events = [
   {
@@ -40,22 +40,24 @@ const ataglance = () => {
     <>
       <Header />
 
-      <section className="bg-gray-100 py-20 text-gray-800">
-        <div className="w-[1260px] mx-auto grid grid-cols-12 gap-14 mt-10 px-20 ">
-          <div className="p-5 col-span-3">
+      <section className=" bg-gray-100  py-20 text-gray-800">
+        <div className="w-[1260px] mx-auto flex gap-1   mt-9">
+          <div className="p-5 ">
             <AboutSidebar />
           </div>
-          <div className="grid w-full col-span-9 ">
-
-            <div className="lg:w-auto pb-5 mx-auto ">
-              <div className="w-64 pt-5">
-                <h3 className="text-2xl font-semibold py-4">
+          <div className="grid w-full ">
+            <div className="lg:w-auto mt-2  ">
+              <div className="w-64 pt-4">
+                <h3 className="text-2xl font-semibold ">
                   At a Glance
                 </h3>
               </div>
-              <div className="">
+              <div  className="">
+                <Divider style={{ backgroundColor: '#808080' }}/>
+              </div>
+              <div className="lg:w-auto border rounded p-4 bg-white ">
 
-                <section className="bg-white  text-gray-800 border rounded pt-2">
+                <section className="text-gray-800   pt-2">
                   <div className="container p-3 mx-auto space-y-4 ">
                     
                     <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
