@@ -2,7 +2,7 @@ import Footer from "@/components/shared/Footer/Footer";
 import Header from "@/components/shared/Header/Header";
 import AboutSidebar from "@/components/shared/AboutSidebar/AboutSidebar";
 import Link from "next/link";
-
+import { Divider } from "antd";
 import Image from "next/image";
 import award from "../../../../public/assests/191010-0697-web.jpg";
 
@@ -13,18 +13,21 @@ const achievement = () => {
     <>
       <Header />
       <section className=" bg-gray-100  py-20 text-gray-800">
-        <div className="w-[1260px] mx-auto grid grid-cols-12 gap-14   mt-10 px-20">
-          <div className="p-5 col-span-3">
+        <div className="w-[1260px] mx-auto flex gap-1   mt-9">
+          <div className="p-5 ">
             <AboutSidebar />
           </div>
-          <div className="grid w-auto col-span-9">
-            <div className="lg:w-auto pb-5 mx-auto ">
-              <div className="w-64 pt-5">
-                <h3 className="text-2xl font-semibold py-4">
+          <div className="grid w-full ">
+            <div className="lg:w-auto mt-2  ">
+              <div className="w-64 pt-4">
+                <h3 className="text-2xl font-semibold ">
                   Achievement
                 </h3>
               </div>
-              <div className="border rounded p-2 bg-white">
+              <div  className="">
+                <Divider style={{ backgroundColor: '#808080' }}/>
+              </div>
+              <div className="lg:w-auto border rounded p-4 bg-white ">
 
 
 

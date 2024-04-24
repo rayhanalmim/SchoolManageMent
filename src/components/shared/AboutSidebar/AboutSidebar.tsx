@@ -10,8 +10,8 @@ const AboutSidebar = () => {
 	return (
 		<div>
 			<div className="w-64 mx-auto py-2">
-				<h3 className="text-lg font-semibold  pl-3 py-3">
-					News & Events
+				<h3 className="text-lg font-semibold  pl-3 py-2">
+					About Us
 				</h3>
 			</div>
 			<div className="w-64 flex justify-center py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded">

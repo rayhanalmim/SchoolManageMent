@@ -57,57 +57,54 @@ const administrations = [
   {
     name: "Governing Body",
     // description: "Get a better understanding of your traffic",
-    href: "#",
+    href: "/administration/governingBody",
     icon: ChartPieIcon,
   },
   {
     name: "Message",
     // description: "Speak directly to your customers",
-    href: "#",
+    href: "/administration/message",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Administrative Body",
     // description: "Your customers’ data will be safe and secure",
-    href: "#",
+    href: "/administration/administrativeBody",
     icon: FingerPrintIcon,
   },
   {
     name: "Teaching Staff",
     // description: "Connect with third-party tools",
-    href: "#",
+    href: "/administration/teachingStaff",
     icon: SquaresPlusIcon,
   },
   {
     name: "Office Staff",
     // description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/administration/officeStaff",
     icon: ArrowPathIcon,
   },
   {
     name: "Supporting Staff",
     // description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/administration/supportingStaff",
     icon: ArrowPathIcon,
   },
 ];
 const results = [
   {
     name: "School Result",
-    // description: "Connect with third-party tools",
-    href: "#",
+    href: "/result/schoolResult",
     icon: SquaresPlusIcon,
   },
   {
     name: "College Result",
-    // description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/result/collegeResult",
     icon: ArrowPathIcon,
   },
   {
     name: "English Version",
-    // description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/result/englishVersionResult",
     icon: ArrowPathIcon,
   },
 ];
@@ -116,175 +113,150 @@ const admissions = [
   {
     name: "School",
     // description: "Get a better understanding of your traffic",
-    href: "/schoolAdmission",
+    href: "/admission/schoolAdmission",
     icon: ChartPieIcon,
   },
   {
     name: "College",
     // description: "Speak directly to your customers",
-    href: "/collegeAdmission",
+    href: "/admission/collegeAdmission",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "English Version",
     // description: "Your customers’ data will be safe and secure",
-    href: "/englishAdmission",
+    href: "/admission/englishAdmission",
     icon: FingerPrintIcon,
   },
 ];
 const facilities = [
   {
-    name: "Science Lab",
-    // description: "Get a better understanding of your traffic",
-    href: "#",
+    name: "Science Lab",    
+    href: "/facilities/scienceLab",
     icon: ChartPieIcon,
   },
   {
     name: "ICT Lab",
-    // description: "Speak directly to your customers",
-    href: "#",
+    href: "/facilities/ictLab",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Library",
-    // description: "Your customers’ data will be safe and secure",
-    href: "#",
+    href: "/facilities/library",
     icon: FingerPrintIcon,
   },
   {
     name: "Multi-Media Class Room",
-    // description: "Connect with third-party tools",
-    href: "#",
+    href: "/facilities/multiMediaClass",
     icon: SquaresPlusIcon,
   },
   {
     name: "S-Net",
-    // description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/facilities/sNet",
     icon: ArrowPathIcon,
   },
   {
     name: "QIP SMS Sevice",
-    // description: "Your customers’ data will be safe and secure",
-    href: "#",
+    href: "/facilities/qipSMS",
     icon: FingerPrintIcon,
   },
   {
     name: "Sapcious Auditorium ",
-    // description: "Connect with third-party tools",
-    href: "#",
+    href: "/facilities/sapciousAuditorium",
     icon: SquaresPlusIcon,
   },
   {
     name: "Common Room",
-    // description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/facilities/commonRoom",
     icon: ArrowPathIcon,
   },
   {
     name: "Prayer Room",
-    // description: "Your customers’ data will be safe and secure",
-    href: "#",
+    href: "/facilities/prayerRoom",
     icon: FingerPrintIcon,
   },
   {
     name: "DHCS Ride Service",
-    // description: "Connect with third-party tools",
-    href: "#",
+    href: "/facilities/rideService",
     icon: SquaresPlusIcon,
   },
   {
     name: "Other Facilities",
-    // description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/facilities/otherFacilities", 
     icon: ArrowPathIcon,
   },
 ];
 const clubs = [
   {
-    name: "Scout Group",
-    // description: "Get a better understanding of your traffic",
-    href: "#",
+    name: "Scout Group",    
+    href: "/club/scout",
     icon: ChartPieIcon,
   },
   {
     name: "Art & Culture Club",
-    // description: "Speak directly to your customers",
-    href: "#",
+    href: "/club/artNculture",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Science Club",
-    // description: "Your customers’ data will be safe and secure",
-    href: "#",
+    href: "/club/science",
     icon: FingerPrintIcon,
   },
   {
     name: "Debate Club",
-    // description: "Connect with third-party tools",
-    href: "#",
+    href: "/club/debate",
     icon: SquaresPlusIcon,
   },
   {
     name: "Computer Club",
-    // description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/club/computer",
     icon: ArrowPathIcon,
   },
   {
     name: "English Language Club",
-    // description: "Get a better understanding of your traffic",
-    href: "#",
+    href: "/club/englishLanguage",
     icon: ChartPieIcon,
   },
   {
     name: "Nutrition Club",
-    // description: "Speak directly to your customers",
-    href: "#",
+    href: "/club/nutrition",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Swadesh O Bissobabna Club",
-    // description: "Your customers’ data will be safe and secure",
-    href: "#",
+    href: "/club/swadeshObissobabna",
     icon: FingerPrintIcon,
   },
   {
     name: "Photography Club",
-    // description: "Connect with third-party tools",
-    href: "#",
+    href: "/club/photography",
     icon: SquaresPlusIcon,
   },
   {
     name: "Sports Club",
-    // description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/club/sports",
     icon: ArrowPathIcon,
   },
   {
     name: "Girl's Guid",
-    // description: "Connect with third-party tools",
-    href: "#",
+    href: "/club/girlsGuid",
     icon: SquaresPlusIcon,
   },
   {
     name: "Peach Growing Education (HWPL)",
-    // description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/club/peachGrowingE",
     icon: ArrowPathIcon,
   },
 ];
 const gallerys = [
   {
     name: "Gallary Images",
-    // description: "Get a better understanding of your traffic",
-    href: "#",
+    href: "/gallery/images",
     icon: ChartPieIcon,
   },
   {
     name: "Videos",
-    // description: "Speak directly to your customers",
-    href: "#",
+    href: "/gallery/videos",
     icon: CursorArrowRaysIcon,
   },
 ];
@@ -303,7 +275,8 @@ const Header = () => {
 
   return (
     <header className=" bg-white shadow-md pb-1  lg:w-full lg:fixed lg:z-10 ">
-      <div className="flex item-center justify-center text-center content-center ">
+      <div className="lg:w-[1260px] mx-auto">
+      <div className="flex lg:w-[1260px] item-center justify-center text-center content-center ">
         {/* <Image
           src={headerImg}
           alt=""
@@ -311,7 +284,7 @@ const Header = () => {
         /> */}
       </div>
       <nav
-        className=" mt-2 flex items-center justify-between p-4 lg:px-5  rounded mb-2 mx-1 "
+        className=" mt-2 flex items-center justify-between py-4 rounded mb-2 mx-1 "
         aria-label="Global"
       >
         <Link href={"/"}><h2 className="font-bold text-2xl px-4">SoftEdu</h2></Link>
@@ -773,6 +746,7 @@ const Header = () => {
           </div>
         </Dialog.Panel>
       </Dialog>
+      </div>
     </header>
   );
 };
