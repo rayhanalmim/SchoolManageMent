@@ -8,7 +8,7 @@ const contact = () => {
   return (
     <>
       <Header />
-      <div className="lg:w-[1260px] lg:mx-auto items-center justify-center content-center">
+      <div className="lg:w-[1260px] lg:mx-auto items-center justify-center content-center pt-16">
 
         {/* email */}
         <div className="w-64 mx-auto py-10">
@@ -17,7 +17,8 @@ const contact = () => {
             Send Us a Email
           </h3>
         </div>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 mx-auto rounded-lg md:grid-cols-2 px-8 md:px-12 lg:px-16 py-16 xl:px-32  text-gray-800 border-[1px] border-black">
+
+        <div className="grid max-w-screen-xl grid-cols-1 gap-10 mx-auto rounded-lg md:grid-cols-2 px-8 md:px-12 lg:px-16 py-16 xl:px-32  text-gray-800 border-[1px] shadow-md">
           <div className="flex flex-col justify-between">
             <Image
               src={contactimg}
@@ -67,12 +68,14 @@ const contact = () => {
             </button>
           </form>
         </div>
+        {/* map */}
         <div className="w-64 mx-auto py-10">
           <h3 className="text-xl font-semibold border-y-4 text-center py-3">
             Map
           </h3>
         </div>
-        <div className="">
+
+        <div className="shadow-md rouded border">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1075.1518268683578!2d90.42238324968673!3d23.820644750680454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c700ff992a63%3A0xbdcb1d9ae66b2d5c!2sSoftypi%20Technology!5e0!3m2!1sen!2sbd!4v1711790838610!5m2!1sen!2sbd"
             className="lg:w-[1260px] h-[450px]"
@@ -91,7 +94,7 @@ const contact = () => {
                 Our Address
               </h3>
             </div>
-            <div className="flex lg:gap-5 justify-between lg:mx-24 items-center content-center text-center  mb-5 lg:mb-0 space-y-4 lg:space-y-0 border border-gray-300 rounded-3xl shadow-md">
+            <div className="flex lg:gap-5 justify-between lg:mx-24 items-center content-center text-center  mb-5 lg:mb-0 space-y-4 lg:space-y-0 border border-gray-300 rounded-md shadow-md">
               {/* first */}
               <div className=" lg:px-10 py-6 lg:pt-7  space-y-2 lg:space-y-0 ">
                 <div className="flex content-center items-center justify-center text-center">
