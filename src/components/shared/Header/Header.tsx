@@ -284,10 +284,10 @@ const Header = () => {
         /> */}
       </div>
       <nav
-        className=" mt-2 flex items-center justify-between py-4 rounded mb-2 mx-1 "
+        className=" mt-2 flex items-center justify-between py-4 rounded mb-2"
         aria-label="Global"
       >
-        <Link href={"/"}><h2 className="font-bold text-2xl px-4">SoftEdu</h2></Link>
+        <Link href={"/"}><h2 className="font-bold text-2xl">SoftEdu</h2></Link>
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -643,9 +643,9 @@ const Header = () => {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link href="/notice" className="text-sm font-semibold leading-6 text-gray-900">
             Notice
-          </a>
+          </Link>
           <Link href="/contact">
             <span className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer">
               Contact

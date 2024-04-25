@@ -3,14 +3,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 
-const activeStyle = 'text-black bg-green-500 h-full w-full p-2'; // Customize as needed
+const activeStyle = 'text-black bg-green-500 h-full w-full p-2'; 
 const nonActiveStyle = 'text-black';
 const AboutSidebar = () => {
 	const currentRoute = usePathname();
 	return (
 		<div>
 			<div className="w-64 mx-auto py-2">
-				<h3 className="text-lg font-semibold  pl-3 py-2">
+				<h3 className="text-lg font-semibold  pl-3 py-2"> 
 					About Us
 				</h3>
 			</div>

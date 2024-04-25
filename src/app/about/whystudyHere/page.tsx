@@ -16,7 +16,7 @@ const whystudyHere = () => {
       <Header />
       <section className=" bg-gray-100  py-20 text-gray-800">
         <div className="w-[1260px] mx-auto flex gap-1   mt-9">
-          <div className="p-5 ">
+          <div className="py-5 pr-5 ">
             <AboutSidebar />
           </div>
           <div className="grid w-full ">
@@ -26,9 +26,7 @@ const whystudyHere = () => {
                   Why Study Here
                 </h3>
               </div>
-              <div  className="">
-                <Divider style={{ backgroundColor: '#808080' }}/>
-              </div>
+              <Divider className="bg-gray-300" />
               <div className="lg:w-auto border rounded p-4 bg-white ">
                 <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-6 pt-5 pl-5">
                   <div>

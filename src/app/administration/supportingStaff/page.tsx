@@ -1,25 +1,27 @@
 import AdministrationSidebar from "@/components/shared/AdministrationSidebar/AdministrationSidebar";
 import Footer from "@/components/shared/Footer/Footer";
 import Header from "@/components/shared/Header/Header";
-
+import { Divider } from "antd";
 
 const supportingStaff = () => {
     return (
         <>
             <Header />
             <section className=" bg-gray-100  py-20 text-gray-800">
-                <div className="w-[1260px] mx-auto grid grid-cols-12 gap-14   mt-10 px-20">
-                    <div className="p-5 col-span-3">
-
+                <div className="w-[1260px] mx-auto flex gap-1   mt-9">
+                    <div className="py-5 pr-5">
                         <AdministrationSidebar />
                     </div>
-                    <div className="grid w-full col-span-9">
-                        <div className="lg:w-auto pb-5  ">
-                            <div className="w-64 pt-5">
-                                <h3 className="text-2xl font-semibold py-4">
-                                    Administration
+                    <div className="grid w-full ">
+                        <div className="lg:w-auto mt-2  ">
+                            <div className="w-64 pt-4">
+                                <h3 className="text-2xl font-semibold ">
+                                    Supporting Staff
                                 </h3>
                             </div>
+                            <Divider className="bg-gray-300" />
+
+                            <section className="lg:w-auto border rounded p-4 bg-white text-gray-800"></section>
 
                         </div>
                     </div>
