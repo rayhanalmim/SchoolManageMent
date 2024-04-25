@@ -46,7 +46,7 @@ const history = () => {
       <Header />
       <section className=" bg-gray-100  py-20 text-gray-800">
         <div className="w-[1260px] mx-auto flex gap-1   mt-9">
-          <div className="p-5 ">
+          <div className="py-5 pr-5 ">
             <AboutSidebar />
           </div>
           <div className="grid w-full ">
@@ -56,9 +56,7 @@ const history = () => {
                   History
                 </h3>
               </div>
-              <div  className="">
-                <Divider style={{ backgroundColor: '#808080' }}/>
-              </div>
+              <Divider className="bg-gray-300" />
               <div className="lg:w-auto border rounded p-4 bg-white ">
                 <h1 className="justify-center text-center font-bold text-xl lg:text-2xl py-3 ">
                   ডক্টরস কেয়ার মডেল স্কুল এর ইতিবৃত্ত

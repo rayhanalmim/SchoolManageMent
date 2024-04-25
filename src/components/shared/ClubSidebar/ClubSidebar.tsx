@@ -10,13 +10,12 @@ const  ClubSidebar= () => {
     const currentRoute = usePathname();
     return (
         <div>
-            <div className="p-2 md:p-0 lg:p-0">
-				<div className="lg:w-64 lg:mx-auto lg:py-2">
-					<h3 className="text-2xl lg:text-lg font-semibold  lg:pl-3 py-3 text-center md:text-start lg:text-start">
+            <div className="w-64 mx-auto py-2">
+				<h3 className="text-lg font-semibold  pl-3 py-2"> 
 						Club
 					</h3>
 				</div>
-				<div className="lg:w-64 flex justify-center p-2 col-span-full md:col-span-1 md:flex-col md:justify-start  md:items-start bg-white gap-2 rounded">				
+				<div className="w-64 flex justify-center py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded">				
 					<Link href={"/club/scout"} className={`${currentRoute === "/club/scout" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Scout Club</Link>
 					<div className="border lg:w-full"></div>
 					<Link href={"/club/artNculture"} className={`${currentRoute === "/club/artNculture" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>
@@ -49,10 +48,10 @@ const  ClubSidebar= () => {
 					<div className="border lg:w-full"></div>
 					<Link href={"/club/girlsGuid"} className={`${currentRoute === "/club/girlsGuid" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Girls Guid</Link>
 					<div className="border lg:w-full"></div>
-					<Link href={"/club/peachGrowingE"} className={`${currentRoute === "/club/peachGrowingE" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Peach Growing Education (HWPL)</Link>
+					<Link href={"/club/peachGrowingE"} className={`${currentRoute === "/club/peachGrowingE" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Peach Growing Education (HWPL)</Link> 
 
 				</div>
-		</div>
+		
         </div>
     );
 };
