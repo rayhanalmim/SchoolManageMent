@@ -42,7 +42,7 @@ const Footer = () => {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="container mx-auto px-6 pb-8 pt-5 lg:px-8 lg:pt-10">
+      <div className="container mx-auto px-6 pb-8 pt-5 lg:px-0 lg:pt-10">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8 mb-3 lg:mb-2">
           <div className="max-w-full lg:max-w-lg  mx-auto">
             <div className="text-center md:text-left">

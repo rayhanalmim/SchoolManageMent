@@ -10,18 +10,17 @@ const FacilitiesSidebar = () => {
     const currentRoute = usePathname();
     return (
         <div>
-            <div className="p-2 md:p-0 lg:p-0">
-				<div className="lg:w-64 lg:mx-auto lg:py-2">
-					<h3 className="text-2xl lg:text-lg font-semibold  lg:pl-3 py-3 text-center md:text-start lg:text-start">
+            <div className="w-64 mx-auto py-2">
+				<h3 className="text-lg font-semibold  pl-3 py-2"> 
 					Facilities
 					</h3>
 				</div>
-				<div className="lg:w-64 flex justify-center p-2 col-span-full md:col-span-1 md:flex-col md:justify-start  md:items-start bg-white gap-2 rounded">				
+				<div className="w-64 flex justify-center py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded">				
 					<Link href={"/facilities/scienceLab"} className={`${currentRoute === "/facilities/scienceLab" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Science Lab</Link>
 					<div className="border lg:w-full"></div>
 					<Link href={"/facilities/ictLab"} className={`${currentRoute === "/facilities/ictLab" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>
 						ICT Lab
-					</Link>
+					</Link> 
 					<div className="border lg:w-full"></div>
 					<Link href={"/facilities/library"} className={`${currentRoute === "/facilities/library" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Library</Link>
 					<div className="border lg:w-full"></div>
@@ -48,7 +47,7 @@ const FacilitiesSidebar = () => {
 					<Link href={"/facilities/otherFacilities"} className={`${currentRoute === "/facilities/otherFacilities" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Other Facilities</Link>
 
 				</div>
-		</div>
+		
         </div>
     );
 };
