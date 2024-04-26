@@ -12,8 +12,8 @@ const achievement = () => {
   return (
     <>
       <Header />
-      <section className=" bg-gray-100  py-20 text-gray-800">
-        <div className="w-[1260px] mx-auto flex gap-1   mt-9">
+      <section className=" bg-gray-100  lg:py-20 text-gray-800">
+        <div className="w-[1260px] mx-auto lg:flex gap-1   mt-9">
           <div className="py-5 pr-5 ">
             <AboutSidebar />
           </div>

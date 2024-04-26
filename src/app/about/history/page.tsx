@@ -44,8 +44,8 @@ const history = () => {
   return (
     <>
       <Header />
-      <section className=" bg-gray-100  py-20 text-gray-800">
-        <div className="w-[1260px] mx-auto flex gap-1   mt-9">
+      <section className=" bg-gray-100  lg:py-20 text-gray-800">
+        <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
           <div className="py-5 pr-5 ">
             <AboutSidebar />
           </div>
@@ -107,20 +107,20 @@ const history = () => {
 
                 {/* mission vision section */}
                 <div className="flex flex-col w-full lg:flex-row gap-4 my-5 text-white">
-                  <div className="grid flex-grow h-52 w-1/2 card bg-base-300 rounded  bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500">
-                    <div className="lg:flex items-center gap-2 px-4">
+                  <div className="grid w-full lg:h-52 lg:w-1/2 card bg-base-300 rounded  bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 p-5">
+                    <div className="flex items-center gap-2 lg:px-4">
                       <Image src={vision} className="h-auto w-auto rounded" alt="img" />
                       <h2 className="text-2xl font-bold">Our Vision</h2>
                     </div>
-                    <p className="px-4 text-justify">To create a world where businesses can intelligently engage and delight their customers through real-time unified data.</p>
+                    <p className="lg:px-4 text-justify">To create a world where businesses can intelligently engage and delight their customers through real-time unified data.</p>
                   </div>
 
-                  <div className="grid flex-grow h-52 w-1/2 card bg-base-300 rounded  bg-gradient-to-tr from-sky-400 via-purple-600 to-blue-400">
-                    <div className="flex items-center gap-2 px-4">
+                  <div className="grid w-full lg:h-52 lg:w-1/2 card bg-base-300 rounded bg-gradient-to-tr from-sky-400 via-purple-600 to-blue-400 p-5">
+                    <div className="flex items-center gap-2 lg:px-4">
                       <Image src={mission} className="h-auto w-auto rounded" alt="img" />
                       <h2 className="text-2xl font-bold">Our Mission</h2>
                     </div>
-                    <p className="px-4 text-justify">To create a best-of-breed, secure, and compliant global platform that helps companies improve the value and actionability of their customer data.</p>
+                    <p className="lg:px-4 text-justify">To create a best-of-breed, secure, and compliant global platform that helps companies improve the value and actionability of their customer data.</p>
                   </div>
                 </div>
 
