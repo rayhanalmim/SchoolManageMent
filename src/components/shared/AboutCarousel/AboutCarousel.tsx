@@ -44,7 +44,7 @@ const AboutCarousel = () => {
 
   return (
     <div className="relative lg:mx-28 ">
-      <h2 className="text-2xl font-bold pb-5 text-center">Our History</h2>
+      <h2 className="text-2xl font-bold pb-5 text-center">আমাদের ইতিহাস</h2>
       <div className="carousel mb-20 h-[260px] lg:h-52  ">
         <div className={`slide ${currentIndex === 0 || currentIndex === 1 ? 'block' : 'hidden'} space-y-2`}>
           <h2 className="text-2xl font-bold">{slides[0].title}</h2>
