@@ -63,7 +63,7 @@ const Corner = () => {
             >
               <Image src={item.icon} alt={item.name} className="h-20 w-20 " />
 
-              <h1 className="text-xl font-bold text-blue-500 text-center content-center ">
+              <h1 className="text-md md:text-lg lg:text-xl font-bold text-blue-500 text-center content-center ">
                 {item.name}
               </h1>
             </div>

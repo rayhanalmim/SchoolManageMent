@@ -44,27 +44,27 @@ const history = () => {
   return (
     <>
       <Header />
-      <section className=" bg-gray-100  lg:py-20 text-gray-800">
+      <section className=" bg-gray-100  lg:py-20 text-gray-800 ">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
-          <div className="py-5 pr-5 ">
+          <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
             <AboutSidebar />
           </div>
           <div className="grid w-full ">
-            <div className="lg:w-auto mt-2  ">
-              <div className="w-64 pt-4">
-                <h3 className="text-2xl font-semibold ">
-                  History
+            <div className="lg:w-auto lg:mt-2  ">
+              <div className="w-full md:w-64 lg:w-64 md:pt-4 lg:pt-4">
+                <h3 className="text-2xl font-semibold text-center md:text-left lg:text-left">
+                 আমাদের ইতিহাস
                 </h3>
               </div>
               <Divider className="bg-gray-300" />
               <div className="lg:w-auto border rounded p-4 bg-white ">
                 <h1 className="justify-center text-center font-bold text-xl lg:text-2xl py-3 ">
-                  ডক্টরস কেয়ার মডেল স্কুল এর ইতিবৃত্ত
+                  SoftyEdu এর ইতিবৃত্ত
                 </h1>
                 {/* <Image src={schoolImg} className="h-auto w-auto rounded" alt="img" /> */}
 
                 <h2 className="mx-4 lg:mx-0 text-justify space-y-4">
-                  দেশসেরা ডক্টরস কেয়ার মডেল স্কুল মাতুয়াইলবাসীর আগ্রহ ও দাবির প্রেক্ষিতে
+                  দেশসেরা SoftyEdu মাতুয়াইলবাসীর আগ্রহ ও দাবির প্রেক্ষিতে
                   বিশিষ্ট সমাজহিতৈষী ও বিদ্যোৎসাহী আলহাজ্ব সামসুল হক খানের উদ্যোগে ১৯৮৯
                   খ্রি. প্রতিষ্ঠিত হয়। প্রতিষ্ঠানের আত্মপ্রকাশ ঘটে সামসুল হক খান জুনিয়র
                   হাইস্কুল হিসেবে এবং সীমিত সংখ্যক শিক্ষার্থী ও শিক্ষক নিয়ে। ১৯৯৩ সালে
@@ -133,15 +133,14 @@ const history = () => {
                 <Divider />
                 {/* teacher */}
                 <section className="text-gray-800">
-                  <div className="container p-4 mx-auto space-y-16 sm:p-10">
+                  <div className="container  mx-auto lg:space-y-16 p-2 lg:p-4">
                     <div className="space-y-4">
-                      <h3 className="text-2xl font-bold leading-none sm:text-5xl">Meet with Our Teachers</h3>
-                      <p className="max-w-2xl text-gray-600">At a assumenda quas cum earum ut itaque commodi saepe rem aspernatur quam natus quis nihil quod, hic explicabo doloribus magnam neque, exercitationem eius sunt!</p>
+                      <h3 className="text-2xl font-bold leading-none lg:text-5xl text-center md:text-left lg:text-left py-4 md:my-2 lg:py-0">শিক্ষকমন্ডলী</h3>
+                      
                     </div>
                     <div className="grid w-full grid-cols-1 gap-x-3 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
                       {teachers.map(items => (
                         <div key={items.Name} className="border rounded w-full py-5">
-                          {/* <img alt="" className="object-cover h-56 mx-auto mb-4 bg-center rounded bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?0" /> */}
                           <Image src={items.img} className="object-cover h-auto mx-auto mb-4 bg-center rounded px-3" alt="img" />
                           <div className="flex flex-col items-center">
                             <h4 className="text-xl font-semibold">{items.Name}</h4>
