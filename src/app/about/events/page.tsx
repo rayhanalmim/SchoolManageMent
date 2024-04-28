@@ -51,7 +51,7 @@ const eventsItems = [
 const events = () => {
   return (
     <div>
-      <Header />
+
       <section className=" bg-gray-100  lg:py-20 text-gray-800 ">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
           <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
@@ -106,7 +106,7 @@ const events = () => {
         </div>
       </section>
 
-      <Footer />
+ 
     </div>
   );
 };

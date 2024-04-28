@@ -5,8 +5,7 @@ import Header from "@/components/shared/Header/Header";
 const notice = () => {
     return (
         <div>
-            <Header/>
-            <Footer/>
+           <h3>this is notice page </h3>
         </div>
     );
 };
