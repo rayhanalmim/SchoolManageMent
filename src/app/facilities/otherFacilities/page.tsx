@@ -7,15 +7,15 @@ const otherFacilities = () => {
     return (
         <>
             <Header />
-            <section className=" bg-gray-100  py-20 text-gray-800">
-                <div className="w-[1260px] mx-auto flex gap-1   mt-9">
+            <section className=" bg-gray-100  lg:py-20 text-gray-800">
+                <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
                     <div className="py-5 pr-5">
                         <FacilitiesSidebar />
                     </div>
                     <div className="grid w-full ">
-                        <div className="lg:w-auto mt-2  ">
-                            <div className="w-64 pt-4">
-                                <h3 className="text-2xl font-semibold ">
+                        <div className="lg:w-auto lg:mt-2  ">
+                            <div className="w-full md:w-64 lg:w-64 md:pt-4 lg:pt-4">
+                                <h3 className="text-2xl font-semibold text-center md:text-left lg:text-left">
                                     Other Facilities
                                 </h3>
                             </div>

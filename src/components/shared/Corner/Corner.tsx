@@ -52,18 +52,18 @@ const corners = [
 
 const Corner = () => {
   return (
-    <div className=" lg:w-[1260px] mx-4 lg:mx-auto flex justify-center mt-5 lg:mt-20 lg:px-0">
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 md:gap-4 lg:gap-6 mx-auto justify-between my-4 space-y-3 md:space-y-0 lg:space-y-0">
+    <div className=" lg:w-[1260px] mx-4 lg:mx-auto flex justify-center mt-6 lg:mt-20 lg:px-0">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-4 lg:gap-6 mx-auto justify-between lg:my-4">
         {corners.map((item) => (
           <div key={item.id}>
           <Link href={item.link}> 
             <div
-              className="border border-gray-300 rounded-lg shadow-md p-2 h-48 w-48 bg-opacity-20 glas bg-gray-300  flex flex-col items-center justify-center gap-3 "
+              className="border border-gray-300 rounded-lg shadow-md p-2 lg:h-48 lg:w-48 bg-opacity-20  bg-gray-300 flex flex-col items-center justify-center gap-3"
               
             >
               <Image src={item.icon} alt={item.name} className="h-20 w-20 " />
 
-              <h1 className="text-xl font-bold text-blue-500 text-center content-center ">
+              <h1 className="text-md md:text-lg lg:text-xl font-bold text-blue-500 text-center content-center ">
                 {item.name}
               </h1>
             </div>

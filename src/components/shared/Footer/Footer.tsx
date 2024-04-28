@@ -47,14 +47,14 @@ const Footer = () => {
           <div className="max-w-full lg:max-w-lg  mx-auto">
             <div className="text-center md:text-left">
               <Link href={"/"}>
-                <h2 className="font-bold text-2xl ">SoftEdu</h2>
+                <h2 className="font-bold text-2xl">SoftEdu</h2>
                 </Link>
               {/* <Image src={logo} className="h-24 w-24" alt="This is Logo" /> */}
               <p className="mt-2 text-sm leading-6 text-gray-600">
                 A School of Modern and Stardard Education System with religious value. 
               </p>
             </div>
-            <div className="mt-4 space-y-4">
+            <div className="mt-4 space-y-4 flex flex-col items-center md:items-left lg:items-left">
               <div className="flex items-center space-x-2">
                 <MapPinIcon className="h-5 w56 text-gray-600" />
                 <p className="text-sm leading-6 text-gray-600">
