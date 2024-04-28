@@ -11,20 +11,17 @@ import ParallaxSec from "@/components/shared/ParallaxSec/ParallaxSec";
 import Address from "@/components/shared/Address/Address";
 import Teacher from "@/components/shared/Teacher/Teacher";
 
-
 export default function Home() {
   return (
     <main>
-      <Header />
       <Slider />
-      <NotificationSlider/>
+      <NotificationSlider />
       <Corner />
       {/* <History/> */}
-      <EventNotice/>
-      <ParallaxSec/>   
+      <EventNotice />
+      <ParallaxSec />
       {/* <Address/> */}
-      <Teacher/>
-      <Footer />
+      <Teacher />
     </main>
   );
 }
