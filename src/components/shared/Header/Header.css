@@ -1,0 +1,11 @@
+.dropdown-hover:hover > details > ul {
+    display: block;
+  }
+  
+  .dropdown-hover details > ul {
+    display: none;
+  }
+  
+  .dropdown-hover summary {
+    cursor: pointer;
+  }

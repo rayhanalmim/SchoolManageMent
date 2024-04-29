@@ -4,7 +4,7 @@ import Header from "@/components/shared/Header/Header";
 
 const notice = () => {
     return (
-        <div>
+        <div className="pt-24">
            <h3>this is notice page </h3>
         </div>
     );
