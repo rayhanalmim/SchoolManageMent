@@ -10,6 +10,7 @@ import NotificationSlider from "@/components/shared/NotificationSlider/Notificat
 import ParallaxSec from "@/components/shared/ParallaxSec/ParallaxSec";
 import Address from "@/components/shared/Address/Address";
 import Teacher from "@/components/shared/Teacher/Teacher";
+import SchoolFeatures from "@/components/shared/SchoolFeatures/SchoolFeatures";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
       <EventNotice />
       <ParallaxSec />
       {/* <Address/> */}
+      
+      <SchoolFeatures/>
       <Teacher />
     </main>
   );

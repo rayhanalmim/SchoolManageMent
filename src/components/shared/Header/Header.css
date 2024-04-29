@@ -1,11 +1,48 @@
-.dropdown-hover:hover > details > ul {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: inline-block;
+    /* margin-right: 20px; */
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 4px;
     display: block;
-  }
+}
+/* Styling for the hover effect */
+li:hover .submenu {
+    display: flex;
+    
+}
+.submenu {    
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 282px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none; 
+    flex-direction: column;
+}
+.submenu a {
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+.submenu a:hover {
+    background-color: #D5D8DC;
+    border-radius: 3px;
+    
+}
+
+
   
-  .dropdown-hover details > ul {
-    display: none;
-  }
-  
-  .dropdown-hover summary {
-    cursor: pointer;
-  }
