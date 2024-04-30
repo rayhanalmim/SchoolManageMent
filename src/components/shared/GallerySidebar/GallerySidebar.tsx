@@ -10,7 +10,7 @@ const GallerySidebar = () => {
     const currentRoute = usePathname();
     return (
         <div>
-            <div className="w-64 mx-auto py-2">
+            <div className="w-64 mx-auto py-2"> 
 				<h3 className="text-lg font-semibold  pl-3 py-2"> 
 						Gallery
 					</h3>
