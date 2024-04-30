@@ -11,6 +11,8 @@ import ParallaxSec from "@/components/shared/ParallaxSec/ParallaxSec";
 import Address from "@/components/shared/Address/Address";
 import Teacher from "@/components/shared/Teacher/Teacher";
 import SchoolFeatures from "@/components/shared/SchoolFeatures/SchoolFeatures";
+import SeeImgandVideos from "@/components/shared/SeeImgandVideos/SeeImgandVideos";
+import OnlineApplication from "@/components/shared/OnlineApplication/OnlineApplication";
 
 export default function Home() {
   return (
@@ -22,9 +24,10 @@ export default function Home() {
       <EventNotice />
       <ParallaxSec />
       {/* <Address/> */}
-      
       <SchoolFeatures/>
+      <SeeImgandVideos/>
       <Teacher />
+      <OnlineApplication/>
     </main>
   );
 }

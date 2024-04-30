@@ -81,7 +81,7 @@ const Footer = () => {
                 <h3 className=" font-semibold leading-6 text-gray-900">
                   Resource
                 </h3>
-                <ul role="list" className="lg:mt-6 lg:space-y-4">
+                <ul role="list" className="lg:mt-6 lg:space-y-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
                       <a
@@ -98,7 +98,7 @@ const Footer = () => {
                 <h3 className=" font-semibold leading-6 text-gray-900">
                   Support
                 </h3>
-                <ul role="list" className="lg:mt-6 lg:space-y-4">
+                <ul role="list" className="lg:mt-6 lg:space-y-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
                       <a
@@ -117,7 +117,7 @@ const Footer = () => {
                 <h3 className=" font-semibold leading-6 text-gray-900">
                   School Directory
                 </h3>
-                <ul role="list" className="lg:mt-6 lg:space-y-4">
+                <ul role="list" className="lg:mt-6 lg:space-y-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
                       <a
@@ -134,7 +134,7 @@ const Footer = () => {
                 <h3 className="font-semibold leading-6 text-gray-900">
                   Information
                 </h3>
-                <ul role="list" className="lg:mt-6 lg:space-y-4">
+                <ul role="list" className="lg:mt-6 lg:space-y-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
                   {navigation.information.map((item) => (
                     <li key={item.name}>
                       <a
@@ -151,7 +151,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="grid justify-center pt-6 lg:justify-between border-t border-gray-900/10">
-          <div className="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
+          <div className="lg:flex lg:gap-4 items-center">
             <span className="mb-2 lg:mb-0">&copy; {new Date().getFullYear()} SoftEdu. All rights reserved.</span>
             <a rel="noopener noreferrer" href="#">
               <span>Privacy policy</span>
