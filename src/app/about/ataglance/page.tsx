@@ -38,7 +38,7 @@ const events = [
 const ataglance = () => {
   return (
     <>
-      <Header />
+
 
       <section className=" bg-gray-100  lg:py-20 text-gray-800 ">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
@@ -89,7 +89,7 @@ const ataglance = () => {
           </div>
         </div>
       </section>
-      <Footer />
+ 
     </>
 
   );

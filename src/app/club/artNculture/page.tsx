@@ -6,7 +6,7 @@ import { Divider } from "antd";
 const artNculture = () => {
     return (
         <>
-            <Header />
+
             <section className=" bg-gray-100  lg:py-20 text-gray-800">
                 <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
                     <div className="py-5 pr-5">
@@ -27,7 +27,6 @@ const artNculture = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
         </>
     );
 };

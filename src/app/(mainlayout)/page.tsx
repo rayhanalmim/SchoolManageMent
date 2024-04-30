@@ -10,21 +10,24 @@ import NotificationSlider from "@/components/shared/NotificationSlider/Notificat
 import ParallaxSec from "@/components/shared/ParallaxSec/ParallaxSec";
 import Address from "@/components/shared/Address/Address";
 import Teacher from "@/components/shared/Teacher/Teacher";
-
+import SchoolFeatures from "@/components/shared/SchoolFeatures/SchoolFeatures";
+import SeeImgandVideos from "@/components/shared/SeeImgandVideos/SeeImgandVideos";
+import OnlineApplication from "@/components/shared/OnlineApplication/OnlineApplication";
 
 export default function Home() {
   return (
     <main>
-      <Header />
       <Slider />
-      <NotificationSlider/>
+      <NotificationSlider />
       <Corner />
       {/* <History/> */}
-      <EventNotice/>
-      <ParallaxSec/>   
+      <EventNotice />
+      <ParallaxSec />
       {/* <Address/> */}
-      <Teacher/>
-      <Footer />
+      <SchoolFeatures/>
+      <SeeImgandVideos/>
+      <Teacher />
+      <OnlineApplication/>
     </main>
   );
 }

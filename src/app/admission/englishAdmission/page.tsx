@@ -6,7 +6,6 @@ import { Divider } from "antd";
 const englishAdmission = () => {
   return (
     <>
-      <Header />
       <section className=" bg-gray-100  lg:py-20 text-gray-800">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
           <div className="py-5 px-3 lg:px-0 lg:pr-5">
@@ -78,7 +77,9 @@ const englishAdmission = () => {
                       />
                     </label>
                     <label className="w-full ">
-                      <h1 className="text-sm p-1">NID / Birth Certificate No. - </h1>
+                      <h1 className="text-sm p-1">
+                        NID / Birth Certificate No. -{" "}
+                      </h1>
                       <input
                         type="text"
                         placeholder="NID / Birth Certificate Number"
@@ -87,7 +88,9 @@ const englishAdmission = () => {
                       />
                     </label>
                     <label className="w-full ">
-                      <h1 className="text-sm p-1">Student Image (Passport Size)</h1>
+                      <h1 className="text-sm p-1">
+                        Student Image (Passport Size)
+                      </h1>
                       <input
                         type="file"
                         className="file-input file-input-bordered w-full "
@@ -97,7 +100,9 @@ const englishAdmission = () => {
                 </div>
                 {/* Guardians or Parents Information */}
                 <div className="rounded p-2 md:p-5 lg:p-5 shadow bg-white">
-                  <div className="divider">Guardians or Parents Information</div>
+                  <div className="divider">
+                    Guardians or Parents Information
+                  </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-3">
                     <label className="form-control w-full ">
                       <h1 className="text-sm p-1">Father Name </h1>
@@ -142,13 +147,14 @@ const englishAdmission = () => {
                     </label>
 
                     <label className="form-control w-full ">
-                      <h1 className="text-sm p-1">Guardian Photo (Passport Size)</h1>
+                      <h1 className="text-sm p-1">
+                        Guardian Photo (Passport Size)
+                      </h1>
                       <input
                         type="file"
                         className="file-input file-input-bordered w-full "
                       />
                     </label>
-
                   </div>
                 </div>
                 {/* Address */}
@@ -248,14 +254,15 @@ const englishAdmission = () => {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center md:justify-end lg:justify-end pb-5">
-                  <button className="btn bg-black btn-wide ml-8  text-white">Submit</button>
+                  <button className="btn bg-black btn-wide ml-8  text-white">
+                    Submit
+                  </button>
                 </div>
               </section>
             </div>
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };
