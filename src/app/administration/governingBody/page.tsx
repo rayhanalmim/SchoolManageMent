@@ -1,11 +1,9 @@
 import AdministrationSidebar from "@/components/shared/AdministrationSidebar/AdministrationSidebar";
-import Footer from "@/components/shared/Footer/Footer";
-import Header from "@/components/shared/Header/Header";
 import teacher from "../../../../public/assests/20112319132256.jpg";
 import Image from "next/image";
 import { Divider } from "antd";
 
-const teachers = [
+const govorningBody = [
   {
     Name: "Leroy Jenkins",
     Subject: "Bangla",
@@ -116,7 +114,7 @@ const governingBody = () => {
                     </div>
                   </div>
                   <div className="grid w-full grid-cols-1 gap-x-3 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-                    {teachers.map((items) => (
+                    {govorningBody.map((items) => (
                       <div
                         key={items.Name}
                         className="border rounded w-full py-5"

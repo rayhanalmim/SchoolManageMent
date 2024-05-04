@@ -13,6 +13,8 @@ import Teacher from "@/components/shared/Teacher/Teacher";
 import SchoolFeatures from "@/components/shared/SchoolFeatures/SchoolFeatures";
 import SeeImgandVideos from "@/components/shared/SeeImgandVideos/SeeImgandVideos";
 import OnlineApplication from "@/components/shared/OnlineApplication/OnlineApplication";
+import Environment from "@/components/shared/Environment/Environment";
+import Overview from "@/components/shared/Overview/Overview";
 
 export default function Home() {
   return (
@@ -22,12 +24,17 @@ export default function Home() {
       <Corner />
       {/* <History/> */}
       <EventNotice />
-      <ParallaxSec />
+      <Environment/>
       {/* <Address/> */}
+      <ParallaxSec />
       <SchoolFeatures/>
       <SeeImgandVideos/>
-      <Teacher />
+      {/* <Teacher /> */}
+      
+      
+      <Overview/>
       <OnlineApplication/>
+
     </main>
   );
 }
