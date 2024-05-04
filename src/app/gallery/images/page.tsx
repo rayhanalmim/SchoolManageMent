@@ -1,5 +1,4 @@
-import Header from "@/components/shared/Header/Header";
-import Footer from "@/components/shared/Footer/Footer";
+
 import GallerySidebar from "@/components/shared/GallerySidebar/GallerySidebar";
 import { Divider } from "antd";
 

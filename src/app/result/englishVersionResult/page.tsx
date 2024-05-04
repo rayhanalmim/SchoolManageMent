@@ -15,7 +15,7 @@ const englishVersionResult = () => {
             <div className="lg:w-auto lg:mt-2  ">
               <div className="w-full md:w-64 lg:w-64 md:pt-4 lg:pt-4">
                 <h3 className="text-2xl font-semibold text-center md:text-left lg:text-left">
-                  College Result
+                  English Version Result
                 </h3>
               </div>
               <Divider className="bg-gray-300" />

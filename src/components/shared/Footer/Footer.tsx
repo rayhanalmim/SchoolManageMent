@@ -42,19 +42,19 @@ const Footer = () => {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="container mx-auto px-6 pb-8 pt-5 lg:px-0 lg:pt-10">
+      <div className="lg:w-[1260px] container mx-auto px-6 pb-8 pt-5 lg:px-0 lg:pt-10">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8 mb-3 lg:mb-2">
           <div className="max-w-full lg:max-w-lg  mx-auto">
-            <div className="text-center md:text-left">
-              <Link href={"/"}>
-                <h2 className="font-bold text-2xl">SoftEdu</h2>
+
+            <div className="space-y-4 flex flex-col items-center md:items-start lg:items-start justify-between">
+              <div className="text-center md:text-left">
+                <Link href={"/"}>
+                  <h2 className="font-bold text-2xl">SoftEdu</h2>
                 </Link>
-              {/* <Image src={logo} className="h-24 w-24" alt="This is Logo" /> */}
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                A School of Modern and Stardard Education System with religious value. 
-              </p>
-            </div>
-            <div className="mt-4 space-y-4 flex flex-col items-center md:items-start lg:items-start">
+                <p className="mt-2 text-sm leading-6 text-gray-600">
+                  A School of Modern and Stardard Education System with religious value.
+                </p>
+              </div>
               <div className="flex items-center space-x-2">
                 <MapPinIcon className="h-5 w56 text-gray-600" />
                 <p className="text-sm leading-6 text-gray-600">
@@ -179,11 +179,11 @@ const Footer = () => {
           </div>
         </div>
 
-       
+
       </div>
     </footer>
 
-    
+
 
   );
 };
