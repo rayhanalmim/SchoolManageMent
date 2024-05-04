@@ -1,12 +1,11 @@
-import Footer from "@/components/shared/Footer/Footer";
-import Header from "@/components/shared/Header/Header";
+
 import FacilitiesSidebar from "@/components/shared/FacilitiesSidebar/FacilitiesSidebar";
 import { Divider } from "antd";
 
 const sNet = () => {
     return (
         <>
-            <Header />
+        
             <section className=" bg-gray-100  lg:py-20 text-gray-800">
                 <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
                     <div className="py-5 pr-5">
@@ -27,7 +26,7 @@ const sNet = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
+       
         </>
     );
 };

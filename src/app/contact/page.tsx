@@ -1,13 +1,10 @@
 import Image from "next/image";
 import contactimg from "../../../public/assests/contactus.jpg";
-import Header from "@/components/shared/Header/Header";
-import { FaTelegramPlane } from "react-icons/fa";
-import Footer from "@/components/shared/Footer/Footer";
 import { Divider } from "antd";
 const contact = () => {
   return (
     <>
-      <Header />
+   
       <div className="lg:w-[1260px] lg:mx-auto items-center justify-center content-center pt-16">
 
         {/* email */}
@@ -88,13 +85,13 @@ const contact = () => {
         {/* address */}
         <div>
 
-          <div className="lg:w-[1260px] mx-3 lg:mx-auto  lg:my-5 ">
+          <div className="lg:w-[1260px] lg:mx-auto  lg:my-5 ">
             <div className="w-64 mx-auto py-10">
               <h3 className="text-xl font-semibold border-y-4 text-center py-3">
                 Our Address
               </h3>
             </div>
-            <div className="flex lg:gap-5 justify-between lg:mx-24 items-center content-center text-center  mb-5 lg:mb-0 space-y-4 lg:space-y-0 border border-gray-300 rounded-md shadow-md">
+            <div className="flex lg:gap-5 justify-between lg:px-8 items-center content-center text-center  mb-5 lg:mb-0 space-y-4 lg:space-y-0 border border-gray-300 rounded-md shadow-md">
               {/* first */}
               <div className=" lg:px-10 py-6 lg:pt-7  space-y-2 lg:space-y-0 ">
                 <div className="flex content-center items-center justify-center text-center">
@@ -124,7 +121,7 @@ const contact = () => {
               </div>
               <Divider type="vertical" className=" h-16 bg-gray-400 w-[2px] " />
               {/* second */}
-              <div className="lg:px-10 py-6 lg:pt-7    space-y-4 lg:space-y-0">
+              <div className="lg:px-10 py-6 lg:pt-7    space-y-2 lg:space-y-0">
                 <div className="flex content-center items-center justify-center text-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +171,7 @@ const contact = () => {
           </div>
         </div>
       </div>
-      <Footer />
+
     </>
   );
 };
