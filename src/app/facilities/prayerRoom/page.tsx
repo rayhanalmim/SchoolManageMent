@@ -1,5 +1,7 @@
 import FacilitiesSidebar from "@/components/shared/FacilitiesSidebar/FacilitiesSidebar";
 import { Divider } from "antd";
+import Image from "next/image";
+import prayerroom from "../../../../public/assests/facilities/prayerroom.jpg";
 
 const prayerRoom = () => {
   return (
@@ -18,7 +20,11 @@ const prayerRoom = () => {
               </div>
               <Divider className="bg-gray-300" />
 
-              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800"></section>
+              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 flex flex-col items-center">
+              
+              <Image src={prayerroom} className="h-auto w-auto mt-5 " alt="" />
+              <h2 className="text-xl text-justify">নামাজ পড়ার জন্য সুন্দর নামাজের কক্ষ। </h2>
+              </section>
             </div>
           </div>
         </div>
