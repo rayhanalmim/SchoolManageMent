@@ -1,7 +1,9 @@
-import Footer from "@/components/shared/Footer/Footer";
-import Header from "@/components/shared/Header/Header";
+
 import FacilitiesSidebar from "@/components/shared/FacilitiesSidebar/FacilitiesSidebar";
 import { Divider } from "antd";
+import Image from "next/image";
+import audi1 from "../../../../public/assests/facilities/audi2.jpg";
+import audi2 from "../../../../public/assests/facilities/auditorium.webp";
 
 const sapciousAuditorium = () => {
   return (
@@ -20,7 +22,11 @@ const sapciousAuditorium = () => {
               </div>
               <Divider className="bg-gray-300" />
 
-              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800"></section>
+              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 items-center">
+                
+                  {/* <Image src={audi1} className="h-auto w-auto mt-5 " alt="" /> */}
+                  <Image src={audi2} className="h-auto w-auto mt-5 " alt="" />
+              </section>
             </div>
           </div>
         </div>

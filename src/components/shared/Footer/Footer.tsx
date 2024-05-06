@@ -12,28 +12,28 @@ import {
 
 const navigation = {
   solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
+    { name: "Events", href: "#" },
+    { name: "Achievments", href: "#" },
+    { name: "History", href: "#" },
+    { name: "Contact", href: "#" },
   ],
   support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" },
+    { name: "Governing Body", href: "#" },
+    { name: "Administrative Body", href: "#" },
+    { name: "Teachers", href: "#" },
+    { name: "Supporting Staff", href: "#" },
   ],
-  company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
+  result: [
+    { name: "School", href: "#" },
+    { name: "College", href: "#" },
+    { name: "English Vesion", href: "#" },
+    { name: "Notice", href: "#" },
+    // { name: "Partners", href: "#" },
   ],
   information: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+    { name: "School", href: "#" },
+    { name: "College", href: "#" },
+    { name: "English Version", href: "#" },
   ],
 };
 const Footer = () => {
@@ -42,19 +42,19 @@ const Footer = () => {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="container mx-auto px-6 pb-8 pt-5 lg:px-0 lg:pt-10">
+      <div className="lg:w-[1260px] container mx-auto px-6 pb-8 pt-5 lg:px-0 lg:pt-10">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8 mb-3 lg:mb-2">
           <div className="max-w-full lg:max-w-lg  mx-auto">
-            <div className="text-center md:text-left">
-              <Link href={"/"}>
-                <h2 className="font-bold text-2xl">SoftEdu</h2>
+
+            <div className="space-y-4 flex flex-col items-center md:items-start lg:items-start justify-between">
+              <div className="text-center md:text-left">
+                <Link href={"/"}>
+                  <h2 className="font-bold text-2xl">SoftEdu</h2>
                 </Link>
-              {/* <Image src={logo} className="h-24 w-24" alt="This is Logo" /> */}
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                A School of Modern and Stardard Education System with religious value. 
-              </p>
-            </div>
-            <div className="mt-4 space-y-4 flex flex-col items-center md:items-start lg:items-start">
+                <p className="mt-2 text-sm leading-6 text-gray-600">
+                  A School of Modern and Stardard Education System with religious value.
+                </p>
+              </div>
               <div className="flex items-center space-x-2">
                 <MapPinIcon className="h-5 w56 text-gray-600" />
                 <p className="text-sm leading-6 text-gray-600">
@@ -115,10 +115,10 @@ const Footer = () => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className=" font-semibold leading-6 text-gray-900">
-                  School Directory
+                  Result
                 </h3>
                 <ul role="list" className="lg:mt-6 lg:space-y-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
-                  {navigation.company.map((item) => (
+                  {navigation.result.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -132,7 +132,7 @@ const Footer = () => {
               </div>
               <div className="mt-10 md:mt-0 ">
                 <h3 className="font-semibold leading-6 text-gray-900">
-                  Information
+                  Admission
                 </h3>
                 <ul role="list" className="lg:mt-6 lg:space-y-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
                   {navigation.information.map((item) => (
@@ -179,11 +179,11 @@ const Footer = () => {
           </div>
         </div>
 
-       
+
       </div>
     </footer>
 
-    
+
 
   );
 };

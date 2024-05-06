@@ -1,7 +1,7 @@
 import FacilitiesSidebar from "@/components/shared/FacilitiesSidebar/FacilitiesSidebar";
-import Footer from "@/components/shared/Footer/Footer";
-import Header from "@/components/shared/Header/Header";
 import { Divider } from "antd";
+import Image from "next/image";
+import common_room from "../../../../public/assests/facilities/common_room.jpg";
 
 const commonRoom = () => {
   return (
@@ -20,7 +20,12 @@ const commonRoom = () => {
               </div>
               <Divider className="bg-gray-300" />
 
-              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800"></section>
+              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 flex flex-col items-center ">
+              <h2 className="text-xl text-justify"> ছাত্রীদের জন্য যুগোপযোগী সব ধরনের আধুনিক সুযোগ সুবিধা। রয়েছে প্রশস্ত, পরিচ্ছন ও সমৃদ্ধ কমন রুম। সেখানে তারা বিনোদন এবং বিশ্রামের সুযোগ নিতে পারে।</h2>
+              <Divider className="bg-gray-300" />
+
+              <Image src={common_room} className="h-auto w-auto " alt="this is img" />
+              </section>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
-import Footer from "@/components/shared/Footer/Footer";
-import Header from "@/components/shared/Header/Header";
 import FacilitiesSidebar from "@/components/shared/FacilitiesSidebar/FacilitiesSidebar";
 import { Divider } from "antd";
+import Image from "next/image";
+import schoolbus from "../../../../public/assests/facilities/schoolbus2.jpg";
 
 const rideService = () => {
   return (
@@ -20,7 +20,10 @@ const rideService = () => {
               </div>
               <Divider className="bg-gray-300" />
 
-              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800"></section>
+              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 flex flex-col items-center">
+                
+                  <Image src={schoolbus} className="h-auto w-auto mt-5 " alt="" />
+              </section>
             </div>
           </div>
         </div>

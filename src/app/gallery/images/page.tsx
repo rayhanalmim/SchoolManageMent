@@ -1,7 +1,41 @@
-import Header from "@/components/shared/Header/Header";
-import Footer from "@/components/shared/Footer/Footer";
 import GallerySidebar from "@/components/shared/GallerySidebar/GallerySidebar";
+import Image from "next/image";
+import common_room from "../../../../public/assests/facilities/common_room.jpg";
+import scienceimg from "../../../../public/assests/scienceclub.jpg";
+import historyImg from "../../../../public/assests/historyImg.jpg";
+import student from "../../../../public/assests/student.jpg";
+import AboutSidebar from "@/components/shared/AboutSidebar/AboutSidebar";
 import { Divider } from "antd";
+
+const events = [
+  {
+    Name: "Science Contest",
+    description: "Te nulla oportere reprimique his dolorum",
+    img: student,
+  }, 
+  {
+    Name: "Leroy Jenkins",
+    description: "Te nulla oportere reprimique his dolorum",
+    img: scienceimg,
+  }, {
+    Name: "Leroy Jenkins",
+    description: "Te nulla oportere reprimique his dolorum",
+    img: historyImg,
+  }, {
+    Name: "Leroy Jenkins",
+    description: "Te nulla oportere reprimique his dolorum",
+    img: student,
+  }, {
+    Name: "Leroy Jenkins",
+    description: "Te nulla oportere reprimique his dolorum",
+    img: scienceimg,
+  }, {
+    Name: "Leroy Jenkins",
+    description: "Te nulla oportere reprimique his dolorum",
+    img: historyImg,
+  },
+
+]
 
 const images = () => {
   return (
@@ -20,7 +54,27 @@ const images = () => {
               </div>
               <Divider className="bg-gray-300" />
 
-              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800"></section>
+              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800">
+
+
+              <div className="container p-3 mx-auto space-y-4 ">
+                    <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
+                      {events.map(items=>(
+                        <div key={items.Name}>
+                      <article className="flex flex-col  bg-gray-50 border rounded">
+                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                          <Image src={items.img} className="object-cover w-full h-52 rounded" alt="" />
+                        </a>
+                        <div className="flex flex-col flex-1 p-4 gap-1"> 
+                          <h3 className="text-2xl font-semibold">{items.Name}</h3>
+                          <h2 className="text-sm text-gray-400">{items.description}</h2>
+                        </div>
+                      </article>
+                      </div>
+                      ))}
+                    </div>
+                  </div>
+              </section>
             </div>
           </div>
         </div>
