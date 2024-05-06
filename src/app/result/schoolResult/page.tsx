@@ -1,7 +1,68 @@
-import Footer from "@/components/shared/Footer/Footer";
-import Header from "@/components/shared/Header/Header";
 import ResultSidebar from "@/components/shared/ResultSidebar/ResultSidebar";
 import { Divider } from "antd";
+
+const tables = [
+  {
+    name: "Bangla",
+    subCode: "101",
+    marks: "70",
+    grade: "A"
+  },
+  {
+    name: "English",
+    subCode: "102",
+    marks: "70",
+    grade: "A"
+  },
+  {
+    name: "Math",
+    subCode: "103",
+    marks: "70",
+    grade: "A"
+  },
+  {
+    name: "Social Science",
+    subCode: "104",
+    marks: "70",
+    grade: "A"
+  },
+  {
+    name: "ICT",
+    subCode: "105",
+    marks: "70",
+    grade: "A"
+  },
+  {
+    name: "Higher Math",
+    subCode: "106",
+    marks: "70",
+    grade: "A"
+  },
+  {
+    name: "Islam",
+    subCode: "107",
+    marks: "70",
+    grade: "A"
+  },
+  {
+    name: "Physics",
+    subCode: "108",
+    marks: "70",
+    grade: "A"
+  },
+  {
+    name: "Chemistry",
+    subCode: "109",
+    marks: "70",
+    grade: "A"
+  },
+  {
+    name: "Biology",
+    subCode: "110",
+    marks: "70",
+    grade: "A"
+  },
+]
 
 const schoolResult = () => {
   return (
@@ -19,10 +80,12 @@ const schoolResult = () => {
                 </h3>
               </div>
               <Divider className="bg-gray-300" />
-
-              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 ">
-
-
+              {/* submit section */}
+              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 px-16">
+              <div className="lg:w-full flex flex-col items-center justify-center">
+                  <h2 className="text-2xl">Gives Information for Result</h2>
+                </div>
+                <Divider className="bg-gray-300" />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   <label className="form-control w-full max-w-xs">
                     <div className="label">
@@ -106,19 +169,17 @@ const schoolResult = () => {
                 <div className="flex flex-col items-center justify-center">
                   <button className="btn btn-neutral lg:btn-wide lg:mt-5">Submit</button>
                 </div>
-
-
               </section>
-              <section className="w-full border rounded p-4 bg-white text-gray-800 gap-4 mt-5 ">
-                <div className="w-full flex flex-col items-center justify-center">
+              {/* Result section */}
+              <section className="lg:w-full border rounded p-4 bg-white text-gray-800 lg:gap-4 lg:mt-5 lg:px-20 lg:py-6">
+                <div className="lg:w-full flex flex-col items-center justify-center">
                   <h2 className="text-2xl">Mid Term Exam Result - 2024</h2>
                 </div>
                 <Divider className="bg-gray-300" />
-
                 <div className="lg:w-full">
                   <table className="border-collapse border border-gray-400 lg:w-full">
                     <thead>
-                      <tr>
+                      <tr className="bg-gray-100">
                         <td className="border border-gray-400 p-2">Roll No.</td>
                         <td className="border border-gray-400 p-2">12345</td>
                         <td className="border border-gray-400 p-2">Class</td>
@@ -126,24 +187,21 @@ const schoolResult = () => {
                       </tr>
                     </thead>
                     <tbody>
-
                       <tr>
                         <td className="border border-gray-400 p-2">Student Name</td>
-                        <td className="border border-gray-400 p-2">Mr. Chamal </td>
-
-
+                        <td className="border border-gray-400 p-2" colSpan="3">Mr. Chamal </td>
                       </tr>
-                      <tr>
+                      <tr className="bg-gray-100">
                         <td className="border border-gray-400 p-2">Father Name</td>
-                        <td className="border border-gray-400 p-2">Mr. Chamal </td>
+                        <td className="border border-gray-400 p-2" colSpan="3">Mr. Chamal </td>
 
                       </tr>
                       <tr>
                         <td className="border border-gray-400 p-2">Mother Name</td>
-                        <td className="border border-gray-400 p-2">Mr. Chamal </td>
+                        <td className="border border-gray-400 p-2" colSpan="3">Mr. Chamal </td>
 
                       </tr>
-                      <tr>
+                      <tr className="bg-gray-100">
                         <td className="border border-gray-400 p-2">Board</td>
                         <td className="border border-gray-400 p-2">Rajshahi</td>
                         <td className="border border-gray-400 p-2">Session</td>
@@ -155,7 +213,7 @@ const schoolResult = () => {
                         <td className="border border-gray-400 p-2">Type</td>
                         <td className="border border-gray-400 p-2">Regular</td>
                       </tr>
-                      <tr>
+                      <tr className="bg-gray-100">
                         <td className="border border-gray-400 p-2">Result</td>
                         <td className="border border-gray-400 p-2">GPA = 4.00</td>
                         <td className="border border-gray-400 p-2">Date of Birth</td>
@@ -165,62 +223,27 @@ const schoolResult = () => {
                     </tbody>
                   </table>
                 </div>
-                <h2 className="text-2xl text-center py-5">Subject Wise Grade / Marks</h2>
+                <h2 className="text-2xl text-center py-5">Subject Wise grade / marks</h2>
                 <div className="lg:w-full">
-                  
-                  <table className="border-collapse border border-gray-400  lg:w-full">
-                    <thead>
-                      <tr className="bg-green-500 text-white text-center font-bold">
+                  <table className=" border border-gray-400  lg:w-full">
+                    <tbody>
+                      <tr className="text-center bg-green-500 text-white font-bold">
                         <td className="border border-gray-400 p-2">Subject Code</td>
                         <td className="border border-gray-400 p-2">Subject Name</td>
+                        <td className="border border-gray-400 p-2">Marks</td>
                         <td className="border border-gray-400 p-2">Grade</td>
                       </tr>
-                    </thead>
-                    <tbody>
-
-                      <tr>
-                      <td className="border border-gray-400 p-2">Subject Code</td>
-                        <td className="border border-gray-400 p-2">Subject Name</td>
-                        <td className="border border-gray-400 p-2">Grade</td>
-
-
-                      </tr>
-                      <tr>
-                      <td className="border border-gray-400 p-2">Subject Code</td>
-                        <td className="border border-gray-400 p-2">Subject Name</td>
-                        <td className="border border-gray-400 p-2">Grade</td>
-
-                      </tr>
-                      <tr>
-                      <td className="border border-gray-400 p-2">Subject Code</td>
-                        <td className="border border-gray-400 p-2">Subject Name</td>
-                        <td className="border border-gray-400 p-2">Grade</td>
-
-                      </tr>
-                      <tr>
-                      <td className="border border-gray-400 p-2">Subject Code</td>
-                        <td className="border border-gray-400 p-2">Subject Name</td>
-                        <td className="border border-gray-400 p-2">Grade</td>
-                      </tr>
-                      <tr>
-                      <td className="border border-gray-400 p-2">Subject Code</td>
-                        <td className="border border-gray-400 p-2">Subject Name</td>
-                        <td className="border border-gray-400 p-2">Grade</td>
-                      </tr>
-                      <tr>
-                      <td className="border border-gray-400 p-2">Subject Code</td>
-                        <td className="border border-gray-400 p-2">Subject Name</td>
-                        <td className="border border-gray-400 p-2">Grade</td>
-                      </tr>
-
+                      {tables.map((items, index) => (
+                        <tr key={items.name}>
+                          <td className={`border border-gray-400 p-2 text-center ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>{items.subCode}</td>
+                          <td className={`border border-gray-400 p-2 uppercase ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>{items.name}</td>
+                          <td className={`border border-gray-400 p-2 text-center ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>{items.marks}</td>
+                          <td className={`border border-gray-400 p-2 text-center ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>{items.grade}</td>
+                        </tr>
+                      ))}
                     </tbody>
                   </table>
                 </div>
-
-
-
-
-
               </section>
             </div>
           </div>

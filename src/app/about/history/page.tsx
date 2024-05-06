@@ -10,33 +10,71 @@ import Image from "next/image";
 import AboutCarousel from "@/components/shared/AboutCarousel/AboutCarousel";
 
 
-const teachers = [
-  {
-    Name: "Leroy Jenkins",
-    Subject: "Bangla",
-    img: teacher,
-  }, {
-    Name: "Leroy Jenkins",
-    Subject: "English",
-    img: teacher,
-  }, {
-    Name: "Leroy Jenkins",
-    Subject: "Math",
-    img: teacher,
-  }, {
-    Name: "Leroy Jenkins",
-    Subject: "Physics",
-    img: teacher,
-  }, {
-    Name: "Leroy Jenkins",
-    Subject: "Chemistry",
-    img: teacher,
-  }, {
-    Name: "Leroy Jenkins",
-    Subject: "Biology",
-    img: teacher,
-  },
+// const teachers = [
+//   {
+//     Name: "Leroy Jenkins",
+//     Subject: "Bangla",
+//     img: teacher,
+//   }, {
+//     Name: "Leroy Jenkins",
+//     Subject: "English",
+//     img: teacher,
+//   }, {
+//     Name: "Leroy Jenkins",
+//     Subject: "Math",
+//     img: teacher,
+//   }, {
+//     Name: "Leroy Jenkins",
+//     Subject: "Physics",
+//     img: teacher,
+//   }, {
+//     Name: "Leroy Jenkins",
+//     Subject: "Chemistry",
+//     img: teacher,
+//   }, {
+//     Name: "Leroy Jenkins",
+//     Subject: "Biology",
+//     img: teacher,
+//   },
 
+// ]
+const teachers = [
+	{
+		Name: "জনাব মাহমুদুর রহমান",
+		Subject: "বাংলা",
+		img: teacher,
+	}, {
+		Name: "জনাব মোস্তফা কামাল",
+		Subject: "ইংরেজী",
+		img: teacher,
+	}, {
+		Name: "জনাব হুমায়ুন কবির",
+		Subject: "গণিত",
+		img: teacher,
+	}, {
+		Name: "জনাব মোজাম্মেল হক",
+		Subject: "পদার্থ",
+		img: teacher,
+	}, {
+		Name: "জনাব মুজিবুর রহমান",
+		Subject: "রসায়ন",
+		img: teacher,
+	}, 
+	{
+		Name: "জনাব আবদুল মান্নান",
+		Subject: "জীববিজ্ঞান",
+		img: teacher,
+	},
+	{
+		Name: "জনাব মশিউর রহমান",
+		Subject: "কৃষি শিক্ষা",
+		img: teacher,
+	}, 
+	{
+		Name: "জনাব কামরুল হাসান",
+		Subject: "সামাজিক বিজ্ঞান",
+		img: teacher,
+	},
 ]
 
 
@@ -138,7 +176,7 @@ const history = () => {
                       <h3 className="text-2xl font-bold leading-none lg:text-5xl text-center md:text-left lg:text-left py-4 md:my-2 lg:py-0">শিক্ষকমন্ডলী</h3>
                       
                     </div>
-                    <div className="grid w-full grid-cols-1 gap-x-3 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full  gap-x-3 gap-y-12 ">
                       {teachers.map(items => (
                         <div key={items.Name} className="border rounded w-full py-5">
                           <Image src={items.img} className="object-cover h-auto mx-auto mb-4 bg-center rounded px-3" alt="img" />

@@ -1,17 +1,12 @@
-import Footer from "@/components/shared/Footer/Footer";
-import Header from "@/components/shared/Header/Header";
 import AboutSidebar from "@/components/shared/AboutSidebar/AboutSidebar";
-import Link from "next/link";
 import { Divider } from "antd";
 import Image from "next/image";
 import award from "../../../../public/assests/191010-0697-web.jpg";
 
 
-
 const achievement = () => {
   return (
     <>
-
       <section className=" bg-gray-100  lg:py-20 text-gray-800 ">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
           <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
@@ -53,20 +48,16 @@ const achievement = () => {
                         <span className="text-xs uppercase  text-gray-600">Join, it&apos;s free</span>
                         <h3 className="text-3xl font-bold">We&apos;not reinventing the wheel</h3>
                         <p className="my-6  text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
-
                       </div>
                     </div>
                   </div>
                 </section>
-
               </div>
             </div>
           </div>
         </div>
       </section>
-
     </>
-
   );
 };
 

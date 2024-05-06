@@ -12,28 +12,28 @@ import {
 
 const navigation = {
   solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
+    { name: "Events", href: "#" },
+    { name: "Achievments", href: "#" },
+    { name: "History", href: "#" },
+    { name: "Contact", href: "#" },
   ],
   support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" },
+    { name: "Governing Body", href: "#" },
+    { name: "Administrative Body", href: "#" },
+    { name: "Teachers", href: "#" },
+    { name: "Supporting Staff", href: "#" },
   ],
-  company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
+  result: [
+    { name: "School", href: "#" },
+    { name: "College", href: "#" },
+    { name: "English Vesion", href: "#" },
+    { name: "Notice", href: "#" },
+    // { name: "Partners", href: "#" },
   ],
   information: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+    { name: "School", href: "#" },
+    { name: "College", href: "#" },
+    { name: "English Version", href: "#" },
   ],
 };
 const Footer = () => {
@@ -115,10 +115,10 @@ const Footer = () => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className=" font-semibold leading-6 text-gray-900">
-                  School Directory
+                  Result
                 </h3>
                 <ul role="list" className="lg:mt-6 lg:space-y-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
-                  {navigation.company.map((item) => (
+                  {navigation.result.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -132,7 +132,7 @@ const Footer = () => {
               </div>
               <div className="mt-10 md:mt-0 ">
                 <h3 className="font-semibold leading-6 text-gray-900">
-                  Information
+                  Admission
                 </h3>
                 <ul role="list" className="lg:mt-6 lg:space-y-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
                   {navigation.information.map((item) => (
