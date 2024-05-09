@@ -4,7 +4,7 @@ import { Divider } from "antd";
 const contact = () => {
   return (
     <>
-   
+
       <div className="lg:w-[1260px] lg:mx-auto items-center justify-center content-center pt-16">
 
         {/* email */}
@@ -84,7 +84,6 @@ const contact = () => {
         </div>
         {/* address */}
         <div>
-
           <div className="lg:w-[1260px] lg:mx-auto  lg:my-5 ">
             <div className="w-64 mx-auto py-10">
               <h3 className="text-xl font-semibold border-y-4 text-center py-3">

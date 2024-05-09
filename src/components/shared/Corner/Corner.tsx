@@ -13,19 +13,19 @@ const corners = [
     id: 1,
     name: "Principle Corner",
     icon: principle,
-    link: "/principle"
+    link: "/corner/principle/message"
   },
   {
     id: 5,
     name: "School Corner",
     icon: school,
-    link: "/school" // Add a link for School Corner, or remove the link if not needed
+    link: "/school" 
   },
   {
     id: 4,
     name: "College Corner",
     icon: college,
-    link: "/college" // Add a link for College Corner, or remove the link if not needed
+    link: "/college" 
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const corners = [
     id: 3,
     name: "Result",
     icon: result,
-    link: "/result/school" // Add a link for Result, or remove the link if not needed
+    link: "/result/schoolResult" 
   },
   
   
@@ -45,7 +45,7 @@ const corners = [
     id: 6,
     name: "Admission Info",
     icon: admission,
-    link: "/admission/school" // Add a link for Admission Info, or remove the link if not needed
+    link: "/admission/schoolAdmission" 
   },
 ];
 

@@ -1,25 +1,23 @@
-import Header from "@/components/shared/Header/Header";
-import Footer from "@/components/shared/Footer/Footer";
 import AdmissionSidebar from "@/components/shared/AdmissionSidebar/AdmissionSidebar";
 import { Divider } from "antd";
 
 const schoolAdmission = () => {
   return (
     <>
-      <section className=" bg-gray-100  lg:py-20 text-gray-800">
+      <section className="bg-gray-100 lg:py-12 text-gray-800">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
           <div className="py-5 px-3 lg:px-0 lg:pr-5">
-            <AdmissionSidebar />
+            <AdmissionSidebar/>
           </div>
-          <div className="grid w-full ">
-            <div className="lg:w-auto lg:mt-2  ">
+          <div className="grid w-full">
+            <div className="lg:w-auto lg:mt-2">
               <div className="w-full md:w-64 lg:w-64 md:pt-4 lg:pt-4">
                 <h3 className="text-2xl font-semibold text-center md:text-left lg:text-left">
                   School Admission
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
-              <section className="lg:w-auto text-gray-800 space-y-4  px-3 md:px-0 lg:px-0 ">
+              <Divider className="bg-gray-300"/>
+              <section className="lg:w-auto text-gray-800 space-y-4 px-3 md:px-0 lg:px-0">
                 {/* Student Information */}
                 <div className="rounded p-2 md:p-5 lg:p-5 shadow bg-white">
                   <div className="divider">Students Information</div>
@@ -29,24 +27,24 @@ const schoolAdmission = () => {
                       <input
                         type="text"
                         placeholder="Type here"
-                        className="input input-bordered w-full "
+                        className="input input-bordered w-full"
                       />
                     </label>
-                    <label className=" w-full ">
-                      <h1 className="text-sm p-1">Last Name </h1>
+                    <label className="w-full">
+                      <h1 className="text-sm p-1">Last Name</h1>
                       <input
                         type="text"
                         placeholder="Type here"
-                        className="input input-bordered w-full "
+                        className="input input-bordered w-full"
                       />
                     </label>
                     <label className="w-full">
                       <h1 className="text-sm p-1">Gender </h1>
                       <select className="select select-bordered w-full">
                         <option disabled selected>
-                          -- Select a Gender -
+                          -- Select a Gender --
                         </option>
-                        <option> Male </option>
+                        <option>Male</option>
                         <option>Fe-Male</option>
                       </select>
                     </label>
@@ -68,22 +66,22 @@ const schoolAdmission = () => {
                       />
                     </label>
 
-                    <label className="w-full ">
-                      <h1 className="text-sm p-1">Date of Birth </h1>
+                    <label className="w-full">
+                      <h1 className="text-sm p-1">Date of Birth</h1>
                       <input
                         type="date"
                         placeholder="Type here"
-                        className="input input-bordered w-full "
+                        className="input input-bordered w-full"
                       />
                     </label>
-                    <label className="w-full ">
+                    <label className="w-full">
                       <h1 className="text-sm p-1">
-                        NID / Birth Certificate No. -{" "}
+                        NID / Birth Certificate No. -
                       </h1>
                       <input
                         type="text"
                         placeholder="NID / Birth Certificate Number"
-                        className="input input-bordered w-full "
+                        className="input input-bordered w-full"
                         pattern="[0-9]*"
                       />
                     </label>
@@ -93,7 +91,7 @@ const schoolAdmission = () => {
                       </h1>
                       <input
                         type="file"
-                        className="file-input file-input-bordered w-full "
+                        className="file-input file-input-bordered w-full"
                       />
                     </label>
                   </div>

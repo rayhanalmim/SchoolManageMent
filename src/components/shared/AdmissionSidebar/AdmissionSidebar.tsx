@@ -16,13 +16,15 @@ const AdmissionSidebar = () => {
 				</h3>
 			</div>
 			<div className="w-full lg:w-64 flex justify-center py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded">
-				<Link href={"/admission/schoolAdmission"} className={`${currentRoute === "/admission/schoolAdmission" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>School Admission</Link>
+				<Link href={"/admission/admissionInfo"} className={`${currentRoute === "/admission/admissionInfo" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Admission Info</Link>
+				<div className="border lg:w-full"></div>
+				<Link href={"/admission/schoolAdmission"} className={`${currentRoute === "/admission/schoolAdmission" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>School Admission Form</Link>
 				<div className="border lg:w-full"></div>
 				<Link href={"/admission/collegeAdmission"} className={`${currentRoute === "/admission/collegeAdmission" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>
-					College Admission
+					College Admission Form
 				</Link>
 				<div className="border lg:w-full"></div>
-				<Link href={"/admission/englishAdmission"} className={`${currentRoute === "/admission/englishAdmission" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>English Version</Link>
+				<Link href={"/admission/englishAdmission"} className={`${currentRoute === "/admission/englishAdmission" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>English Version Admission From</Link>
 			</div>
 
 		</div>

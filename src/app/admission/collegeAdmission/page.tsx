@@ -1,12 +1,10 @@
-import Header from "@/components/shared/Header/Header";
-import Footer from "@/components/shared/Footer/Footer";
 import AdmissionSidebar from "@/components/shared/AdmissionSidebar/AdmissionSidebar";
 import { Divider } from "antd";
 
 const collegeAdmission = () => {
   return (
     <>
-      <section className=" bg-gray-100  lg:py-20 text-gray-800">
+      <section className=" bg-gray-100  lg:py-12 text-gray-800">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
           <div className="py-5 px-3 lg:px-0 lg:pr-5">
             <AdmissionSidebar />
