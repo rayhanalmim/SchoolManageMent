@@ -4,76 +4,59 @@ import AboutSidebar from "@/components/shared/AboutSidebar/AboutSidebar";
 // import History from "@/components/shared/History/History";
 import vision from "../../../../public/assests/binoculars-white1x.png"
 import mission from "../../../../public/assests/flag-plain-white.svg"
-import teacher from "../../../../public/assests/20112319132256.jpg"
+import teacher1 from "../../../../public/assests/teacher/teachers-9.png"
+import teacher2 from "../../../../public/assests/teacher/teachers-2.jpg"
+import teacher3 from "../../../../public/assests/teacher/teachers-3.jpg"
+import teacher4 from "../../../../public/assests/teacher/teachers-4.jpg"
+import teacher5 from "../../../../public/assests/teacher/teachers-5.jpg"
+import teacher6 from "../../../../public/assests/teacher/teachers-6.jpg"
+import teacher7 from "../../../../public/assests/teacher/teachers-7.jpg"
+import teacher8 from "../../../../public/assests/teacher/teachers-8.jpg"
 import { Divider } from "antd";
 import Image from "next/image";
 import AboutCarousel from "@/components/shared/AboutCarousel/AboutCarousel";
 
 
-// const teachers = [
-//   {
-//     Name: "Leroy Jenkins",
-//     Subject: "Bangla",
-//     img: teacher,
-//   }, {
-//     Name: "Leroy Jenkins",
-//     Subject: "English",
-//     img: teacher,
-//   }, {
-//     Name: "Leroy Jenkins",
-//     Subject: "Math",
-//     img: teacher,
-//   }, {
-//     Name: "Leroy Jenkins",
-//     Subject: "Physics",
-//     img: teacher,
-//   }, {
-//     Name: "Leroy Jenkins",
-//     Subject: "Chemistry",
-//     img: teacher,
-//   }, {
-//     Name: "Leroy Jenkins",
-//     Subject: "Biology",
-//     img: teacher,
-//   },
-
-// ]
 const teachers = [
 	{
 		Name: "জনাব মাহমুদুর রহমান",
 		Subject: "বাংলা",
-		img: teacher,
-	}, {
+		img: teacher1,
+	}, 
+  {
 		Name: "জনাব মোস্তফা কামাল",
 		Subject: "ইংরেজী",
-		img: teacher,
-	}, {
+		img: teacher2,
+	}, 
+  {
 		Name: "জনাব হুমায়ুন কবির",
 		Subject: "গণিত",
-		img: teacher,
-	}, {
-		Name: "জনাব মোজাম্মেল হক",
+		img: teacher3,
+	}, 
+  {
+		Name: "জনাবা খালেদা আক্তার",
 		Subject: "পদার্থ",
-		img: teacher,
-	}, {
+		img: teacher4,
+	}, 
+  {
 		Name: "জনাব মুজিবুর রহমান",
 		Subject: "রসায়ন",
-		img: teacher,
+		img: teacher5,
 	}, 
 	{
 		Name: "জনাব আবদুল মান্নান",
 		Subject: "জীববিজ্ঞান",
-		img: teacher,
+		img: teacher6,
 	},
 	{
-		Name: "জনাব মশিউর রহমান",
+		Name: "জনাব ফাতেমা ইয়াসমিন",
 		Subject: "কৃষি শিক্ষা",
-		img: teacher,
+		img: teacher7,
 	}, 
 	{
 		Name: "জনাব কামরুল হাসান",
 		Subject: "সামাজিক বিজ্ঞান",
-		img: teacher,
+		img: teacher8,
 	},
 ]
 
@@ -82,7 +65,7 @@ const history = () => {
   return (
     <>
   
-      <section className=" bg-gray-100  lg:py-20 text-gray-800 ">
+      <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
           <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
             <AboutSidebar />
@@ -179,7 +162,7 @@ const history = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full  gap-x-3 gap-y-12 ">
                       {teachers.map(items => (
                         <div key={items.Name} className="border rounded w-full py-5">
-                          <Image src={items.img} className="object-cover h-auto mx-auto mb-4 bg-center rounded px-3" alt="img" />
+                          <Image src={items.img} className="object-cover h-[210px] w-[420px] mx-auto mb-4 bg-center rounded px-3" alt="img" />
                           <div className="flex flex-col items-center">
                             <h4 className="text-xl font-semibold">{items.Name}</h4>
                             <p className="text-sm text-gray-600">{items.Subject}</p>

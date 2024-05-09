@@ -67,7 +67,7 @@ const tables = [
 const schoolResult = () => {
   return (
     <>
-      <section className=" bg-gray-100  lg:py-20 text-gray-800">
+      <section className=" bg-gray-100  lg:py-12 text-gray-800">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
           <div className="py-5 pr-5">
             <ResultSidebar />

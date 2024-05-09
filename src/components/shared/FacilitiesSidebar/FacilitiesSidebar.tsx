@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-
 const activeStyle = 'text-black bg-green-500 h-full w-full p-2'; 
 const nonActiveStyle = 'text-black';
 
