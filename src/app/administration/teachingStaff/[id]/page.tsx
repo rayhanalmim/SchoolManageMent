@@ -48,8 +48,11 @@ const teacherDetails = ({ params }) => {
 
         </div>
       </div>
+
     </div>
   );
 };
 
+
 export default teacherDetails;
+

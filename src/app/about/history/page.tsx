@@ -14,9 +14,11 @@ import teacher6 from "../../../../public/assests/teacher/teachers-6.jpg"
 import teacher7 from "../../../../public/assests/teacher/teachers-7.jpg"
 import teacher8 from "../../../../public/assests/teacher/teachers-8.jpg"
 import Link from "next/link";
+
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
+
 
 
 const teachers = [
@@ -38,6 +40,7 @@ const teachers = [
     Subject: "গণিত",
     img: teacher3,
   },
+
   {
     id: 4,
     Name: "জনাবা খালেদা আক্তার",
@@ -55,7 +58,7 @@ const teachers = [
     Name: "জনাব আবদুল মান্নান",
     Subject: "জীববিজ্ঞান",
     img: teacher6,
-  },
+  },  
   {
     id: 7,
     Name: "জনাব ফাতেমা ইয়াসমিন",
@@ -170,6 +173,7 @@ const history = () => {
                           <Link href={`/about/history/${items.id}`} > <h4 className="text-xl font-semibold">{items.Name}</h4></Link>
                             {/* <h4 className="text-xl font-semibold">{items.Name}</h4> */}
                             <p className="text-sm text-gray-600">{items.Subject}</p>
+
                             <div className="flex gap-1 mt-1 ">
                             <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-600">
                             <FaFacebookF className="w-4 h-4"/>
@@ -183,6 +187,7 @@ const history = () => {
                             <FaLinkedinIn className="w-4 h-4"/>                
                             </a>
                           </div>
+
                           </div>
                         </div>
                       ))}
