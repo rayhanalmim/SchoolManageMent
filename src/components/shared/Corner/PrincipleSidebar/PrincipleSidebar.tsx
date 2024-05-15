@@ -22,7 +22,7 @@ const PrincipleSidebar = () => {
 					Principle Bio
 				</Link>
 				<div className="border lg:w-full"></div>
-				<Link href={"/corner/principle/gallery"} className={`${currentRoute === "/corner/principle/gallery" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Gallery</Link>
+				<Link href={"/corner/principle/principleAchievement"} className={`${currentRoute === "/corner/principle/principleAchievement" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Principle Achievement</Link>
 				<div className="border lg:w-full"></div>
 				<Link href={"/corner/principle/sendMessage"} className={`${currentRoute === "/corner/principle/sendMessage" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Send Message for Principle</Link>
 				<div className="border lg:w-full"></div>

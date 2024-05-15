@@ -2,38 +2,41 @@ import Image from "next/image";
 import scienceimg from "../../../../public/assests/scienceclub.jpg";
 import historyImg from "../../../../public/assests/historyImg.jpg";
 import student from "../../../../public/assests/student.jpg";
-import AboutSidebar from "@/components/shared/AboutSidebar/AboutSidebar";
+import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
 import { Divider } from "antd";
 
 const events = [
   {
     Name: "Science Contest",
-    description: "Te nulla oportere reprimique his dolorum",
+    // description: "Te nulla oportere reprimique his dolorum",
     img: student,
   }, {
-    Name: "Leroy Jenkins",
-    description: "Te nulla oportere reprimique his dolorum",
+    Name: "Olompiad",
+    // description: "Te nulla oportere reprimique his dolorum",
     img: scienceimg,
   }, {
-    Name: "Leroy Jenkins",
-    description: "Te nulla oportere reprimique his dolorum",
+    Name: "School Fest",
+    // description: "Te nulla oportere reprimique his dolorum",
     img: historyImg,
   }, {
-    Name: "Leroy Jenkins",
-    description: "Te nulla oportere reprimique his dolorum",
+    Name: "Quiz Text",
+    // description: "Te nulla oportere reprimique his dolorum",
     img: student,
   }, {
-    Name: "Leroy Jenkins",
-    description: "Te nulla oportere reprimique his dolorum",
+    Name: "Sports",
+    // description: "Te nulla oportere reprimique his dolorum",
     img: scienceimg,
   }, {
-    Name: "Leroy Jenkins",
-    description: "Te nulla oportere reprimique his dolorum",
+    Name: "School Tour",
+    // description: "Te nulla oportere reprimique his dolorum",
     img: historyImg,
   },
 
 ]
 const ataglance = () => {
+
+
+
   return (
     <>
       <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
@@ -55,13 +58,13 @@ const ataglance = () => {
                     <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
                       {events.map(items=>(
                         <div key={items.Name}>
-                      <article className="flex flex-col  bg-gray-50 border rounded">
+                      <article className="flex flex-col  bg-gray-100 rounded-lg">
                         <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                          <Image src={items.img} className="object-cover w-full h-52 rounded" alt="" />
+                          <Image src={items.img} className="object-cover w-full h-52 rounded-t" alt="" />
                         </a>
-                        <div className="flex flex-col flex-1 p-4 gap-1"> 
-                          <h3 className="text-2xl font-semibold">{items.Name}</h3>
-                          <h2 className="text-sm text-gray-400">{items.description}</h2>
+                        <div className="flex flex-col flex-1 p-2 gap-1"> 
+                          <h3 className="text-2xl font-base">{items.Name}</h3>
+                          {/* <h2 className="text-sm text-gray-400">{items.description}</h2> */}
                         </div>
                       </article>
                       </div>

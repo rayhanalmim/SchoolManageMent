@@ -1,14 +1,12 @@
 "use client";
 import React from 'react';
-
 import { useState } from "react";
 import Link from 'next/link';
 import { FaPlay } from "react-icons/fa";
-
-import campus1 from "../../../../public/assests/191010-0697-web.jpg"
+import campus1 from "../../../../public/assests/campus-3.jpg"
 import campus2 from "../../../../public/assests/student.jpg"
-import campus3 from "../../../../public/assests/campus-1.webp"
-import campus4 from "../../../../public/assests/campus-2.webp"
+import campus3 from "../../../../public/assests/campus-1.jpg"
+import campus4 from "../../../../public/assests/campus-2.jpg"
 import Image from 'next/image';
 import { FaFileImage } from "react-icons/fa6";
 
@@ -30,8 +28,6 @@ const slides = [
 
     }
 ];
-
-
 
 const SeeImgandVideos = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,12 +52,12 @@ const SeeImgandVideos = () => {
                 <div className="lg:w-[1260px] lg:mx-auto bg-gray-100 text-gray-900 lg:flex ">
                     <div className="lg:w-[550px] lg:px-10 bg-blue-900">
                         <div className="relative lg:mx-8 pt-12 lg:h-[410px] lg:w-[550px]">
-                            <div className="carousel mb-20 h-[260px] lg:h-[300px] w-[800px]">
+                            <div className="carousel lg:mb-20 h-[240px] lg:h-[300px] w-[800px]">
                                 {slides.map((slide, index) => (
                                     <div
                                         key={index}
                                         className={`slide ${currentIndex === index ? "block" : "hidden"
-                                            } space-y-2`}
+                                            } lg:space-y-2`}
                                     >
                                         <Image src={slide.img} alt={`campus-${index}`} className='h-auto w-auto' />
                                     </div>
@@ -82,20 +78,23 @@ const SeeImgandVideos = () => {
                         </div>
                     </div>
 
-                    <div className="px-10">
-                        <div className='space-y-4 pt-14 ml-20'>
-                            <div className='text-5xl font-bold'>
-                                Visit our Campus <br /> with image gallery</div>
+                    <div className="px-5 lg:px-10">
+                        <div className='space-y-4 py-5 md:pt-10 lg:pt-14 ml-5 md:ml-14 lg:ml-20'>
+                            <div className='text-3xl md:text-5xl lg:text-5xl font-bold'>
+                                Visit Our Campus <br/> with Image Gallery</div>
                             <Link href={"/gallery/images"}>
                                 <button className="btn btn-warning flex items-center  gap-2 hover:text-green-500">
-                                    <FaFileImage /> See All Images</button>
+                                    <FaFileImage /> See All Images
+                                </button>
                             </Link>
-                            <div className='border border-black lg:w-96 '></div>
-                            <div className='text-5xl font-bold'>
-                                or watch video</div>
+                            <div className='border border-black lg:w-96'></div>
+                            <div className='text-3xl md:text-5xl lg:text-5xl font-bold'>
+                                or, Watch Video</div>
                             <Link href={"/gallery/videos"}>
                                 <button className=" flex items-center text-2xl gap-2 hover:text-green-500">
-                                    <FaPlay /> Play now</button></Link>
+                                    <FaPlay /> Play now
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
