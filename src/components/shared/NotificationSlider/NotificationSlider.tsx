@@ -1,23 +1,5 @@
 import Marquee from "react-fast-marquee";
 
-const notifications = [
-  {
-    name: "SoftyEdu School & College",
-  },
-  {
-    name: "SoftyEdu School & College",
-  },
-  {
-    name: "SoftyEdu School & College",
-  },
-  {
-    name: "SoftyEdu School & College",
-  },
-  {
-    name: "SoftyEdu School & College",
-  },
-];
-
 const NotificationSlider = () => {
   return (
     <div className="lg:w-[1260px] flex justify-center border-black border-2  mt-8 mx-1 lg:mx-auto rounded ">      

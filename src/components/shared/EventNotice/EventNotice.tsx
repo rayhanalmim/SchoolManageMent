@@ -1,4 +1,5 @@
 "use client"
+
 import { Divider } from "antd";
 import Image from "next/image";
 import React from "react";
