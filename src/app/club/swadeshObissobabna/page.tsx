@@ -1,5 +1,3 @@
-import Footer from "@/components/shared/Footer/Footer";
-import Header from "@/components/shared/Header/Header";
 import ClubSidebar from "@/components/shared/ClubSidebar/ClubSidebar";
 import { Divider } from "antd";
 import Image from "next/image";
@@ -13,7 +11,7 @@ const swadeshObissobabna = () => {
         <>
             <section className=" bg-gray-100  lg:py-12 text-gray-800">
                 <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
-                    <div className="py-5 pr-5">
+                    <div className="py-5 lg:pr-5">
                         <ClubSidebar />
                     </div>
                     <div className="grid w-full ">

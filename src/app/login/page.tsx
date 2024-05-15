@@ -1,5 +1,5 @@
 
-"use client";
+// "use client";
 
 // import { useState } from "react";
 // import { useForm } from "react-hook-form";
@@ -7,7 +7,6 @@
 // import { useRouter } from "next/navigation";
 // import usePublicAxios from "@/components/hooks/usePublicAxios";
 // import toast from "react-hot-toast";
-// import { BsGoogle } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
 import { MdEmail } from "react-icons/md";

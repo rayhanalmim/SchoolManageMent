@@ -1,7 +1,3 @@
-"use client";
-
-import Header from "@/components/shared/Header/Header";
-import Footer from "@/components/shared/Footer/Footer";
 import Slider from "@/components/shared/Slider/Slider";
 import Corner from "@/components/shared/Corner/Corner";
 import EventNotice from "@/components/shared/EventNotice/EventNotice";
@@ -29,12 +25,9 @@ export default function Home() {
       <ParallaxSec />
       <SchoolFeatures/>
       <SeeImgandVideos/>
-      {/* <Teacher /> */}
-      
-      
+      {/* <Teacher /> */}   
       <Overview/>
       <OnlineApplication/>
-
     </main>
   );
 }

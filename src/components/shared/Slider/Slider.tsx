@@ -1,3 +1,4 @@
+"use client"
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import slide1 from "../../../../public/assests/s1.jpg";
@@ -36,7 +37,7 @@ const schools = [
 ];
 const Slider = () => {
   return (
-    <div className="flex justify-center align-middle items-center w-auto lg:pt-20 ">
+    <div className="flex justify-center align-middle items-center w-auto pt-20">
       <Carousel autoPlay infiniteLoop showStatus={false} showThumbs={false}>
         {/* first slide */}
         {schools.map((item) => (

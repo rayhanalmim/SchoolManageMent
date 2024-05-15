@@ -1,4 +1,4 @@
-import AdministrationSidebar from "@/components/shared/AdministrationSidebar/AdministrationSidebar";
+import AdministrationSidebar from "@/components/shared/Administration/AdministrationSidebar/AdministrationSidebar";
 import teacher from "../../../../public/assests/20112319132256.jpg";
 import Image from "next/image";
 import { Divider } from "antd";

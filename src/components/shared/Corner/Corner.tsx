@@ -19,13 +19,13 @@ const corners = [
     id: 5,
     name: "School Corner",
     icon: school,
-    link: "/school" 
+    link: "/corner/school/schoolInfo" 
   },
   {
     id: 4,
     name: "College Corner",
     icon: college,
-    link: "/college" 
+    link: "/corner/college/collegeInfo" 
   },
   {
     id: 2,
@@ -45,25 +45,22 @@ const corners = [
     id: 6,
     name: "Admission Info",
     icon: admission,
-    link: "/admission/schoolAdmission" 
+    link: "/admission/admissionInfo" 
   },
 ];
 
 
 const Corner = () => {
   return (
-    <div className=" lg:w-[1260px] mx-3 lg:mx-auto flex justify-center mt-6 lg:mt-20 lg:px-0">
+    <div className=" lg:w-[1260px] mx-3 lg:mx-auto flex justify-center mt-6 lg:mt-10 lg:px-0">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 md:gap-4 lg:gap-6 mx-auto justify-between lg:my-4">
         {corners.map((item) => (
           <div key={item.id}>
           <Link href={item.link}> 
             <div
-              className="border border-gray-300 rounded-lg shadow-md p-2 lg:h-48 lg:w-48 bg-opacity-20  bg-gray-300 flex flex-col items-center justify-center gap-3"
-              
-            >
-              <Image src={item.icon} alt={item.name} className="h-20 w-20 " />
-
-              <h1 className="text-md md:text-lg lg:text-xl font-bold text-blue-500 text-center content-center ">
+              className="border border-gray-300 rounded-lg shadow-md p-2 lg:h-48 lg:w-48 bg-opacity-20  bg-gray-300 flex flex-col items-center justify-center gap-3">
+              <Image src={item.icon} alt={item.name} className="h-20 w-20"/>
+              <h1 className="text-md md:text-lg lg:text-xl font-bold text-blue-500 text-center content-center">
                 {item.name}
               </h1>
             </div>

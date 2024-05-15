@@ -9,7 +9,7 @@ import logo2 from "../../../../public/assests/whychoose/icon6.png";
 import logo3 from "../../../../public/assests/whychoose/icon7.png";
 import logo4 from "../../../../public/assests/whychoose/icon8.png";
 import ourMission from "../../../../public/assests/abt2.png";
-import AboutSidebar from "@/components/shared/AboutSidebar/AboutSidebar";
+import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
 const whystudyHere = () => {
   return (
     <>

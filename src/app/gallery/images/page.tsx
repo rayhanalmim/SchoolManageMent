@@ -4,7 +4,7 @@ import common_room from "../../../../public/assests/facilities/common_room.jpg";
 import scienceimg from "../../../../public/assests/scienceclub.jpg";
 import historyImg from "../../../../public/assests/historyImg.jpg";
 import student from "../../../../public/assests/student.jpg";
-import AboutSidebar from "@/components/shared/AboutSidebar/AboutSidebar";
+import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
 import { Divider } from "antd";
 
 const events = [
@@ -42,7 +42,7 @@ const images = () => {
     <>
       <section className=" bg-gray-100  lg:py-12 text-gray-800">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
-          <div className="py-5 pr-5">
+          <div className="py-5 lg:pr-5 px-5 md:px-0 lg:px-0">
             <GallerySidebar />
           </div>
           <div className="grid w-full ">

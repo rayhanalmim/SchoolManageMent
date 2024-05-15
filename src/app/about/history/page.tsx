@@ -1,9 +1,10 @@
-import Footer from "@/components/shared/Footer/Footer";
-import Header from "@/components/shared/Header/Header";
-import AboutSidebar from "@/components/shared/AboutSidebar/AboutSidebar";
-// import History from "@/components/shared/History/History";
+import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
 import vision from "../../../../public/assests/binoculars-white1x.png"
 import mission from "../../../../public/assests/flag-plain-white.svg"
+import { Divider } from "antd";
+import Image from "next/image";
+import AboutCarousel from "@/components/shared/About/AboutCarousel/AboutCarousel";
+
 import teacher1 from "../../../../public/assests/teacher/teachers-9.png"
 import teacher2 from "../../../../public/assests/teacher/teachers-2.jpg"
 import teacher3 from "../../../../public/assests/teacher/teachers-3.jpg"
@@ -12,59 +13,62 @@ import teacher5 from "../../../../public/assests/teacher/teachers-5.jpg"
 import teacher6 from "../../../../public/assests/teacher/teachers-6.jpg"
 import teacher7 from "../../../../public/assests/teacher/teachers-7.jpg"
 import teacher8 from "../../../../public/assests/teacher/teachers-8.jpg"
-import { Divider } from "antd";
-import Image from "next/image";
-import AboutCarousel from "@/components/shared/AboutCarousel/AboutCarousel";
-
+import Link from "next/link";
 
 const teachers = [
-	{
-		Name: "জনাব মাহমুদুর রহমান",
-		Subject: "বাংলা",
-		img: teacher1,
-	}, 
   {
-		Name: "জনাব মোস্তফা কামাল",
-		Subject: "ইংরেজী",
-		img: teacher2,
-	}, 
+    id: 1,
+    Name: "জনাব মাহমুদুর রহমান",
+    Subject: "বাংলা",
+    img: teacher1,
+  },
   {
-		Name: "জনাব হুমায়ুন কবির",
-		Subject: "গণিত",
-		img: teacher3,
-	}, 
+    id: 2,
+    Name: "জনাব মোস্তফা কামাল",
+    Subject: "ইংরেজী",
+    img: teacher2,
+  },
   {
-		Name: "জনাবা খালেদা আক্তার",
-		Subject: "পদার্থ",
-		img: teacher4,
-	}, 
+    id: 3,
+    Name: "জনাব হুমায়ুন কবির",
+    Subject: "গণিত",
+    img: teacher3,
+  },
   {
-		Name: "জনাব মুজিবুর রহমান",
-		Subject: "রসায়ন",
-		img: teacher5,
-	}, 
-	{
-		Name: "জনাব আবদুল মান্নান",
-		Subject: "জীববিজ্ঞান",
-		img: teacher6,
-	},
-	{
-		Name: "জনাব ফাতেমা ইয়াসমিন",
-		Subject: "কৃষি শিক্ষা",
-		img: teacher7,
-	}, 
-	{
-		Name: "জনাব কামরুল হাসান",
-		Subject: "সামাজিক বিজ্ঞান",
-		img: teacher8,
-	},
+    id: 4,
+    Name: "জনাবা খালেদা আক্তার",
+    Subject: "পদার্থ",
+    img: teacher4,
+  },
+  {
+    id: 5,
+    Name: "জনাব মুজিবুর রহমান",
+    Subject: "রসায়ন",
+    img: teacher5,
+  },
+  {
+    id: 6,
+    Name: "জনাব আবদুল মান্নান",
+    Subject: "জীববিজ্ঞান",
+    img: teacher6,
+  },
+  {
+    id: 7,
+    Name: "জনাব ফাতেমা ইয়াসমিন",
+    Subject: "কৃষি শিক্ষা",
+    img: teacher7,
+  },
+  {
+    id: 8,
+    Name: "জনাব কামরুল হাসান",
+    Subject: "সামাজিক বিজ্ঞান",
+    img: teacher8,
+  },
 ]
-
 
 const history = () => {
   return (
     <>
-  
       <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
           <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
@@ -74,7 +78,7 @@ const history = () => {
             <div className="lg:w-auto lg:mt-2  ">
               <div className="w-full md:w-64 lg:w-64 md:pt-4 lg:pt-4">
                 <h3 className="text-2xl font-semibold text-center md:text-left lg:text-left">
-                 আমাদের ইতিহাস
+                  আমাদের ইতিহাস
                 </h3>
               </div>
               <Divider className="bg-gray-300" />
@@ -82,8 +86,6 @@ const history = () => {
                 <h1 className="justify-center text-center font-bold text-xl lg:text-2xl py-3 ">
                   SoftyEdu এর ইতিবৃত্ত
                 </h1>
-                {/* <Image src={schoolImg} className="h-auto w-auto rounded" alt="img" /> */}
-
                 <h2 className="mx-4 lg:mx-0 text-justify space-y-4">
                   দেশসেরা SoftyEdu মাতুয়াইলবাসীর আগ্রহ ও দাবির প্রেক্ষিতে
                   বিশিষ্ট সমাজহিতৈষী ও বিদ্যোৎসাহী আলহাজ্ব সামসুল হক খানের উদ্যোগে ১৯৮৯
@@ -144,30 +146,27 @@ const history = () => {
                     <p className="lg:px-4 text-justify">To create a best-of-breed, secure, and compliant global platform that helps companies improve the value and actionability of their customer data.</p>
                   </div>
                 </div>
-
                 <Divider />
 
                 {/* history slider section */}
-                
-                <AboutCarousel/>
-                
+                <AboutCarousel />
                 <Divider />
+
                 {/* teacher */}
                 <section className="text-gray-800">
-                  <div className="container  mx-auto lg:space-y-16 p-2 lg:p-4">
-                    <div className="space-y-4">
-                      <h3 className="text-2xl font-bold leading-none lg:text-5xl text-center md:text-left lg:text-left py-4 md:my-2 lg:py-0">শিক্ষকমন্ডলী</h3>
-                      
+                  <div className="  mx-auto lg:space-y-8 p-2 lg:p-4">
+                    <div className="space-y-2">
+                      <h3 className="text-2xl font-bold leading-none lg:text-4xl text-center md:text-center lg:text-center  md:my-2 lg:py-0">শিক্ষকমন্ডলী</h3>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full  gap-x-3 gap-y-12 ">
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full  gap-x-3 gap-y-10 ">
                       {teachers.map(items => (
                         <div key={items.Name} className="border rounded w-full py-5">
                           <Image src={items.img} className="object-cover h-[210px] w-[420px] mx-auto mb-4 bg-center rounded px-3" alt="img" />
                           <div className="flex flex-col items-center">
-                            <h4 className="text-xl font-semibold">{items.Name}</h4>
+                          <Link href={`/about/history/${items.id}`} > <h4 className="text-xl font-semibold">{items.Name}</h4></Link>
+                            {/* <h4 className="text-xl font-semibold">{items.Name}</h4> */}
                             <p className="text-sm text-gray-600">{items.Subject}</p>
                             <div className="flex mt-2 space-x-2">
-
                               <a rel="noopener noreferrer" href="#" title="Twitter" className="dark:text-gray-600">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" className="w-4 h-4">
                                   <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"></path>
@@ -195,7 +194,6 @@ const history = () => {
           </div>
         </div>
       </section>
-  
     </>
   );
 };

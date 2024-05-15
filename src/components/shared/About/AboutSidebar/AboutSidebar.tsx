@@ -4,6 +4,8 @@ import { usePathname } from "next/navigation";
 
 const activeStyle = "text-black bg-green-500 w-full lg:p-2 ";
 const nonActiveStyle = "text-black";
+
+
 const AboutSidebar = () => {
   const currentRoute = usePathname();
   return (
