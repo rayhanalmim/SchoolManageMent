@@ -24,7 +24,7 @@ const message = () => {
               <div className="lg:w-auto border rounded p-4 bg-white ">
                 <section className="p-0 lg:p-2  text-gray-800 text-justify">
                   <div className="container mx-auto space-y-8">
-                    <Image src={headteacher} className="  bg-gray-500 aspect-video rounded-l mx-auto" alt="" />
+                    {/* <Image src={headteacher} className="  bg-gray-500 aspect-video rounded-l mx-auto" alt="" /> */}
                     <p className="">
                       <h1 className="text-2xl font-bold">সম্মানিত অভিভাবকবৃন্দ, আসসালামুআলাইকুম </h1><br />
                       একবিংশ শতাব্দীর চ্যালেঞ্জ মোকাবেলায় আধুনিক শিক্ষা ছাড়া কোন জাতির উন্নতি সম্ভব নয়। একটি জাতি তখনই প্রকৃত উন্নত হতে পারে যখন সেই শিক্ষিত জাতির মধ্যে আধুনিক ও নৈতিক শিক্ষার সমন্বয় ঘটে। যুগযুগ ধরে সুশিক্ষাই জাতির মেরুকরণ সৃষ্টিতে অগ্রণী ভূমিকা পালন করে আসছে। যেখানে সারা পৃথিবী জ্ঞান, বিজ্ঞান ও মেধায় অনেক এগিয়ে সেখানে আমরা ঢাকাবাসী অনেক পিছিয়ে রয়েছি। প্রত্যেকটা সচেতন অভিভাবকের অবাক চাহনি ও তার সন্তানের ভবিষ্যত নিয়ে চিন্তা আমাদের মনকে আন্দোলিত করেছে। তাই উনাদের আশা আকাঙ্খার বাতিঘর হিসাবে আমরা গড়ে তুলেছি SoftyEdu স্কুল।<br /><br />
