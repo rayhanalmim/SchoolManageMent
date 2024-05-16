@@ -77,8 +77,8 @@ const events = () => {
                         <h3 className="font-bold text-xl md:text-xl lg:text-2xl group-hover:underline group-focus:underline lg:pt-5">বিজ্ঞান মেলা এবং কুইজ লীগ - </h3>
                         <span className="text-xs  text-gray-600">February 19, 2021</span>
                         <p className="text-sm text-gray-400 lg:pr-2 text-justify">Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id.</p>
-                        {/* <Link href={`/about/events/${items.id}`}><button className="btn btn-sm p-2 rounded text-black" >Read More</button></Link> */}
-                        <Link href={"#"}><button className="btn btn-sm p-2 rounded text-black" >Read More</button></Link>
+                        <Link href={"/about/events/eventsDetails"}><button className="btn btn-sm p-2 rounded text-black" >Read More</button></Link>
+                        {/* <Link href={"#"}><button className="btn btn-sm p-2 rounded text-black" >Read More</button></Link> */}
                       </div>
                     </div>
                     <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
