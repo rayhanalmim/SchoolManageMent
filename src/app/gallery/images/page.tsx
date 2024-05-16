@@ -4,33 +4,45 @@ import common_room from "../../../../public/assests/facilities/common_room.jpg";
 import scienceimg from "../../../../public/assests/scienceclub.jpg";
 import historyImg from "../../../../public/assests/historyImg.jpg";
 import student from "../../../../public/assests/student.jpg";
+import annual from "../../../../public/assests/img/annual.jpg";
 import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
 import { Divider } from "antd";
+import Link from "next/link";
 
-const events = [
+const img = [
   {
-    Name: "Science Contest",
+    id:1,
+    Name: "বার্ষিক বনভোজন - ২০২৩",
+    description: "Te nulla oportere reprimique his dolorum",
+    img: annual,
+  }, 
+  {
+    id:2,
+    Name: "শিক্ষা সফর - ২০২৩",
+    description: "Te nulla oportere reprimique his dolorum",
+    img: scienceimg,
+  }, 
+  {
+    id:3,
+    Name: "বার্ষিক সাংস্কৃতিক অনুষ্ঠান - ২০২২",
+    description: "Te nulla oportere reprimique his dolorum",
+    img: historyImg,
+  }, 
+  {
+    id:4,
+    Name: "জাতীয় বিজ্ঞান অলম্পিয়াড - ২০২২",
     description: "Te nulla oportere reprimique his dolorum",
     img: student,
   }, 
   {
-    Name: "Leroy Jenkins",
+    id:5,
+    Name: "বার্ষিক পরিক্ষার ফলাফল - ২০২২",
     description: "Te nulla oportere reprimique his dolorum",
     img: scienceimg,
-  }, {
-    Name: "Leroy Jenkins",
-    description: "Te nulla oportere reprimique his dolorum",
-    img: historyImg,
-  }, {
-    Name: "Leroy Jenkins",
-    description: "Te nulla oportere reprimique his dolorum",
-    img: student,
-  }, {
-    Name: "Leroy Jenkins",
-    description: "Te nulla oportere reprimique his dolorum",
-    img: scienceimg,
-  }, {
-    Name: "Leroy Jenkins",
+  }, 
+  {
+    id:6,
+    Name: "শিক্ষা সফর - ২০২২",
     description: "Te nulla oportere reprimique his dolorum",
     img: historyImg,
   },
@@ -59,17 +71,17 @@ const images = () => {
 
               <div className="container p-3 mx-auto space-y-4 ">
                     <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
-                      {events.map(items=>(
-                        <div key={items.Name}>
-                      <article className="flex flex-col  bg-gray-50 border rounded">
-                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                      {img.map(items=>(
+                        <div key={items.id}>
+                      <Link href={`/gallery/images/${items.id}`} className="flex flex-col  bg-gray-50 border rounded">
+                        <div >
                           <Image src={items.img} className="object-cover w-full h-52 rounded" alt="" />
-                        </a>
+                        </div>
                         <div className="flex flex-col flex-1 p-4 gap-1"> 
-                          <h3 className="text-2xl font-semibold">{items.Name}</h3>
+                          <h3 className="text-xl font-semibold">{items.Name}</h3>
                           <h2 className="text-sm text-gray-400">{items.description}</h2>
                         </div>
-                      </article>
+                      </Link>
                       </div>
                       ))}
                     </div>

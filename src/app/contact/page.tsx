@@ -1,5 +1,8 @@
 import Image from "next/image";
-import contactimg from "../../../public/assests/contactus.jpg";
+import contactimg from "../../../public/assests/contact/contactus.jpg";
+import contactIcon from "../../../public/assests/contact/telephone.png";
+import emailIcon from "../../../public/assests/contact/email.png";
+import locationIcon from "../../../public/assests/contact/location.png";
 import { Divider } from "antd";
 const contact = () => {
   return (
@@ -90,22 +93,11 @@ const contact = () => {
                 Our Address
               </h3>
             </div>
-            <div className="flex lg:gap-5 justify-between lg:px-8 items-center content-center text-center  mb-5 lg:mb-0 space-y-4 lg:space-y-0 border border-gray-300 rounded-md shadow-md">
+            <div className="flex lg:gap-5 justify-between lg:px-8 items-center content-center text-center  mb-5 lg:mb-0 space-y-4 lg:space-y-4 border border-gray-300 rounded-md shadow-md">
               {/* first */}
-              <div className=" lg:px-10 py-6 lg:pt-7  space-y-2 lg:space-y-0 ">
+              <div className=" lg:px-10 py-6 lg:pt-7  space-y-2 lg:space-y-2 ">
                 <div className="flex content-center items-center justify-center text-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-6 h-6  text-blue-500"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
+                  <Image src={locationIcon} className="w-10 h-10 " alt=""/>                  
                 </div>
                 <h1 className="text-2xl font-bold text-blue-500 lg:mb-10 text-center">
                   Address
@@ -120,16 +112,9 @@ const contact = () => {
               </div>
               <Divider type="vertical" className=" h-16 bg-gray-400 w-[2px] " />
               {/* second */}
-              <div className="lg:px-10 py-6 lg:pt-7    space-y-2 lg:space-y-0">
+              <div className="lg:px-10 py-6 lg:pt-7    space-y-2 lg:space-y-2">
                 <div className="flex content-center items-center justify-center text-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-6 h-6  text-blue-500"
-                  >
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                  </svg>
+                <Image src={contactIcon} className="w-10 h-10 " alt=""/>                  
                 </div>
                 <h1 className="text-2xl font-bold text-blue-500 lg:mb-10 text-center">
                   Phone Number
@@ -143,17 +128,9 @@ const contact = () => {
               </div>
               <Divider type="vertical" className=" h-16 bg-gray-400 w-[2px] " />
               {/* third */}
-              <div className="lg:px-10 py-6 lg:pt-7 space-y-2 lg:space-y-0">
+              <div className="lg:px-10 py-6 lg:pt-7 space-y-2 lg:space-y-2">
                 <div className="flex content-center items-center justify-center text-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-6 h-6  text-blue-500"
-                  >
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                  </svg>
+                <Image src={emailIcon} className="w-10 h-10 " alt=""/>
                 </div>
                 <h1 className="text-2xl font-bold text-blue-500 lg:mb-10 text-center">
                   E-Mail
@@ -164,8 +141,7 @@ const contact = () => {
                     <span>softedu@softedu.com</span>
                   </p>
                 </div>
-              </div>
-
+              </div> 
             </div>
           </div>
         </div>
