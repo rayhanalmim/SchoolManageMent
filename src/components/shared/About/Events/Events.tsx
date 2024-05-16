@@ -5,6 +5,7 @@ import Image from "next/image";
 import scienceimg from "../../../../../public/assests/scienceclub.jpg";
 import student from "../../../../../public/assests/student.jpg";
 import result from "../../../../../public/assests/result.jpg";
+import Link from 'next/link';
 
 const eventsItems = [
     {
@@ -70,7 +71,7 @@ const Events = () => {
                             <h3 className="font-bold text-xl md:text-xl lg:text-2xl group-hover:underline group-focus:underline lg:pt-5">বিজ্ঞান মেলা এবং কুইজ লীগ - </h3>
                             <span className="text-xs  text-gray-600">February 19, 2021</span>
                             <p className="text-sm text-gray-400 lg:pr-2 text-justify">Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id.</p>
-                            <button className="btn btn-sm p-2 rounded text-black" >Read More</button>
+                            <Link href={"/"}><button className="btn btn-sm p-2 rounded text-black" >Read More</button></Link>
                     
                         </div>
                         <div className="">
