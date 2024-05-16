@@ -83,8 +83,8 @@ const login = () => {
   //   };
   return (
     <div className="bg-gray-100  ">
-      <div className="w-[1260px]  py-8 pt-24 mx-auto ">
-        <div className="shadow-xl mx-48 my-5 bg-white rounded-lg p-8">
+      <div className="lg:w-[1260px]  py-8 pt-20 lg:pt-24 mx-auto ">
+        <div className="shadow-xl mx-2 lg:mx-48 my-5 bg-white rounded-lg p-4 lg:p-8">
           <div className="grid md:grid-cols-2">
             <div className="flex flex-col items-center space-y-5">
               <Image src={img} alt="login" className="h-auto w-auto rounded-lg" />
@@ -100,20 +100,23 @@ const login = () => {
                   <RiLockPasswordFill />
                   <input type="password" name="full_name" className="click text-sm font-light w-full  pl-1 focus:outline-none" placeholder="Password" />
                 </div>
-                <h2 className="text-yellow-500 text-right justify-end text-xs font-bold">Forgot Password?</h2>
+                {/* <h2 className=""></h2> */}
+                <Link href={"#"} className="text-yellow-500 text-right justify-end text-xs font-bold"> Forgot Password?
+                </Link>
               </div>
               <div className="flex gap-2 text-sm font-light">
                 <input type="checkbox" value="" /> Remember me
               </div>
               {/* <button className="btn btn-info">Log In</button> */}
-              <input type="submit" value="Log In" className="btn bg-[#6dabe4] text-base text-white font-light" />
+              {/* button */}
+              <input type="submit" value="Log In" className="bg-[#6dabe4] text-base text-white font-light px-5 py-3" />
             </div>
           </div>
 
-          <div className="grid grid-cols-2 items-center mt-5 ">
-            <div className="flex flex-col items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center mt-5 space-y-4 md:space-y-0 lg:space-y-0">
+            <div className="flex flex-col lg:items-center ">
               <h2 className="flex items-center gap-2 text-sm">Create an Account?
-                <Link href={"/signup"} className="text-purple-600 hover:underline text-base text-center"> Register Now.
+                <Link href={"/signup"} className="text-purple-600 hover:underline text-base lg:text-center"> Register Now.
                 </Link>
               </h2>
             </div>
