@@ -60,9 +60,9 @@ const Header = () => {
           <Link href="#" className="flex gap-1 items-center mr-3">Admissions<ChevronDownIcon className="h-5 w-5" /> </Link>
           <ul className="submenu rounded w-full">
             <li> <Link href="/admission/admissionInfo">Admission Info</Link></li>
-            <li> <Link href="/admission/schoolAdmission">School Admission</Link></li>
-            <li> <Link href="/admission/collegeAdmission">College Admission</Link></li>
-            <li> <Link href="/admission/englishAdmission">English Version Admissions</Link></li>
+            <li> <Link href="/admission/schoolAdmission">School Admission Form</Link></li>
+            <li> <Link href="/admission/collegeAdmission">College Admission Form</Link></li>
+            <li> <Link href="/admission/englishAdmission">English Version Admissions Form</Link></li>
           </ul>
         </li>
         {/* Facilities */}
