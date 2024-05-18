@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import apply from "../../../../public/assests/onlineApply.png"
+import apply from "../../../../public/assests/onlineApply.jpg"
 
 const OnlineApplication = () => {
     return (

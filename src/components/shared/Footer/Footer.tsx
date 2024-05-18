@@ -12,28 +12,29 @@ import {
 
 const navigation = {
   solutions: [
-    { name: "Events", href: "#" },
-    { name: "Achievments", href: "#" },
-    { name: "History", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Events", href: "/about/events" },
+    { name: "Achievments", href: "/about/achievement" },
+    { name: "History", href: "/about/history" },
+    { name: "Contact", href: "/contact" },
   ],
   support: [
-    { name: "Governing Body", href: "#" },
-    { name: "Administrative Body", href: "#" },
-    { name: "Teachers", href: "#" },
-    { name: "Supporting Staff", href: "#" },
+    { name: "Governing Body", href: "/administration/governingBody" },
+    { name: "Administrative Body", href: "/administration/administrativeBody" },
+    { name: "Teachers", href: "/administration/teachingStaff" },
+    { name: "Office Staff", href: "/administration/officeStaff" },
   ],
   result: [
-    { name: "School", href: "#" },
-    { name: "College", href: "#" },
-    { name: "English Vesion", href: "#" },
-    { name: "Notice", href: "#" },
+    { name: "School", href: "/result/schoolResult" },
+    { name: "College", href: "/result/collegeResult" },
+    { name: "English Vesion", href: "/result/englishVersionResult" },
+    { name: "Notice", href: "/notice" },
     // { name: "Partners", href: "#" },
   ],
-  information: [
-    { name: "School", href: "#" },
-    { name: "College", href: "#" },
-    { name: "English Version", href: "#" },
+  admission: [
+    { name: "Admission Info", href: "/admission/admissionInfo" },
+    { name: "School", href: "/admission/schoolAdmission" },
+    { name: "College", href: "/admission/collegeAdmission" },
+    { name: "English Version", href: "/admission/englishAdmission" },
   ],
 };
 const Footer = () => {
@@ -45,7 +46,6 @@ const Footer = () => {
       <div className="lg:w-[1260px] container mx-auto px-6 pb-8 pt-5 lg:px-0 lg:pt-10">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8 mb-3 lg:mb-2">
           <div className="max-w-full lg:max-w-lg  mx-auto">
-
             <div className="space-y-4 flex flex-col items-center md:items-start lg:items-start justify-between">
               <div className="text-center md:text-left">
                 <Link href={"/"}>
@@ -135,7 +135,7 @@ const Footer = () => {
                   Admission
                 </h3>
                 <ul role="list" className="lg:mt-6 lg:space-y-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
-                  {navigation.information.map((item) => (
+                  {navigation.admission.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
@@ -182,9 +182,6 @@ const Footer = () => {
 
       </div>
     </footer>
-
-
-
   );
 };
 
