@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Achievement = () => {
+const CommonRoom = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Achievement = () => {
     );
 };
 
-export default Achievement;
+export default CommonRoom;
