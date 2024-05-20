@@ -1,4 +1,4 @@
-import { Divider } from "antd";
+ 
 import { BsDot } from "react-icons/bs";
 import CollegeSidebar from "@/components/shared/Corner/CollegeSidebar/CollegeSidebar";
 
@@ -17,7 +17,8 @@ const collegeInfo = () => {
                   School Info
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
               <div className="lg:w-auto border rounded p-4 bg-white ">
                 <section className="p-0 lg:p-2  text-gray-800 text-justify">
                   <div className="container mx-auto space-y-8">

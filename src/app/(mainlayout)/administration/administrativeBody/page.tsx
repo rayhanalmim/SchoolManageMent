@@ -7,7 +7,7 @@ import administrative5 from "../../../../../public/assests/administration/admini
 import administrative6 from "../../../../../public/assests/administration/administrative/26.jpeg";
 import administrative7 from "../../../../../public/assests/administration/administrative/13.jpeg";
 import Image from "next/image";
-import { Divider } from "antd";
+ 
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -44,6 +44,21 @@ const administrative = [
     img: administrative6,
   },
 ];
+
+const socialIcon = (
+  <div className="flex gap-1 mt-2 ">
+    <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-600">
+      <FaFacebookF className="w-4 h-4" />
+    </a>
+    <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-600 ">
+      <FaXTwitter className="w-4 h-4" />
+    </a>
+    <a rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-600 ">
+      <FaLinkedinIn className="w-4 h-4" />
+    </a>
+  </div>
+)
+
 const administrativeBody = () => {
   return (
     <>
@@ -59,10 +74,11 @@ const administrativeBody = () => {
                   Administrative Body
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800">
                 <div className="container p-4 mx-auto space-y-16 sm:p-10 ">
-                  <div className="justify-center items-center content-center mx-auto max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">
+                  <div className="justify-center items-center content-center mx-auto max-w-xs rounded-md shadow-md bg-gray-50 text-gray-800">
                     <Image
                       src={administrative7}
                       className="object-cover h-auto mx-auto mb-4 bg-center rounded p-3"
@@ -72,25 +88,12 @@ const administrativeBody = () => {
                       <h4 className="text-xl font-semibold">Leroy Jenkins</h4>
                       <p className="text-sm text-gray-600">Chairmen</p>
 
-                      <div className="flex gap-1 mt-1 ">
-                        <a rel="noopener noreferrer" href="#" title="Facebook" className="text-gray-600">
-                          <FaFacebookF className="w-4 h-4" />
-                        </a>
-                        <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-600 ">
-                          <FaXTwitter className="w-4 h-4" />
-                        </a>
-                        <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-600 ">
-                          <FaLinkedinIn className="w-4 h-4" />
-                        </a>
-                      </div>
+                      {socialIcon}
                     </div>
                   </div>
                   <div className="grid w-full grid-cols-1 gap-x-3 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
                     {administrative.map((items) => (
-                      <div
-                        key={items.Name}
-                        className="border rounded w-full py-5"
-                      >
+                      <div key={items.Name} className="border rounded w-full py-5 shadow-md">
                         <Image
                           src={items.img}
                           className="object-cover h-auto mx-auto mb-4 bg-center rounded px-3"
@@ -103,17 +106,7 @@ const administrativeBody = () => {
                           <p className="text-sm text-gray-600">
                             {items.Subject}
                           </p>
-                          <div className="flex gap-1 mt-1 ">
-                            <a rel="noopener noreferrer" href="#" title="Facebook" className="text-gray-600">
-                              <FaFacebookF className="w-4 h-4" />
-                            </a>
-                            <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-600 ">
-                              <FaXTwitter className="w-4 h-4" />
-                            </a>
-                            <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-600 ">
-                              <FaLinkedinIn className="w-4 h-4" />
-                            </a>
-                          </div>
+                          {socialIcon}
                         </div>
                       </div>
                     ))}

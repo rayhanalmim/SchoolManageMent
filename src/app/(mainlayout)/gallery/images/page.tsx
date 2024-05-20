@@ -6,42 +6,42 @@ import historyImg from "../../../../../public/assests/historyImg.jpg";
 import student from "../../../../../public/assests/student.jpg";
 import annual from "../../../../../public/assests/img/annual.jpg";
 import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
-import { Divider } from "antd";
+
 import Link from "next/link";
 
 const img = [
   {
-    id:1,
+    id: 1,
     Name: "বার্ষিক বনভোজন - ২০২৩",
     description: "Te nulla oportere reprimique his dolorum",
     img: annual,
-  }, 
+  },
   {
-    id:2,
+    id: 2,
     Name: "শিক্ষা সফর - ২০২৩",
     description: "Te nulla oportere reprimique his dolorum",
     img: scienceimg,
-  }, 
+  },
   {
-    id:3,
+    id: 3,
     Name: "বার্ষিক সাংস্কৃতিক অনুষ্ঠান - ২০২২",
     description: "Te nulla oportere reprimique his dolorum",
     img: historyImg,
-  }, 
+  },
   {
-    id:4,
+    id: 4,
     Name: "জাতীয় বিজ্ঞান অলম্পিয়াড - ২০২২",
     description: "Te nulla oportere reprimique his dolorum",
     img: student,
-  }, 
+  },
   {
-    id:5,
+    id: 5,
     Name: "বার্ষিক পরিক্ষার ফলাফল - ২০২২",
     description: "Te nulla oportere reprimique his dolorum",
     img: scienceimg,
-  }, 
+  },
   {
-    id:6,
+    id: 6,
     Name: "শিক্ষা সফর - ২০২২",
     description: "Te nulla oportere reprimique his dolorum",
     img: historyImg,
@@ -64,28 +64,27 @@ const images = () => {
                   Images
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
-              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800">
-
-
-              <div className="container p-3 mx-auto space-y-4 ">
-                    <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
-                      {img.map(items=>(
-                        <div key={items.id}>
-                      <Link href={`/gallery/images/${items.id}`} className="flex flex-col  bg-gray-50 border rounded">
-                        <div >
-                          <Image src={items.img} className="object-cover w-full h-52 rounded" alt="" />
-                        </div>
-                        <div className="flex flex-col flex-1 p-4 gap-1"> 
-                          <h3 className="text-xl font-semibold">{items.Name}</h3>
-                          <h2 className="text-sm text-gray-400">{items.description}</h2>
-                        </div>
-                      </Link>
+              <section className="lg:w-auto border rounded p-1 md:p-4 lg:p-4 bg-white text-gray-800">
+                <div className="container p-1 mx-auto space-y-4 ">
+                  <div className="grid grid-cols-1 gap-x-4 gap-y-2 md:gap-y-4 lg:gap-y-8 md:grid-cols-2 lg:grid-cols-3 ">
+                    {img.map(items => (
+                      <div key={items.id} className="shadow-md">
+                        <Link href={`/gallery/images/${items.id}`} className="flex flex-col  bg-gray-50 border rounded">
+                          <div >
+                            <Image src={items.img} className="object-cover w-full h-52 rounded" alt="" />
+                          </div>
+                          <div className="flex flex-col flex-1 p-4 gap-1">
+                            <h3 className="text-xl font-semibold">{items.Name}</h3>
+                            <h2 className="text-sm text-gray-400">{items.description}</h2>
+                          </div>
+                        </Link>
                       </div>
-                      ))}
-                    </div>
+                    ))}
                   </div>
+                </div>
               </section>
             </div>
           </div>

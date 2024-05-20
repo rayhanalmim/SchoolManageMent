@@ -1,6 +1,6 @@
 
 import GallerySidebar from "@/components/shared/GallerySidebar/GallerySidebar";
-import { Divider } from "antd";
+ 
 import Image from "next/image";
 import common_room from "../../../../public/assests/facilities/common_room.jpg";
 
@@ -19,7 +19,8 @@ const videos = () => {
                   Videos
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
               <section className="lg:w-auto border rounded p-2 md:p-4 lg:p-4 bg-white text-gray-800 mb-5 md:mb-0 lg:mb-0">
                 <div className="lg:w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mx-auto">

@@ -7,7 +7,7 @@ const OnlineApplication = () => {
         <div>
             <div className="hero my-10 lg:w-[1260px] mx-auto">
                 <div className="hero-overlay bg-opacity-60">
-                <Image src={apply} className="h-52 w-full" alt="this is img icon" />
+                <Image src={apply} className="h-full lg:h-52 w-full" alt="this is img icon" />
                 </div>
 
                 <div className="hero-content text-center text-bold text-black">

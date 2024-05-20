@@ -1,5 +1,5 @@
 import ResultSidebar from "@/components/shared/ResultSidebar/ResultSidebar";
-import { Divider } from "antd";
+ 
 
 const tables = [
   {
@@ -66,27 +66,30 @@ const tables = [
 const englishVersionResult = () => {
   return (
     <>
-      <section className=" bg-gray-100  lg:py-12 text-gray-800">
+      <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
-          <div className="py-5 lg:pr-5">
+          <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
             <ResultSidebar />
           </div>
-          <div className="grid w-full ">
-            <div className="lg:w-auto lg:mt-2  ">
+          <div className="lg:grid lg:w-full">
+            <div className="w-auto lg:mt-2 px-2">
               <div className="w-full md:w-64 lg:w-64 md:pt-4 lg:pt-4">
                 <h3 className="text-2xl font-semibold text-center md:text-left lg:text-left">
                   English Version Result
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
               {/* submit section */}
-              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 px-16">
+              {/* submit section */}
+              <section className="w-auto border rounded p-4 bg-white text-gray-800 lg:px-16 my-4 md:my-0 lg:my-0">
                 <div className="lg:w-full flex flex-col items-center justify-center">
-                  <h2 className="text-2xl">Gives Information for Result</h2>
+                  <h2 className="text-xl md:text-2xl lg:text-2xl">Gives Information for Result</h2>
                 </div>
-                <Divider className="bg-gray-300" />
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {/* Divider  */}
+                <div className="w-full  border-t border-gray-300 my-3 md:my-6 lg:my-6"></div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  lg:gap-4">
                   <label className="form-control w-full max-w-xs">
                     <div className="label">
                       <span className="label-text">Name</span>
@@ -167,16 +170,20 @@ const englishVersionResult = () => {
                   </label>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <button className="btn btn-neutral lg:btn-wide lg:mt-5">Submit</button>
+                  <button className="btn btn-neutral btn-wide mt-5">Submit</button>
                 </div>
               </section>
-              {/* Result section */}
-              <section className="lg:w-full border rounded p-4 bg-white text-gray-800 lg:gap-4 lg:mt-5 lg:px-20 lg:py-6">
+
+
+              {/* ------------------Result section----------------- */}
+              <section className="lg:w-full border rounded p-1 md:p-2 lg:p-4 bg-white text-gray-800 lg:gap-4 lg:mt-5 lg:px-20 lg:py-6">
                 <div className="lg:w-full flex flex-col items-center justify-center">
-                  <h2 className="text-2xl">Mid Term Exam Result - 2024</h2>
+                  <h2 className="text-xl md:text-2xl lg:text-2xl">Mid Term Exam Result - 2024</h2>
                 </div>
-                <Divider className="bg-gray-300" />
-                <div className="lg:w-full">
+                {/* Divider  */}
+                <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
+                {/* -------first section--------- */}
+                <div className="lg:w-full text-xs md:text-md lg:text-base">
                   <table className="border-collapse border border-gray-400 lg:w-full">
                     <thead>
                       <tr className="bg-gray-100">
@@ -223,8 +230,9 @@ const englishVersionResult = () => {
                     </tbody>
                   </table>
                 </div>
-                <h2 className="text-2xl text-center py-5">Subject Wise grade / marks</h2>
-                <div className="lg:w-full">
+                {/* --------second section-------- */}
+                <h2 className="text-xl md:text-2xl lg:text-2xl text-center py-5">Subject Wise grade / marks</h2>
+                <div className="lg:w-full text-xs md:text-md lg:text-base">
                   <table className=" border border-gray-400  lg:w-full">
                     <tbody>
                       <tr className="text-center bg-green-500 text-white font-bold">

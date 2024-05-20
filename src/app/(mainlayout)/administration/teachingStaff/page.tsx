@@ -10,7 +10,7 @@ import teacher6 from "../../../../../public/assests/teacher/teachers-6.jpg"
 import teacher7 from "../../../../../public/assests/teacher/teachers-7.jpg"
 import teacher8 from "../../../../../public/assests/teacher/teachers-8.jpg"
 import Link from "next/link";
-import { Divider } from "antd";
+ 
 import Image from "next/image";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -84,32 +84,33 @@ const teachingStaff = () => {
                   Teaching Staff
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
               <section className="text-gray-800 bg-white rounded border">
                 <div className="  mx-auto lg:space-y-8 p-2 lg:p-4">
                   {/* head teacher */}
                   <div className="">
-                    <div className=" flex gap-3">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
 
                       {/* image */}
-                      <Image src={teacher} className="h-[350px] w-[500px] " alt="Teacher Img" />
+                      <Image src={teacher} className="lg:h-[350px] lg:w-[500px] " alt="Teacher Img" />
 
                       {/* description */}
                       <div className="flex flex-col justify-center flex-1 p-4  bg-gray-50 text-justify">
-                        <h3 className="text-3xl font-bold">মো. খুরশীদ আলম</h3>
+                        <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold">মো. খুরশীদ আলম</h3>
                         <h3 className="">প্রধান শিক্ষক</h3>
-                        <h3 className="">বিএ, বিএড, এমএ</h3>
-                        <p className="my-6  text-gray-600">গত ০৪/০৮/২০২০ইং তারিখ থেকে অত্র বিদ্যালয়ে প্রধান শিক্ষক হিসেবে দায়িত্ব পালন করে আসছেন। তিনি কুমিল্লা জেলার নাঙ্গলকোট উপজেলাস্থ ৯নং আদ্রা দক্ষিণ ইউনিয়নের আটিয়াবাড়ী গ্রামের সম্ভ্রান্ত মুসলিম পরিবারে ১৯৬৮ইং সনে জন্ম গ্রহন করেন। নিজ গ্রামে প্রাথমিক শিক্ষা শেষে ১৯৮৫ইং সনে লাকসাম সরকারি পাইলট উচ্চ বিদ্যালয় থেকে এস.এস.সি,নওয়াব ফয়জুন্নেছা সরকারি কলেজ,লাকসাম থেকে ১৯৮৭ইং সনে এইচ.এস.সি এবং ১৯৮৯ইং সনে বি.এসসি,পাস করেন।<Link href={`/corner/principle/bio`} ><span className='text-purple-400'>Read more..</span></Link>
+                        <h3 className="">বিএ, বিএড, এমএ</h3>                        
+                        <p className="text-sm md:text-base lg:text-base my-4  text-gray-600">গত ০৪/০৮/২০২০ইং তারিখ থেকে অত্র বিদ্যালয়ে প্রধান শিক্ষক হিসেবে দায়িত্ব পালন করে আসছেন। তিনি কুমিল্লা জেলার নাঙ্গলকোট উপজেলাস্থ ৯নং আদ্রা দক্ষিণ ইউনিয়নের আটিয়াবাড়ী গ্রামের সম্ভ্রান্ত মুসলিম পরিবারে ১৯৬৮ইং সনে জন্ম গ্রহন করেন। নিজ গ্রামে প্রাথমিক শিক্ষা শেষে ১৯৮৫ইং সনে লাকসাম সরকারি পাইলট উচ্চ বিদ্যালয় থেকে এস.এস.সি,নওয়াব ফয়জুন্নেছা সরকারি কলেজ,লাকসাম থেকে ১৯৮৭ইং সনে এইচ.এস.সি এবং ১৯৮৯ইং সনে বি.এসসি,পাস করেন।<Link href={`/corner/principle/bio`} ><span className='text-purple-400'>Read more..</span></Link>
                         </p>
                       </div>
                     </div>
                   </div>
                   {/* all teacher */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full  gap-x-3 gap-y-10 ">
+                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full  gap-x-3 gap-y-3 md:gap-y-5 lg:gap-y-10 px-4 md:px-1 lg:px-0 my-5 md:my-0 lg:my-0">
                     {teachers.map(items => (
-                      <div key={items.Name} className="border rounded w-full py-5">
-                        <Image src={items.img} className="object-cover h-[210px] w-[420px] mx-auto mb-4 bg-center rounded px-3" alt="img" />
+                      <div key={items.Name} className="border rounded w-full py-2 lg:py-5 shadow-md">
+                        <Image src={items.img} className="object-cover lg:h-[210px] lg:w-[420px] mx-auto mb-4 bg-center rounded px-3" alt="img" />
                         <div className="flex flex-col items-center">
                           <Link href={`/administration/teachingStaff/${items.id}`} > 
                               <h4 className="text-xl font-semibold hover:underline">{items.Name}</h4>

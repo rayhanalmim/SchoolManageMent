@@ -5,15 +5,16 @@ import { usePathname } from "next/navigation";
 const activeStyle = "text-black bg-green-500 w-full lg:p-2 ";
 const nonActiveStyle = "text-black";
 
-
 const AboutSidebar = () => {
   const currentRoute = usePathname();
   return (
-    <div className="">
-      <div className="w-44 xl:w-64 lg:mx-auto lg:py-2 text-center  md:text-left lg:text-start md:mt-0 mt-5 ">
-        <h3 className="text-lg font-semibold  lg:pl-3 lg:py-2">About Us</h3>
+    <div className="pt-[70px] lg:pt-0">
+      <div className="w-full lg:w-64 lg:mx-auto lg:py-2 text-center md:text-left lg:text-start">
+        <h3 className="text-sm md:text-md lg:text-lg font-semibold lg:pl-3 lg:py-2">
+          About Us
+        </h3>
       </div>
-      <div className="p-2 w-full md:w-64 lg:flex justify-center lg:py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded items-center content-center">
+      <div className="p-2 w-64 lg:flex justify-center lg:py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded items-center content-center text-sm md:text-md lg:text-base">
         <Link
           href={"/about/history"}
           className={`${currentRoute === "/about/history" ? activeStyle : nonActiveStyle
@@ -41,8 +42,8 @@ const AboutSidebar = () => {
         <Link
           href={"/about/whystudyHere"}
           className={`${currentRoute === "/about/whystudyHere"
-              ? activeStyle
-              : nonActiveStyle
+            ? activeStyle
+            : nonActiveStyle
             } px-2`}
         >
           Why Study Here
