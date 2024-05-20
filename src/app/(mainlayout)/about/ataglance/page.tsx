@@ -3,7 +3,7 @@ import scienceimg from "../../../../../public/assests/scienceclub.jpg";
 import historyImg from "../../../../../public/assests/historyImg.jpg";
 import student from "../../../../../public/assests/student.jpg";
 import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
-
+ 
 
 const events = [
   {
@@ -52,7 +52,7 @@ const ataglance = () => {
                 </h3>
               </div>
               {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
               <div className="lg:w-auto border rounded p-4 bg-white">
                 <section className="text-gray-800 pt-2">
                   <div className="container p-3 mx-auto space-y-4 ">

@@ -1,13 +1,13 @@
 import AdmissionInfo from "@/components/shared/Admission/AdmissionInfo/AdmissionInfo";
 import AdmissionSidebar from "@/components/shared/Admission/AdmissionSidebar/AdmissionSidebar";
-import { Divider } from "antd";
+
 
 const admissionInfo = () => {
     return (
         <>
-            <div className=" bg-gray-100  lg:py-12 text-gray-800">
+            <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
                 <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
-                    <div className="py-5 px-3 lg:px-0 lg:pr-5">
+                    <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
                         <AdmissionSidebar />
                     </div>
                     <div className="grid w-full">
@@ -18,12 +18,12 @@ const admissionInfo = () => {
                                 </h3>
                             </div>
                             {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
-                            <AdmissionInfo/>
+                            <div className="w-full  border-t border-gray-300 my-3 md:my-6 lg:my-6"></div>
+                            <AdmissionInfo />
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     );
 };

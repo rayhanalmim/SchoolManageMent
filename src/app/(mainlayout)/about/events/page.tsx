@@ -1,4 +1,4 @@
-
+ 
 import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
 import Events from "@/components/shared/About/Events/Events";
 import Image from "next/image";
@@ -67,7 +67,7 @@ const events = () => {
                 </h3>
               </div>
               {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
               {/* <Events /> */}
               <div>
                 <section className=" border  rounded text-gray-800 lg:w-auto p-4 bg-white">
@@ -79,6 +79,7 @@ const events = () => {
                         <span className="text-xs  text-gray-600">February 19, 2021</span>
                         <p className="text-sm text-gray-400 lg:pr-2 text-justify">Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id.</p>
                         <Link href={"/about/events/eventsDetails"}><button className="btn btn-sm p-2 rounded text-black" >Read More</button></Link>
+                        {/* <Link href={"#"}><button className="btn btn-sm p-2 rounded text-black" >Read More</button></Link> */}
                       </div>
                     </div>
                     <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -89,6 +90,7 @@ const events = () => {
                             <h3 className="text-xl font-semibold">{item.title}</h3>
                             <span className="text-xs text-gray-600">{item.date}</span>
                             <p className="text-sm text-gray-400">{item.description}</p>
+                            {/* <button className="btn btn-sm p-2 rounded text-black">Read More</button> */}
                             <Link href={`/about/events/${item.id}`}><button className="btn btn-sm p-2 rounded text-black" >Read More</button></Link>
                           </div>
                         </div>

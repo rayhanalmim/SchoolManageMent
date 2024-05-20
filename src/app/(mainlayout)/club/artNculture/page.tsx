@@ -1,5 +1,5 @@
 import ClubSidebar from "@/components/shared/ClubSidebar/ClubSidebar";
-import { Divider } from "antd";
+
 import Image from "next/image";
 import logo from "../../../../../public/assests/club/artnculture1.png"
 import scout1 from "../../../../../public/assests/club/artnculture2.png";
@@ -11,9 +11,9 @@ import scout5 from "../../../../../public/assests/club/artnculture7.jpeg";
 const artNculture = () => {
     return (
         <>
-            <section className=" bg-gray-100  lg:py-12 text-gray-800">
+            <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
                 <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
-                    <div className="py-5 lg:pr-5">
+                    <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
                         <ClubSidebar />
                     </div>
                     <div className="grid w-full ">
@@ -24,7 +24,7 @@ const artNculture = () => {
                                 </h3>
                             </div>
                             {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+                            <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
                             <section className="lg:w-auto border rounded p-4 bg-white text-gray-800">
                                 <Image src={logo} className="h-[200px] w-[200px] mx-auto" alt="this is logo" />
                                 <section className="   text-gray-800">
@@ -54,7 +54,7 @@ const artNculture = () => {
                                     </div>
                                 </section>
                                 {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+                                <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
                                 <div>
                                     <h2 className="text-2xl font-bold text-center">ছবি সমূহ:</h2>
                                     <section className="py-6  text-gray-900">
@@ -64,7 +64,7 @@ const artNculture = () => {
                                             <Image src={scout2} className="w-full h-full rounded shadow-sm min-h-48  bg-gray-500 aspect-square" alt="img" />
                                             <Image src={scout3} className="w-full h-full rounded shadow-sm min-h-48  bg-gray-500 aspect-square" alt="img" />
                                             <Image src={scout4} className="w-full h-full rounded shadow-sm min-h-48  bg-gray-500 aspect-square" alt="img" />
-                                            
+
                                         </div>
                                     </section>
                                 </div>

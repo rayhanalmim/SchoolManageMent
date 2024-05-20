@@ -9,9 +9,9 @@ const nonActiveStyle = 'text-black';
 const GallerySidebar = () => {
     const currentRoute = usePathname();
     return (
-        <div>
-            <div className="lg:w-64 mx-auto py-2"> 
-				<h3 className="text-lg font-semibold  pl-3 py-2"> 
+        <div className="pt-[70px] lg:pt-0">
+			<div className="w-full lg:w-64 lg:mx-auto lg:py-2 text-center md:text-left lg:text-start">
+				<h3 className="text-sm md:text-md lg:text-lg font-semibold lg:pl-3 lg:py-2">
 						Gallery
 					</h3>
 				</div>

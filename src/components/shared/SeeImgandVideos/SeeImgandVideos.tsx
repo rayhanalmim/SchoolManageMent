@@ -48,11 +48,11 @@ const SeeImgandVideos = () => {
 
     return (
         <>
-            <div className="lg:my-16">
-                <div className="lg:w-[1260px] lg:mx-auto bg-gray-100 text-gray-900 lg:flex ">
+            <div className=" lg:my-16">
+                <div className="lg:w-[1260px] mx-auto bg-gray-100 text-gray-900 lg:flex ">
                     <div className="lg:w-[550px] lg:px-10 bg-blue-900">
-                        <div className="relative lg:mx-8 pt-12 lg:h-[410px] lg:w-[550px]">
-                            <div className="carousel lg:mb-20 h-[240px] lg:h-[300px] w-[800px]">
+                        <div className="relative lg:mx-8 pt-5 md:pt-10 lg:pt-12 lg:h-[410px] lg:w-[550px]">
+                            <div className="carousel lg:mb-20 h-[235px] lg:h-[300px] w-[800px]">
                                 {slides.map((slide, index) => (
                                     <div
                                         key={index}
@@ -79,7 +79,7 @@ const SeeImgandVideos = () => {
                     </div>
 
                     <div className="px-5 lg:px-10">
-                        <div className='space-y-4 py-5 md:pt-10 lg:pt-14 ml-5 md:ml-14 lg:ml-20'>
+                        <div className='space-y-4 py-5 md:pt-10 lg:pt-14 ml-0 md:ml-14 lg:ml-20'>
                             <div className='text-3xl md:text-5xl lg:text-5xl font-bold'>
                                 Visit Our Campus <br/> with Image Gallery</div>
                             <Link href={"/gallery/images"}>
@@ -89,7 +89,7 @@ const SeeImgandVideos = () => {
                             </Link>
                             <div className='border border-black lg:w-96'></div>
                             <div className='text-3xl md:text-5xl lg:text-5xl font-bold'>
-                                or, Watch Video</div>
+                              Watch Video</div>
                             <Link href={"/gallery/videos"}>
                                 <button className=" flex items-center text-2xl gap-2 hover:text-green-500">
                                     <FaPlay /> Play now

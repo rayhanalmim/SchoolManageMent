@@ -1,5 +1,5 @@
 "use client"
-import { Divider } from "antd";
+ 
 import React from "react";
 import { ClockIcon, PrinterIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
@@ -76,7 +76,7 @@ const notices = [
 const NoticeBoard = () => {
     return (
         <div className="lg:w-[1260px] lg:mx-auto">
-            <h2 className="text-xl font-semibold mb-2 text-center lg:my-5">Notice Board</h2>
+            <h2 className="text-3xl font-semibold mb-2 text-center lg:my-5">Notice Board</h2>
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap-5 ">
                 {notices.map((items, index) => (
                     <div key={index}  >
@@ -105,8 +105,9 @@ const NoticeBoard = () => {
                                         <ClockIcon className="w-4 h-4" />
                                         <h1>{items.date}</h1>
                                     </div>
+                                    {/* <Divider /> */}
                                     {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+                                    <div className="w-full  border-t border-gray-300 h-[.5px] my-6"></div>
                                     <p className="text-gray-700 text-justify">{items.description}</p>
                                     <div className="flex gap-2 pt-2">
                                         <button className="flex btn gap-2 content-center text-center items-center"><PrinterIcon className="w-5 h-5" />প্রিন্ট করুন</button>

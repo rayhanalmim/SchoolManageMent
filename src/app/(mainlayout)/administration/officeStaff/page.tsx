@@ -1,6 +1,6 @@
 import AdministrationSidebar from "@/components/shared/Administration/AdministrationSidebar/AdministrationSidebar";
 import teacher from "../../../../../public/assests/20112319132256.jpg"
-import { Divider } from "antd";
+ 
 import Image from "next/image";
 import officeStaff1 from "../../../../../public/assests/administration/officeStaff/8.jpeg";
 import officeStaff2 from "../../../../../public/assests/administration/officeStaff/9.jpeg";
@@ -73,7 +73,7 @@ const officeStaff = () => {
                 </h3>
               </div>
               {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800">
 
@@ -82,9 +82,9 @@ const officeStaff = () => {
                     <h3 className="text-2xl font-bold leading-none lg:text-5xl text-center py-4 md:my-2 lg:py-0">অফিস সহকারী</h3>
 
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full  gap-x-3 gap-y-12 ">
+                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full  gap-x-3 gap-y-3 md:gap-y-5 lg:gap-y-10 px-4 md:px-1 lg:px-0 my-5 md:my-0 lg:my-0">
                     {staffs.map(items => (
-                      <div key={items.Name} className="border rounded w-full py-5">
+                      <div key={items.Name} className="border rounded w-full py-5 shadow-md">
                         <Image src={items.img} className="object-cover h-[230px] w-[300px] mx-auto mb-4 bg-center rounded px-3" alt="img" />
                         <div className="flex flex-col items-center">
                           <h4 className="text-xl font-semibold">{items.Name}</h4>

@@ -1,4 +1,4 @@
-import { Divider } from "antd";
+ 
 import SchoolSidebar from "@/components/shared/Corner/SchoolSidebar/SchoolSidebar";
 import SchoolAdmissionForm from "@/components/shared/Admission/SchoolAdmissionForm/SchoolAdmissionForm";
 
@@ -18,7 +18,7 @@ const schoolAdmissionForm = () => {
                                 </h3>
                             </div>
                             {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
                             <SchoolAdmissionForm />
                         </div>
                     </div>

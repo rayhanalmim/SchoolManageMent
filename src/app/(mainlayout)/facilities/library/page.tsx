@@ -1,4 +1,4 @@
-import { Divider } from "antd";
+ 
 import FacilitiesSidebar from "@/components/shared/FacilitiesSidebar/FacilitiesSidebar";
 import Image from "next/image";
 import libraryimg from "../../../../../public/assests/facilities/library.jpg";
@@ -6,9 +6,9 @@ import libraryimg from "../../../../../public/assests/facilities/library.jpg";
 const library = () => {
   return (
     <>
-      <section className=" bg-gray-100  lg:py-12 text-gray-800">
+      <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
-          <div className="py-5 lg:pr-5">
+          <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
             <FacilitiesSidebar />
           </div>
           <div className="grid w-full ">
@@ -19,10 +19,10 @@ const library = () => {
                 </h3>
               </div>
               {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 flex flex-col items-center ">
-                <p className="text-xl text-justify"> বই হচ্ছে জ্ঞানের ভান্ডার তাই প্রতিটি স্কুলে গ্রন্থাগার হচ্ছে জ্ঞান ভান্ডারের একটি স্থান বা উৎস। প্রতিটি স্কুলে লাইব্রেরী থাকা একান্ত প্রয়োজন। বিভিন্ন গল্পের বই, উপন্যাস, কবিতা, মনীষীদের জীবনি, ম্যাগাজিন, সাহিত্য, ধর্মীয় বই ইত্যাদি স্কুলের গ্রন্থাগারে থাকা আবশ্যক। স্কুলে লাইব্রেরী প্রতিটি শিক্ষার্থীকে জ্ঞান আহরণের জন্য নতুন আলোড়ন সৃষ্টি করতে পারে। স্কুল লাইব্রেরী থেকে যেভাবে শিক্ষার জ্ঞান আহরণ করা যায়, তেমনি শিক্ষার্থীরাও জ্ঞান আহরণের জন্য স্কুল লাইব্রেরীতে বিশেষ সময়ে যেতে পারে। <br/><br/>
+                <p className="lg:text-xl text-justify"> বই হচ্ছে জ্ঞানের ভান্ডার তাই প্রতিটি স্কুলে গ্রন্থাগার হচ্ছে জ্ঞান ভান্ডারের একটি স্থান বা উৎস। প্রতিটি স্কুলে লাইব্রেরী থাকা একান্ত প্রয়োজন। বিভিন্ন গল্পের বই, উপন্যাস, কবিতা, মনীষীদের জীবনি, ম্যাগাজিন, সাহিত্য, ধর্মীয় বই ইত্যাদি স্কুলের গ্রন্থাগারে থাকা আবশ্যক। স্কুলে লাইব্রেরী প্রতিটি শিক্ষার্থীকে জ্ঞান আহরণের জন্য নতুন আলোড়ন সৃষ্টি করতে পারে। স্কুল লাইব্রেরী থেকে যেভাবে শিক্ষার জ্ঞান আহরণ করা যায়, তেমনি শিক্ষার্থীরাও জ্ঞান আহরণের জন্য স্কুল লাইব্রেরীতে বিশেষ সময়ে যেতে পারে। <br/><br/>
 
 বই পড়ার মাধ্যমে, তারা নিজেদেরকে নতুন জিনিস, নতুন তথ্য, সমস্যার সমাধান করার নতুন উপায় অর্জনের মাধ্যমগুলো খুজে পায়। আমরা নিয়মিতভাবে লাইব্রেরি ব্যবহার করার জন্য আমাদের ছাত্র/ছাত্রীদের অনুপ্রাণিত করি এবং সপ্তাহে অন্তত একবার লাইব্রেরি পরিদর্শন করাই। </p>
 

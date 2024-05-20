@@ -1,5 +1,5 @@
 import PrincipleSidebar from "@/components/shared/Corner/PrincipleSidebar/PrincipleSidebar";
-import { Divider } from "antd";
+ 
 import Image from "next/image";
 import award from "../../../../../../public/assests/teacher/achievement3.jpg";
 import award1 from "../../../../../../public/assests/teacher/achievement1.jpeg";
@@ -22,7 +22,7 @@ const principleAchievement = () => {
                 </h3>
               </div>
               {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
               <div className="lg:w-auto border rounded p-4 bg-white ">
                 <section className="p-0 lg:p-2  text-gray-800 ">
                   <div className="container mx-auto space-y-8">

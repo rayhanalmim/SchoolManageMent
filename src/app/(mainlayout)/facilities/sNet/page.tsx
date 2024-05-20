@@ -1,6 +1,6 @@
 
 import FacilitiesSidebar from "@/components/shared/FacilitiesSidebar/FacilitiesSidebar";
-import { Divider } from "antd";
+ 
 import Image from "next/image";
 import s_net from "../../../../../public/assests/facilities/s-net.jpg";
 
@@ -8,9 +8,9 @@ const sNet = () => {
     return (
         <>
 
-            <section className=" bg-gray-100  lg:py-12 text-gray-800">
-                <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
-                    <div className="py-5 lg:pr-5">
+            <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
+        <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
+          <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
                         <FacilitiesSidebar />
                     </div>
                     <div className="grid w-full ">
@@ -21,10 +21,10 @@ const sNet = () => {
                                 </h3>
                             </div>
                             {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
                             <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 flex flex-col items-center ">
-                                <p className="text-xl text-justify">শিক্ষার্থীর পাঠোন্নতির লক্ষে গঠিত তদারকী কমিটি S-Net কতিপয় সচেতন ও দ্বায়িত্বশীল শিক্ষকের সমন্বয়ে গঠিত। শিক্ষার্থীর পাঠ প্রস্তুতি কার্যকর করতে শিক্ষাথী-শিক্ষক ও অভিভাবকের নৈকট্য সৃষ্টি ও এর কার্যপরিধির অন্তর্গত।
+                                <p className="lg:text-xl text-justify">শিক্ষার্থীর পাঠোন্নতির লক্ষে গঠিত তদারকী কমিটি S-Net কতিপয় সচেতন ও দ্বায়িত্বশীল শিক্ষকের সমন্বয়ে গঠিত। শিক্ষার্থীর পাঠ প্রস্তুতি কার্যকর করতে শিক্ষাথী-শিক্ষক ও অভিভাবকের নৈকট্য সৃষ্টি ও এর কার্যপরিধির অন্তর্গত।
 
                                     অনলাইন, অফলাইনসহ যেকোন উপায়ে শিক্ষার্থীকে পাঠে আগ্রহী করতে বদ্ধপরিকর। জাবাবদিহিতা মূলক শ্রেণিশিক্ষক সহায়ক কমিটি।</p>
 

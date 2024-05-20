@@ -1,5 +1,5 @@
 import AdministrationSidebar from "@/components/shared/Administration/AdministrationSidebar/AdministrationSidebar";
-import { Divider } from "antd";
+ 
 import teacher from "../../../../../public/assests/20112319132256.jpg";
 import Image from "next/image";
 
@@ -19,7 +19,7 @@ const message = () => {
                 </h3>
               </div>
               {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 items-center ">
                 <div className=" p-4  text-gray-800 flex flex-col items-center content-center">
@@ -44,10 +44,10 @@ const message = () => {
                   </div>
                 </div>
                 {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
                 <div className=" p-4  text-gray-800 flex flex-col items-center content-center">
-                  <h2 className="text-4xl font-bold">প্রধান শিক্ষকের বার্তা</h2>
+                  <h2 className="text-2xl md:text-4xl lg:text-4xl font-bold">প্রধান শিক্ষকের বার্তা</h2>
                   <div className="space-y-4 flex flex-col items-center content-center">
 
                     <Image

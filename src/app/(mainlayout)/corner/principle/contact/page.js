@@ -1,5 +1,5 @@
 import PrincipleSidebar from "@/components/shared/Corner/PrincipleSidebar/PrincipleSidebar";
-import { Divider } from "antd";
+ 
 import Image from "next/image";
 import email from "../../../../../../public/assests/teacher/email.png";
 import contact from "../../../../../../public/assests/teacher/contact-book.png";
@@ -22,7 +22,7 @@ const principle = () => {
                 </h3>
               </div>
               {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
               <div className="lg:w-auto border rounded p-4 bg-white">
                 <section className="p-0 lg:p-2 text-gray-800">
                   <div className="container mx-auto space-y-8">
@@ -43,7 +43,7 @@ const principle = () => {
                               </p>
                             </div>
                           </div>
-                          <Divider type="vertical" className="h-16 bg-gray-400 w-[2px]"/>
+                          <div className="w-auto border-t md:border-l lg:border-l mx-2 lg:h-32 bg-gray-500"></div>
 
                           {/* second */}
                           <div className="lg:px-2 py-6 lg:pt-7 space-y-2 lg:space-y-2">
@@ -59,7 +59,7 @@ const principle = () => {
                               </p>
                             </div>
                           </div>
-                          <Divider type="vertical" className="h-16 bg-gray-400 w-[2px]"/>
+                          <div className="w-auto border-t md:border-l lg:border-l mx-2 lg:h-32 bg-gray-500"></div>
 
                           {/* third */}
                           <div className="lg:px-2 py-6 lg:pt-7 space-y-2 lg:space-y-2">

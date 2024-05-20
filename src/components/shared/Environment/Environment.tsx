@@ -21,41 +21,6 @@ const Environment = () => {
                 <button className="bg-blue-950 px-5 lg:py-3 text-white">Explore</button>
             </div>
 
-
-
-            {/* <div className="w-auto lg:mr-10">
-                <div>
-                    <Image src={envir5} className="h-auto w-auto -ml-[230px] mt-[100px]" alt="this is img" />
-                </div>
-                <div>
-                    <Image src={envir6} className="h-auto w-auto -mt-[150px] ml-[25px]" alt="this is img" />
-                </div>
-                <div className="-mt-[100px]">
-                    <div>
-                        <div className='bg-blue-500 h-[140px] w-[140px] rotate-45 rounded-xl -ml-[140px] mt-[64px]'></div>
-                        <Image src={envir4} className="h-auto w-auto rotate-45 rounded-xl -ml-[139px] -mt-[125px]" alt="this is img" />
-                    </div>
-                    <div>
-                        <div className='bg-blue-950 h-[290px] w-[290px] rotate-45 rounded-xl ml-[32px] -mt-[100px]'></div>
-                        <Image src={envir1} className="h-auto w-auto rotate-45 rounded-xl  -mt-[290px]" alt="this is img" />
-                    </div>
-                    <div>
-                        <div className='bg-green-600 h-[190px] w-[190px] rotate-45 rounded-xl -ml-[270px] -mt-[180px]'></div>
-                        <Image src={envir3} className="h-auto w-auto rotate-45 rounded-xl -ml-[250px] -mt-[190px]" alt="this is img" />
-                    </div>
-                    <div>
-                        <div className='bg-[#27b8a7] h-[225px] w-[225px] rotate-45 rounded-xl -ml-[120px] -mt-[3px]'></div>
-                        <Image src={envir2} className="h-auto w-auto rotate-45 rounded-xl -ml-[120px] -mt-[249px]" alt="this is img" />
-                    </div>
-                </div>               
-                <div>
-                    <Image src={envir7} className="h-auto w-auto -ml-[250px] -mt-[150px]" alt="this is img" />
-                </div>
-                <div>
-                    <Image src={envir8} className="h-auto w-auto ml-[160px] -mt-[40px]" alt="this is img" />
-                </div>
-            </div> */}
-
              <div className="w-auto md:mr-14 lg:mr-14">
                 <div>
                     <Image src={envir5} className="h-auto w-auto ml-10 md:-ml-[230px] lg:-ml-[230px] mt-[50px] md:mt-[150px] lg:mt-[100px]" alt="this is img" />
@@ -63,26 +28,29 @@ const Environment = () => {
                 <div>
                     <Image src={envir6} className="h-auto w-auto -mt-[40px] md:-mt-[150px] lg:-mt-[150px] ml-[220px] md:ml-[25px] lg:ml-[25px]" alt="this is img" />
                 </div>
+
+                {/* -------------Main Images----------------- */}
                 <div className="md:-mt-[100px] lg:-mt-[100px] flex flex-col">
-                
                     <div>
                         <div className='bg-blue-500 md:h-[140px] lg:h-[140px] md:w-[140px] lg:w-[140px] rotate-45 rounded-xl lg:-ml-[140px] lg:mt-[64px]'></div>
-                        <Image src={envir4} className="h-[200px] md:h-auto lg:h-auto w-auto rotate-45 rounded-xl ml-14 md:-ml-[139px] lg:-ml-[139px] md:-mt-[125px] lg:-mt-[125px] " alt="this is img" />
+                        <Image src={envir4} className="h-[160px] sm:h-[200px] md:h-auto lg:h-auto w-auto rotate-45 rounded-xl ml-10 sm:ml-14 md:-ml-[139px] lg:-ml-[139px] md:-mt-[125px] lg:-mt-[125px] " alt="this is img" />
                     </div>
                     <div>
-                        <div className='bg-blue-950  md:h-[290px] lg:h-[290px] md:w-[290px] lg:w-[290px] rotate-45 rounded-xl md:ml-[32px] lg:ml-[32px] md:-mt-[100px] lg:-mt-[100px]'></div>
-                        <Image src={envir1} className="h-[200px] md:h-auto lg:h-auto w-auto rotate-45 rounded-xl  ml-14 md:-mt-[290px] lg:-mt-[290px]" alt="this is img" />
+                        <div className='bg-blue-950 md:h-[290px] lg:h-[290px] md:w-[290px] lg:w-[290px] rotate-45 rounded-xl md:ml-[32px] lg:ml-[32px] md:-mt-[100px] lg:-mt-[100px]'></div>
+                        <Image src={envir1} className="h-[160px] sm:h-[200px] md:h-auto lg:h-auto w-auto rotate-45 rounded-xl  ml-[50px] md:ml-0 lg:ml-0 md:-mt-[290px] lg:-mt-[290px]" alt="this is img" />
                     </div>
                     <div>
                         <div className='bg-green-600 lg:h-[190px] lg:w-[190px] rotate-45 rounded-xl lg:-ml-[270px] lg:-mt-[180px]'></div>
-                        <Image src={envir3} className="h-[200px] lg:h-auto w-auto rotate-45 rounded-xl lg:-ml-[250px] ml-14 lg:-mt-[190px]" alt="this is img" />
+                        <Image src={envir3} className="h-[160px] sm:h-[200px] lg:h-auto w-auto rotate-45 rounded-xl lg:-ml-[250px] ml-10 sm:ml-14 lg:-mt-[190px]" alt="this is img" />
                     </div>
                     <div>
                         <div className='bg-[#27b8a7] lg:h-[225px] lg:w-[225px] rotate-45 rounded-xl lg:-ml-[120px] lg:-mt-[3px]'></div>
-                        <Image src={envir2} className="h-[200px] lg:h-auto w-auto rotate-45 rounded-xl lg:-ml-[120px] ml-14 lg:-mt-[249px]" alt="this is img" />
+                        <Image src={envir2} className="h-[160px] sm:h-[200px] lg:h-auto w-auto rotate-45 rounded-xl lg:-ml-[120px] ml-10 sm:ml-14 lg:-mt-[249px]" alt="this is img" />
                     </div>
                 </div>  
-                             {/* --------------- */}
+                {/* ------------------------------ */}
+
+
                 <div>
                     <Image src={envir7} className="h-auto w-auto ml-10 md:ml-0 lg:-ml-[250px] lg:-mt-[150px]" alt="this is img" />
                 </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Divider } from "antd";
+ 
 
 const slides = [
   {
@@ -52,43 +52,46 @@ const AboutCarousel = () => {
 
   return (
     <div className="relative lg:mx-28 ">
-      <h2 className="text-2xl font-bold pb-5 text-center">আমাদের ইতিহাস</h2>
+      <h2 className="text-xl md:text-2xl lg:text-2xl font-bold pb-5 text-center">আমাদের ইতিহাস</h2>
       <div className="carousel mb-20 h-[260px] lg:h-52 text-left ">
         <div
           className={`slide ${
             currentIndex === 0 || currentIndex === 1 ? "block" : "hidden"
           } space-y-2`}
         >
-          <h2 className="text-2xl font-bold">{slides[0].title}</h2>
-          <p>{slides[0].content}</p>
+          <h2 className="text-xl md:text-2xl lg:text-2xl font-bold">{slides[0].title}</h2>
+          <p className="text-sm md:text-base lg:text-base">{slides[0].content}</p>
+          {/* <Divider /> */}
           {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
-          <h2 className="text-2xl font-bold">{slides[1].title}</h2>
-          <p>{slides[1].content}</p>
+          <div className="w-full  border-t border-gray-300 h-[.5px] my-6"></div>
+          <h2 className="text-xl md:text-2xl lg:text-2xl font-bold">{slides[1].title}</h2>
+          <p className="text-sm md:text-base lg:text-base">{slides[1].content}</p>
         </div>
         <div
           className={`slide ${
             currentIndex === 2 || currentIndex === 3 ? "block" : "hidden"
           } space-y-2`}
         >
-          <h2 className="text-2xl font-bold">{slides[2].title}</h2>
-          <p>{slides[2].content}</p>
+          <h2 className="text-xl md:text-2xl lg:text-2xl font-bold">{slides[2].title}</h2>
+          <p className="text-sm md:text-base lg:text-base">{slides[2].content}</p>
+          {/* <Divider /> */}
           {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
-          <h2 className="text-2xl font-bold">{slides[3].title}</h2>
-          <p>{slides[3].content}</p>
+          <div className="w-full  border-t border-gray-300 h-[.5px] my-6"></div>
+          <h2 className="text-xl md:text-2xl lg:text-2xl font-bold">{slides[3].title}</h2>
+          <p className="text-sm md:text-base lg:text-base">{slides[3].content}</p> 
         </div>
         <div
           className={`slide ${
             currentIndex === 4 || currentIndex === 5 ? "block" : "hidden"
           } space-y-2`}
         >
-          <h2 className="text-2xl font-bold">{slides[4].title}</h2>
-          <p>{slides[4].content}</p>
+          <h2 className="text-xl md:text-2xl lg:text-2xl font-bold">{slides[4].title}</h2>
+          <p className="text-sm md:text-base lg:text-base">{slides[4].content}</p>
+          {/* <Divider /> */}
           {/* Divider  */}
-              <div className="w-full border-t border my-3"></div>
-          <h2 className="text-2xl font-bold">{slides[5].title}</h2>
-          <p>{slides[5].content}</p>
+          <div className="w-full  border-t border-gray-300 h-[.5px] my-6"></div>
+          <h2 className="text-xl md:text-2xl lg:text-2xl font-bold">{slides[5].title}</h2>
+          <p className="text-sm md:text-base lg:text-base">{slides[5].content}</p>
         </div>
       </div>
 
