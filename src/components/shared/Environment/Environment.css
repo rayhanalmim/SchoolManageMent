@@ -1,0 +1,24 @@
+
+
+
+
+@media only screen and (max-width:500px){
+  .imgResponsive{
+    margin-left:120px;
+  }
+}    
+@media only screen and (max-width:375px){
+  .imgResponsive{
+    margin-left:60px;
+  }
+}    
+
+@media only screen and (max-width:275px){
+    .imgResponsive{
+        width:150px !important;
+        height:150px !important ;
+    }
+    .smallImg{
+        display: none !important;
+    }
+}    

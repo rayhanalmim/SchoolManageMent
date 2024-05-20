@@ -15,7 +15,7 @@ const AdministrationSidebar = () => {
 						Administration 
 					</h3>
 				</div>
-				<div className="w-64 flex justify-center py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded">				
+				<div className="w-full md:w-64 flex  flex-col justify-center py-2 col-span-full md:col-span-1  md:justify-start md:items-start bg-white gap-2 rounded">				
 					<Link href={"/administration/governingBody"} className={`${currentRoute === "/administration/governingBody" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Governing Body</Link>
 					<div className="border w-full"></div>
 					<Link href={"/administration/message"} className={`${currentRoute === "/administration/message" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>
