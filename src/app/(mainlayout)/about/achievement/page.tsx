@@ -1,5 +1,5 @@
 import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
-import { Divider } from "antd";
+
 import Image from "next/image";
 import award from "../../../../../public/assests/achievment/achievement1.jpg";
 import award1 from "../../../../../public/assests/achievment/achievement3.jpg";
@@ -20,7 +20,8 @@ const achievement = () => {
                   Achievement
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
               <div className="lg:w-auto border rounded p-4 bg-white ">
                 <section className="p-0 lg:p-2  text-gray-800 ">
                   <div className="container mx-auto space-y-8 text-justify">

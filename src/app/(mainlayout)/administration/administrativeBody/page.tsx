@@ -7,7 +7,7 @@ import administrative5 from "../../../../../public/assests/administration/admini
 import administrative6 from "../../../../../public/assests/administration/administrative/26.jpeg";
 import administrative7 from "../../../../../public/assests/administration/administrative/13.jpeg";
 import Image from "next/image";
-import { Divider } from "antd";
+
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -59,7 +59,8 @@ const administrativeBody = () => {
                   Administrative Body
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800">
                 <div className="container p-4 mx-auto space-y-16 sm:p-10 ">
                   <div className="justify-center items-center content-center mx-auto max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">

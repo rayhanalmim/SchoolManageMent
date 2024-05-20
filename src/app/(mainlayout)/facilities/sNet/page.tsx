@@ -20,7 +20,8 @@ const sNet = () => {
                                     S-Net
                                 </h3>
                             </div>
-                            <Divider className="bg-gray-300" />
+                            {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
                             <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 flex flex-col items-center ">
                                 <p className="text-xl text-justify">শিক্ষার্থীর পাঠোন্নতির লক্ষে গঠিত তদারকী কমিটি S-Net কতিপয় সচেতন ও দ্বায়িত্বশীল শিক্ষকের সমন্বয়ে গঠিত। শিক্ষার্থীর পাঠ প্রস্তুতি কার্যকর করতে শিক্ষাথী-শিক্ষক ও অভিভাবকের নৈকট্য সৃষ্টি ও এর কার্যপরিধির অন্তর্গত।

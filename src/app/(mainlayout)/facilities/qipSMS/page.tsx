@@ -18,7 +18,8 @@ const qipSMS = () => {
                   QIP SMS
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 flex flex-col items-center">
                 <p className="text-2xl text-justify lg:my-10">Quick Information Provider SMS Service </p>

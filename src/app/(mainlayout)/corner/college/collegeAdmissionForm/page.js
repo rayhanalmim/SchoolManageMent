@@ -18,7 +18,8 @@ const collegeAdmissionForm = () => {
                                     College Admission Form
                                 </h3>
                             </div>
-                            <Divider className="bg-gray-300" />
+                            {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
                             <CollegeAdmissionForm />
                         </div>
                     </div>

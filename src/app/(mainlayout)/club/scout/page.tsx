@@ -24,7 +24,8 @@ const scout = () => {
                                     Scout Club
                                 </h3>
                             </div>
-                            <Divider className="bg-gray-300" />
+                            {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
                             <section className=" lg:w-auto border rounded p-4 bg-white text-gray-800">
                                 <div className="container max-w-xl px-6 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
                                     <div>
@@ -211,7 +212,8 @@ const scout = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <Divider className="bg-gray-300" />
+                                            {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
                                         </div>
                                     </section>
                                 </div>

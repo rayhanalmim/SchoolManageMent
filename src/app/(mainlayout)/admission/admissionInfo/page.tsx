@@ -17,7 +17,8 @@ const admissionInfo = () => {
                                     Admission Info
                                 </h3>
                             </div>
-                            <Divider className="bg-gray-300" />
+                            {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
                             <AdmissionInfo/>
                         </div>
                     </div>

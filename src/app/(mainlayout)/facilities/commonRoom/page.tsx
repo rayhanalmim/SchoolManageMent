@@ -18,11 +18,13 @@ const commonRoom = () => {
                   Common Room
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 flex flex-col items-center ">
               <h2 className="text-xl text-justify"> ছাত্রীদের জন্য যুগোপযোগী সব ধরনের আধুনিক সুযোগ সুবিধা। রয়েছে প্রশস্ত, পরিচ্ছন ও সমৃদ্ধ কমন রুম। সেখানে তারা বিনোদন এবং বিশ্রামের সুযোগ নিতে পারে।</h2>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
               <Image src={common_room} className="h-auto w-auto " alt="this is img" />
               </section>

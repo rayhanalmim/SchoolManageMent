@@ -20,7 +20,8 @@ const message = () => {
                   Principle Message
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
               <div className="lg:w-auto border rounded p-4 bg-white ">
                 <section className="p-0 lg:p-2  text-gray-800 text-justify">
                   <div className="container mx-auto space-y-8">

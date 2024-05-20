@@ -18,7 +18,8 @@ const message = () => {
                   Message
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 items-center ">
                 <div className=" p-4  text-gray-800 flex flex-col items-center content-center">
@@ -42,7 +43,8 @@ const message = () => {
                     </div>
                   </div>
                 </div>
-                <Divider className="bg-gray-300" />
+                {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
                 <div className=" p-4  text-gray-800 flex flex-col items-center content-center">
                   <h2 className="text-4xl font-bold">প্রধান শিক্ষকের বার্তা</h2>

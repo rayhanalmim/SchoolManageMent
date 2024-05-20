@@ -61,7 +61,8 @@ const AboutCarousel = () => {
         >
           <h2 className="text-2xl font-bold">{slides[0].title}</h2>
           <p>{slides[0].content}</p>
-          <Divider />
+          {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
           <h2 className="text-2xl font-bold">{slides[1].title}</h2>
           <p>{slides[1].content}</p>
         </div>
@@ -72,7 +73,8 @@ const AboutCarousel = () => {
         >
           <h2 className="text-2xl font-bold">{slides[2].title}</h2>
           <p>{slides[2].content}</p>
-          <Divider />
+          {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
           <h2 className="text-2xl font-bold">{slides[3].title}</h2>
           <p>{slides[3].content}</p>
         </div>
@@ -83,7 +85,8 @@ const AboutCarousel = () => {
         >
           <h2 className="text-2xl font-bold">{slides[4].title}</h2>
           <p>{slides[4].content}</p>
-          <Divider />
+          {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
           <h2 className="text-2xl font-bold">{slides[5].title}</h2>
           <p>{slides[5].content}</p>
         </div>

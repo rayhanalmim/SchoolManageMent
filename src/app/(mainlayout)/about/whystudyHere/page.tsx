@@ -26,7 +26,8 @@ const whystudyHere = () => {
                   Why Study Here
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
               <div className="lg:w-auto border rounded p-4 bg-white ">
                 <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-6 pt-5 pl-5">
                   <div>

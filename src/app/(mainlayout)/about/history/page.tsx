@@ -1,7 +1,7 @@
 import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
 import vision from "../../../../../public/assests/binoculars-white1x.png"
 import mission from "../../../../../public/assests/flag-plain-white.svg"
-import { Divider } from "antd";
+
 import Image from "next/image";
 import AboutCarousel from "@/components/shared/About/AboutCarousel/AboutCarousel";
 
@@ -88,7 +88,8 @@ const history = () => {
                   আমাদের ইতিহাস
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"/>
               <div className="lg:w-auto border rounded p-4 bg-white ">
                 <h1 className="justify-center text-center font-bold text-xl lg:text-2xl py-3 ">
                   SoftyEdu এর ইতিবৃত্ত
@@ -153,11 +154,13 @@ const history = () => {
                     <p className="lg:px-4 text-justify">To create a best-of-breed, secure, and compliant global platform that helps companies improve the value and actionability of their customer data.</p>
                   </div>
                 </div>
-                <Divider />
+                {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
                 {/* history slider section */}
                 <AboutCarousel />
-                <Divider />
+                {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
                 {/* teacher */}
                 <section className="text-gray-800">

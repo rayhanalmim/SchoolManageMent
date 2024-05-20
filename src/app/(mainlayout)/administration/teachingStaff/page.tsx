@@ -84,7 +84,8 @@ const teachingStaff = () => {
                   Teaching Staff
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
               <section className="text-gray-800 bg-white rounded border">
                 <div className="  mx-auto lg:space-y-8 p-2 lg:p-4">

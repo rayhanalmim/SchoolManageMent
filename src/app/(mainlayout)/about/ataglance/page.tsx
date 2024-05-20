@@ -3,7 +3,7 @@ import scienceimg from "../../../../../public/assests/scienceclub.jpg";
 import historyImg from "../../../../../public/assests/historyImg.jpg";
 import student from "../../../../../public/assests/student.jpg";
 import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
-import { Divider } from "antd";
+
 
 const events = [
   {
@@ -51,7 +51,8 @@ const ataglance = () => {
                   At a Glance
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
               <div className="lg:w-auto border rounded p-4 bg-white">
                 <section className="text-gray-800 pt-2">
                   <div className="container p-3 mx-auto space-y-4 ">

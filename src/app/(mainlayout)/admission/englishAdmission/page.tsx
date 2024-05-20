@@ -17,7 +17,8 @@ const englishAdmission = () => {
                   English Version Admission
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
               <section className="lg:w-auto text-gray-800 space-y-4 px-3 md:px-0 lg:px-0">
                 <EnglishVersionAdmissionForm/>
               </section>

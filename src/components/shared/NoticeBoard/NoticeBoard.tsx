@@ -105,7 +105,8 @@ const NoticeBoard = () => {
                                         <ClockIcon className="w-4 h-4" />
                                         <h1>{items.date}</h1>
                                     </div>
-                                    <Divider />
+                                    {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
                                     <p className="text-gray-700 text-justify">{items.description}</p>
                                     <div className="flex gap-2 pt-2">
                                         <button className="flex btn gap-2 content-center text-center items-center"><PrinterIcon className="w-5 h-5" />প্রিন্ট করুন</button>

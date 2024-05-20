@@ -21,7 +21,8 @@ const peachGrowingE = () => {
                                     Peach Growing Education (HWPL)
                                 </h3>
                             </div>
-                            <Divider className="bg-gray-300" />
+                            {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
                             <section className="lg:w-auto border rounded p-4 bg-white text-gray-800">
                                 <Image src={logo} className="h-[200px] w-[200px] mx-auto" alt="this is logo" />
@@ -55,7 +56,8 @@ const peachGrowingE = () => {
                                         </div>
                                     </div>
                                 </section>
-                                <Divider className="bg-gray-300" />
+                                {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
                                 <section className="py-6 dark:bg-gray-100">
                                     <h2 className="text-2xl font-bold text-center">ছবি সমূহ:</h2>
                                     <div className="container flex flex-col justify-center p-4 mx-auto">

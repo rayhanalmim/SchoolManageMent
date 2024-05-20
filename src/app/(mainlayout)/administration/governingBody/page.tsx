@@ -7,7 +7,7 @@ import governing4 from "../../../../../public/assests/administration/governingBo
 import governing5 from "../../../../../public/assests/administration/governingBody/7.png";
 import governing6 from "../../../../../public/assests/administration/governingBody/20.png";
 import Image from "next/image";
-import { Divider } from "antd";
+
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -66,7 +66,8 @@ const governingBody = () => {
                   Governing Body
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+             {/* Divider  */}
+             <div className="w-full border-t border my-3"></div>
 
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800">
                 <div className="container p-4 mx-auto space-y-16 sm:p-10 ">

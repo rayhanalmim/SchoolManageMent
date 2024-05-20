@@ -78,14 +78,16 @@ const collegeResult = () => {
                   College Result
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
               {/* submit section */}
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 px-16">
                 <div className="lg:w-full flex flex-col items-center justify-center">
                   <h2 className="text-2xl">Gives Information for Result</h2>
                 </div>
-                <Divider className="bg-gray-300" />
+                {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   <label className="form-control w-full max-w-xs">
                     <div className="label">
@@ -175,7 +177,8 @@ const collegeResult = () => {
                 <div className="lg:w-full flex flex-col items-center justify-center">
                   <h2 className="text-2xl">Mid Term Exam Result - 2024</h2>
                 </div>
-                <Divider className="bg-gray-300" />
+                {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
                 <div className="lg:w-full">
                   <table className="border-collapse border border-gray-400 lg:w-full">
                     <thead>

@@ -72,7 +72,8 @@ const officeStaff = () => {
                   Office Staff
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800">
 

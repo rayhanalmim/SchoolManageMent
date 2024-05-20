@@ -18,7 +18,8 @@ const multiMediaClass = () => {
                   Multi-Media Class
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full border-t border my-3"></div>
 
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 flex flex-col items-center ">
                 <p className="text-xl text-justify">মাল্টিমিডিয়ার মাধ্যমে শিখন ব্যবস্থা হচ্ছে সহজ, সাবলিল, আকর্ষণীয়, দীর্ঘস্থায়ী ও সহজবোধ্য। প্রতিটি বিষয়ে প্রতিটি পিরিয়ডের বিষয়বস্তু অনুযায়ী নির্ধারিত শিখন চিহ্নিত করে শিক্ষকগণ ডিজিটাল কণ্টেণ্ট প্রস্তুত করে তা প্রদর্শনের মাধ্যমে শিখনফল অর্জনে সমর্থ হচ্ছেন, যা গতানুগতিক শিখন ব্যবস্থায় ছিল সময় স্বাপেক্ষ এবং কষ্টসাধ্য। <br /><br />
