@@ -20,10 +20,10 @@ const menu = [
 		name:"Corner",
 		icon: <PiCornersInFill className="h-5 w-5"/>,
 		subMenu: [
-			{ name: "Principle Corner", href: "/dashboard/about/events"  },
-			{ name: "Student Corner", href: "/dashboard/about/events"  },
-			{ name: "School Corner", href: "/about/achievement" },
-			{ name: "College Corner", href: "/about/history" },
+			{ name: "Principle Corner", href: "/dashboard/corner/principle"  },
+			{ name: "Student Corner", href: "/dashboard/corner/sutdent"  },
+			{ name: "School Corner", href: "/dashboard/corner/school" },
+			{ name: "College Corner", href: "/dashboard/corner/college" },
 		  ]
 	},
 	{
@@ -171,7 +171,9 @@ const menu = [
 									</summary>
 									{items.subMenu.map(menu=>(
 									<ul key={menu.name} className='hover:bg-gray-200 hover:rounded-lg hover:text-black'>
-										<li><a>{menu.name}</a></li>												
+										
+											<li><Link href={menu.href}>{menu.name}</Link></li>	
+										
 									</ul>
 									))}
 								</details>
