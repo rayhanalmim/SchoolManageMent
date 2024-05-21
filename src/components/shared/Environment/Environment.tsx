@@ -18,7 +18,7 @@ const Environment = () => {
                 <p className="text-justify lg:my-10">Even slightly believable. If you are going use passage of Lorem Ipsum need desire to obtain pain of itself, because it is pain de sires many pain of itself occur for your study <br /><br />
 
                 Even slightly believable. If you are going use passage of Lorem Ipsum need desir</p>
-                <button className="bg-blue-950 px-5 lg:py-3 text-white">Explore</button>
+                <button className="bg-blue-950 px-5 lg:py-3 mt-4 md:mt-2 lg:mt-0 text-white">Explore</button>
             </div>
 
              <div className="w-auto md:mr-14 lg:mr-14">

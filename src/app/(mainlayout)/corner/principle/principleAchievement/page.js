@@ -28,29 +28,29 @@ const principleAchievement = () => {
                   <div className="container mx-auto space-y-8">
                     <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row gap-2">
 
-                      <Image src={award} className="w-[450px] h-[300px] bg-gray-500 aspect-video rounded-l" alt="" />
+                      <Image src={award} className="lg:w-[450px] lg:h-[300px] bg-gray-500 aspect-video rounded-l" alt="" />
                       <div className="flex flex-col justify-center flex-1 p-2  bg-gray-50">
-                        <span className="text-xs uppercase  text-gray-600">Join, it&apos;s free</span>
-                        <h3 className="text-3xl font-bold">We&apos;not reinventing the wheel</h3>
-                        <p className="my-6  text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
+                      <span className="text-xs   text-gray-600">5 May 2023</span>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold">We&apos;not reinventing the wheel</h3>
+                        <p className="my-6 text-sm md:text-base lg:text-base text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
 
                       </div>
                     </div>
                     <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse gap-2">
-                      <Image src={award1} className="w-[450px] h-[300px] bg-gray-500 aspect-video rounded-r" alt="" />
+                      <Image src={award1} className="lg:w-[450px] lg:h-[300px] bg-gray-500 aspect-video rounded-r" alt="" />
                       <div className="flex flex-col justify-center flex-1 p-2  bg-gray-50">
-                        <span className="text-xs uppercase  text-gray-600">Join, it&apos;s free</span>
-                        <h3 className="text-3xl font-bold">We&apos;not reinventing the wheel</h3>
-                        <p className="my-6  text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
+                      <span className="text-xs   text-gray-600">5 May 2023</span>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold">We&apos;not reinventing the wheel</h3>
+                        <p className="my-6 text-sm md:text-base lg:text-base text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
 
                       </div>
                     </div>
                     <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row gap-2">
-                      <Image src={award2} className="w-[450px] h-[300px] bg-gray-500 aspect-video rounded-l" alt="" />
+                      <Image src={award2} className="lg:w-[450px] lg:h-[300px] bg-gray-500 aspect-video rounded-l" alt="" />
                       <div className="flex flex-col justify-center flex-1 p-2  bg-gray-50">
-                        <span className="text-xs uppercase  text-gray-600">Join, it&apos;s free</span>
-                        <h3 className="text-3xl font-bold">We&apos;not reinventing the wheel</h3>
-                        <p className="my-6  text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
+                        <span className="text-xs   text-gray-600">5 May 2023</span>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold">We&apos;not reinventing the wheel</h3>
+                        <p className="my-6 text-sm md:text-base lg:text-base text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam possimus quas, error esse quos.</p>
                       </div>
                     </div>
                   </div>

@@ -153,12 +153,12 @@ const Footer = () => {
         <div className="grid justify-center pt-6 lg:justify-between border-t border-gray-900/10">
           <div className="lg:flex lg:gap-4 items-center">
             <span className="mb-2 lg:mb-0">&copy; {new Date().getFullYear()} SoftEdu. All rights reserved.</span>
-            <a rel="noopener noreferrer" href="#">
+            <Link href="#" className="lg:flex text-center">
               <span>Privacy policy</span>
-            </a>
-            <a rel="noopener noreferrer" href="#">
+            </Link>
+            <Link href="#" className="text-center">
               <span>Terms of service</span>
-            </a>
+            </Link>
           </div>
           <div className="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
             <Link rel="noopener noreferrer" href="#" title="Facebook" className="flex items-center p-1">
