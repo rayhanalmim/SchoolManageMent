@@ -3,29 +3,29 @@ import React from 'react';
 import { useState } from "react";
 import Link from 'next/link';
 import { FaPlay } from "react-icons/fa";
-import campus1 from "../../../../public/assests/campus-3.jpg"
-import campus2 from "../../../../public/assests/student.jpg"
-import campus3 from "../../../../public/assests/campus-1.jpg"
-import campus4 from "../../../../public/assests/campus-2.jpg"
+import campus1 from "../../../../public/assests/doctorsCare/campus/2.jpg";
+import campus2 from "../../../../public/assests/doctorsCare/campus/4.jpg"
+import campus3 from "../../../../public/assests/doctorsCare/campus/3.jpg"
+import campus4 from "../../../../public/assests/doctorsCare/campus/price.jpg"
+// import campus1 from "../../../../public/assests/campus-3.jpg"
+// import campus2 from "../../../../public/assests/student.jpg"
+// import campus3 from "../../../../public/assests/campus-1.jpg" 
+// import campus4 from "../../../../public/assests/campus-2.jpg"
 import Image from 'next/image';
 import { FaFileImage } from "react-icons/fa6";
 
 const slides = [
     {
-        img: campus1
-
+      img: campus1
     },
     {
-        img: campus2
-
+      img: campus2
     },
     {
-        img: campus3
-
+      img: campus3
     },
     {
-        img: campus4
-
+      img: campus4
     }
 ];
 

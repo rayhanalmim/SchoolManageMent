@@ -1,35 +1,42 @@
 import Image from "next/image";
-import scienceimg from "../../../../../public/assests/scienceclub.jpg";
-import historyImg from "../../../../../public/assests/historyImg.jpg";
-import student from "../../../../../public/assests/student.jpg";
+import atAGlance1 from "../../../../../public/assests/doctorsCare/ataglance/class.jpg";
+import atAGlance2 from "../../../../../public/assests/doctorsCare/ataglance/2ndterm.jpg";
+import atAGlance3 from "../../../../../public/assests/doctorsCare/ataglance/exam.jpg";
+import atAGlance4 from "../../../../../public/assests/doctorsCare/ataglance/price.jpg";
+import atAGlance5 from "../../../../../public/assests/doctorsCare/ataglance/price2.jpg";
+import atAGlance6 from "../../../../../public/assests/doctorsCare/ataglance/result.jpg";
+// import scienceimg from "../../../../../public/assests/scienceclub.jpg";
+// import historyImg from "../../../../../public/assests/historyImg.jpg";
+// import student from "../../../../../public/assests/student.jpg";
 import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
  
 
 const events = [
   {
-    Name: "Science Contest",
+    Name: "Class",
     // description: "Te nulla oportere reprimique his dolorum",
-    img: student,
+    // img: student,
+    img: atAGlance1,
   }, {
-    Name: "Olompiad",
+    Name: "2nd Terms Exam",
     // description: "Te nulla oportere reprimique his dolorum",
-    img: scienceimg,
+    img: atAGlance2,
   }, {
-    Name: "School Fest",
+    Name: "Final Exam",
     // description: "Te nulla oportere reprimique his dolorum",
-    img: historyImg,
+    img: atAGlance3,
   }, {
-    Name: "Quiz Text",
+    Name: "Prize",
     // description: "Te nulla oportere reprimique his dolorum",
-    img: student,
+    img: atAGlance4,
   }, {
-    Name: "Sports",
+    Name: "Best Result",
     // description: "Te nulla oportere reprimique his dolorum",
-    img: scienceimg,
+    img: atAGlance5,
   }, {
-    Name: "School Tour",
+    Name: "Annual Exam Result",
     // description: "Te nulla oportere reprimique his dolorum",
-    img: historyImg,
+    img: atAGlance6,
   },
 
 ]

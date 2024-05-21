@@ -16,7 +16,7 @@ const ParallaxSec = () => {
         </Background>
 
         <div className="h-[700px] md:h-[400px] lg:h-[500px] lg:w-[1260px] ">
-          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-80"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
           <div className="w-full lg:w-auto p-10 lg:p-0 absolute top-1/2 left-1/2 lg:transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
             <div className="lg:mx-full space-y-3 mb-3">
               <h2 className="text-[23px] lg:text-4xl font-bold ">

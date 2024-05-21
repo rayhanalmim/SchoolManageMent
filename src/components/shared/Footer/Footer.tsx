@@ -49,16 +49,16 @@ const Footer = () => {
             <div className="space-y-4 flex flex-col items-center md:items-start lg:items-start justify-between">
               <div className="text-center md:text-left">
                 <Link href={"/"}>
-                  <h2 className="font-bold text-2xl">SoftEdu</h2>
+                  <h2 className="font-bold text-2xl">Doctors Care Model School </h2>
                 </Link>
                 <p className="mt-2 text-sm leading-6 text-gray-600">
-                  A School of Modern and Stardard Education System with religious value.
+                  A School of Modern and Stardard Education System with Religious Value.
                 </p>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPinIcon className="h-5 w56 text-gray-600" />
                 <p className="text-sm leading-6 text-gray-600">
-                  1234 North Avenue,Dhaka.
+                  খিরাতলা, সিঙ্গারবিল, বিজয়নগর, ব্রাহ্মমবাড়িয়া.
                 </p>
               </div>
               <div className="flex items-center space-x-2">

@@ -1,7 +1,9 @@
 import FacilitiesSidebar from "@/components/shared/FacilitiesSidebar/FacilitiesSidebar";
  
 import Image from "next/image";
-import schoolbus from "../../../../../public/assests/facilities/schoolbus2.jpg";
+import schoolbus1 from "../../../../../public/assests/doctorsCare/riding/1.jpg";
+import schoolbus2 from "../../../../../public/assests/doctorsCare/riding/2.jpg";
+// import schoolbus from "../../../../../public/assests/facilities/schoolbus2.jpg";
 
 const rideService = () => {
   return (
@@ -21,9 +23,10 @@ const rideService = () => {
               {/* Divider  */}
               <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
-              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 flex flex-col items-center">
+              <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 lg:flex items-center gap-5">
                 
-                  <Image src={schoolbus} className="h-auto w-auto mt-5 " alt="" />
+                  <Image src={schoolbus1} className="h-auto w-[450px] mt-5 " alt="" />
+                  <Image src={schoolbus2} className="h-auto w-[450px] mt-5 " alt="" />
               </section>
             </div>
           </div>
