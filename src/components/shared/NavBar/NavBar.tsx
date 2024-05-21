@@ -36,7 +36,7 @@ const NavBar = () => {
         </Container>
       </header>
       <Container>
-        <nav>
+        <nav className="lg:block hidden">
           <ul className="navList space-x-6  ">
             <li>Home</li>
             <li>Administration</li>

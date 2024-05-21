@@ -3,11 +3,12 @@ import "./WhyChoose.css";
 import Container from "../../Container/Container";
 import hero from "../../../../assets/images/hero6.png";
 import hero2 from "../../../../assets/images/hero4.png";
-import hero3 from "../../../../assets/images/hero7.png";
+import hero3 from "../../../../assets/images/Quoran.png";
 import hero4 from "../../../../assets/images/classroom.png";
 import hero5 from "../../../../assets/images/hero5.png";
 import hero6 from "../../../../assets/images/idea.png";
 import Image from "next/image";
+
 const WhyChoose = () => {
   const chooseData = [
     {
@@ -24,8 +25,8 @@ const WhyChoose = () => {
 
     {
       id: 1,
-      title: "অভিজ্ঞ শিক্ষক মহোদয়",
-      text: " আমাদের রয়েছে একঝাক তরুন মেধাবী এবং বিশেষ ভাবে প্রশিক্ষনপ্রাপ্ত অভিজ্ঞ শিক্ষক মন্ডলী।",
+      title: " নুরানী , নাজেরা ও হিফ্জ",
+      text: "হিফ্জ এর পাশাপাশি  রয়েছে বাংলা, ইংরেজি এবং জেনারেল ক্লাসের সুবিদা। ",
     },
 
     {
@@ -50,7 +51,7 @@ const WhyChoose = () => {
   return (
     <Container>
       <h1 className="text-3xl font-semibold ">কেন আমাদের স্কুলে আসবেন?</h1>
-      <div className="grid grid-cols-3 gap-10 place-items-center ">
+      <div className="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 gap-10 place-items-center ">
         {chooseData.map((data, i) => (
           <div key={data.id}>
             <div className="chooseCard flex justify-between mt-16">

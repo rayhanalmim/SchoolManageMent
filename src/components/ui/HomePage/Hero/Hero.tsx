@@ -36,7 +36,7 @@ const Hero = () => {
   return (
     <div className="heroSectionWrap">
       <Container>
-        <div className="grid grid-cols-4 gap-10 ">
+        <div className="grid grid-cols-1  xl:grid-cols-4 md:grid-cols-2 gap-10 ">
           {heroData.map((data, i) => (
             <div key={data.id}>
               <div

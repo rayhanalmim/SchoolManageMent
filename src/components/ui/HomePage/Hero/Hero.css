@@ -27,3 +27,11 @@
   margin-top: -70px;
   z-index: 99;
 }
+
+
+@media only screen and (max-width:1068px){
+  .heroCard {
+    width: 100%;
+    margin-top:20px;
+}
+}
