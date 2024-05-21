@@ -13,7 +13,7 @@ const corners = [
     id: 1,
     name: "Principle Corner",
     icon: principle,
-    link: "/corner/principle/message"
+    link: "/corner/principle/bio"
   },
   {
     id: 5,
