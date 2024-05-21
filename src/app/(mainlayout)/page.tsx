@@ -8,6 +8,7 @@ import SeeImgandVideos from "@/components/shared/SeeImgandVideos/SeeImgandVideos
 import OnlineApplication from "@/components/shared/OnlineApplication/OnlineApplication";
 import Environment from "@/components/shared/Environment/Environment";
 import Overview from "@/components/shared/Overview/Overview";
+import { Button } from "@mui/material";
 // import History from "@/components/shared/History/History";
 // import Address from "@/components/shared/Address/Address";
 // import Teacher from "@/components/shared/Teacher/Teacher";
@@ -18,16 +19,17 @@ export default function Home() {
       <Slider />
       <NotificationSlider />
       <Corner />
+
       <EventNotice />
-      <Environment/>
+      <Environment />
       <ParallaxSec />
-      <SchoolFeatures/>
-      <SeeImgandVideos/>
-      <Overview/>
-      <OnlineApplication/>
+      <SchoolFeatures />
+      <SeeImgandVideos />
+      <Overview />
+      <OnlineApplication />
       {/* <Address/> */}
       {/* <History/> */}
-      {/* <Teacher /> */}   
+      {/* <Teacher /> */}
     </main>
   );
 }
