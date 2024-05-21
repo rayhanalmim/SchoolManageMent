@@ -3,29 +3,29 @@ import contactimg from "../../../../public/assests/contact/contactus.jpg";
 import contactIcon from "../../../../public/assests/contact/telephone.png";
 import emailIcon from "../../../../public/assests/contact/email.png";
 import locationIcon from "../../../../public/assests/contact/location.png";
-import { Divider } from "antd";
+ 
 const contact = () => {
   return (
     <>
 
-      <div className="lg:w-[1260px] lg:mx-auto items-center justify-center content-center pt-16">
+      <div className="lg:w-[1260px] items-center justify-center content-center pt-16 mx-2 md:mx-0 lg:mx-auto">
 
         {/* email */}
-        <div className="w-64 mx-auto py-10">
+        <div className="w-64 mx-auto py-6 md:py-8 lg:py-10">
 
           <h3 className="text-xl font-semibold border-y-4 text-center py-3">
             Send Us a Email
           </h3>
         </div>
 
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 mx-auto rounded-lg md:grid-cols-2 px-8 md:px-12 lg:px-16 py-16 xl:px-32  text-gray-800 border-[1px] shadow-md">
-          <div className="flex flex-col justify-between">
+        <div className="grid lg:max-w-screen-xl grid-cols-1 lg:gap-5 mx-auto rounded-lg md:grid-cols-2 px-1 md:px-8 lg:px-10 py-1 md:py-5 lg:py-5  text-gray-800 border-[1px] shadow-md justify-center ">
+         
             <Image
               src={contactimg}
-              className="h-[500px] w-auto"
+              className="lg:h-[500px] w-auto"
               alt="this is img"
             />
-          </div>
+         
           <form className="space-y-6">
             <div>
               <label className="text-sm">Full name</label>
@@ -85,6 +85,8 @@ const contact = () => {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+
+
         {/* address */}
         <div>
           <div className="lg:w-[1260px] lg:mx-auto  lg:my-5 ">
@@ -93,9 +95,9 @@ const contact = () => {
                 Our Address
               </h3>
             </div>
-            <div className="flex lg:gap-5 justify-between lg:px-8 items-center content-center text-center  mb-5 lg:mb-0 space-y-4 lg:space-y-4 border border-gray-300 rounded-md shadow-md">
+            <div className="lg:flex lg:gap-5 justify-between lg:px-8 items-center content-center text-center  mb-5 lg:mb-0 space-y-4 lg:space-y-4 border border-gray-300 rounded-md shadow-md">
               {/* first */}
-              <div className=" lg:px-10 py-6 lg:pt-7  space-y-2 lg:space-y-2 ">
+              <div className=" lg:px-10 py-6 lg:pt-4  space-y-2 lg:space-y-2 ">
                 <div className="flex content-center items-center justify-center text-center">
                   <Image src={locationIcon} className="w-10 h-10 " alt=""/>                  
                 </div>
@@ -110,9 +112,10 @@ const contact = () => {
                 </div>
 
               </div>
-              <Divider type="vertical" className=" h-16 bg-gray-400 w-[2px] " />
+              <div className="w-auto border-t md:border-l lg:border-l mx-2 lg:h-32 bg-gray-500"></div>
+              {/* <Divider type="vertical" className=" " /> */}
               {/* second */}
-              <div className="lg:px-10 py-6 lg:pt-7    space-y-2 lg:space-y-2">
+              <div className="lg:px-10 py-6 lg:pt-4 space-y-2 lg:space-y-2">
                 <div className="flex content-center items-center justify-center text-center">
                 <Image src={contactIcon} className="w-10 h-10 " alt=""/>                  
                 </div>
@@ -126,9 +129,9 @@ const contact = () => {
                   </p>
                 </div>
               </div>
-              <Divider type="vertical" className=" h-16 bg-gray-400 w-[2px] " />
+              <div className="w-auto border-t md:border-l lg:border-l mx-2 lg:h-32 bg-gray-500"></div>
               {/* third */}
-              <div className="lg:px-10 py-6 lg:pt-7 space-y-2 lg:space-y-2">
+              <div className="lg:px-10 py-6 lg:pt-4 space-y-2 lg:space-y-2">
                 <div className="flex content-center items-center justify-center text-center">
                 <Image src={emailIcon} className="w-10 h-10 " alt=""/>
                 </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import { Divider } from "antd";
+ 
 import Image from "next/image";
 import React from "react";
 import scienceimg from "../../../../public/assests/scienceclub.jpg";
@@ -69,7 +69,17 @@ const notices = [
     text: "মৌখিক-পরীক্ষার-নোটিশ-বাংলা-মাধ্যম",
     date: "২৫ এপ্রিল ২০২৪",
     description: "প্রিয় ছাত্র-ছাত্রীবৃন্দ, আমরা এই নোটিশ জানাতে চাই যে, পরিস্কুল/পরিকলেজ পরীক্ষার তারিখ সম্পর্কে প্রাধিকৃত নির্দেশনা প্রদান করা হল। আপনারা সময় পরীক্ষার প্রস্তুতি করতে শুরু করুন এবং নির্দিষ্ট সময়ে পরীক্ষা দেতে সাজুক থাকুন। পরীক্ষার সময় এবং স্থান জানতে, প্রতিষ্ঠানের বোর্ড বা শিক্ষকের সাথে যোগাযোগ করুন।"
-  }
+  },
+  {
+    text: "মৌখিক-পরীক্ষার-নোটিশ-বাংলা-মাধ্যম",
+    date: "২৫ এপ্রিল ২০২৪",
+    description: "প্রিয় ছাত্র-ছাত্রীবৃন্দ, আমরা এই নোটিশ জানাতে চাই যে, পরিস্কুল/পরিকলেজ পরীক্ষার তারিখ সম্পর্কে প্রাধিকৃত নির্দেশনা প্রদান করা হল। আপনারা সময় পরীক্ষার প্রস্তুতি করতে শুরু করুন এবং নির্দিষ্ট সময়ে পরীক্ষা দেতে সাজুক থাকুন। পরীক্ষার সময় এবং স্থান জানতে, প্রতিষ্ঠানের বোর্ড বা শিক্ষকের সাথে যোগাযোগ করুন।"
+  },
+  {
+    text: "মৌখিক-পরীক্ষার-নোটিশ-বাংলা-মাধ্যম",
+    date: "২৫ এপ্রিল ২০২৪",
+    description: "প্রিয় ছাত্র-ছাত্রীবৃন্দ, আমরা এই নোটিশ জানাতে চাই যে, পরিস্কুল/পরিকলেজ পরীক্ষার তারিখ সম্পর্কে প্রাধিকৃত নির্দেশনা প্রদান করা হল। আপনারা সময় পরীক্ষার প্রস্তুতি করতে শুরু করুন এবং নির্দিষ্ট সময়ে পরীক্ষা দেতে সাজুক থাকুন। পরীক্ষার সময় এবং স্থান জানতে, প্রতিষ্ঠানের বোর্ড বা শিক্ষকের সাথে যোগাযোগ করুন।"
+  },
 
 ];
 
@@ -81,11 +91,13 @@ const EventNotice = () => {
         <div className="h-full w-full md:w-1/2 lg:w-[45%] bg-white rounded shadow-md p-4 border lg:flex lg:flex-col lg:flex-grow">
           <h2 className="text-xl font-semibold text-center">News & Events</h2>
           <div>
-          <Divider />
+          {/* <Divider /> */}
+          {/* Divider  */}
+          <div className="w-full  border-t border-gray-300 h-[.5px] my-3"></div>
           {news.map(items=>(
             <div className=" bg-base-100 lg:px-6" key={items.date}>
               <figure>
-                <Image src={scienceimg} className="h-[260px] w-full" alt="" />
+                <Image src={scienceimg} className="h-[150px] md:h-[200px] lg:h-[260px] w-full" alt="" />
               </figure>
 
               <div className="mt-2 space-y-[4px]">
@@ -94,14 +106,16 @@ const EventNotice = () => {
                   <h1>{items.date}</h1>
                 </div>
                 <h2 className="font-bold lg:text-2xl pt-2">{items.heading}</h2>
-                <p className="text-sm lg:text-md text-gray-400">{items.description}</p>
+                <p className="text-sm lg:text-base text-gray-400">{items.description}</p>
                 <div className="">
                   <button className="btn btn-sm bg-gray-300 p-2 rounded text-black mt-2">
                     Read More
                   </button>
                 </div>
               </div>
-              <Divider />
+              {/* <Divider /> */}
+              {/* Divider  */}
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-[13px]"></div>
             </div>
           ))}
           </div>
@@ -119,7 +133,9 @@ const EventNotice = () => {
         <div className="h-full w-full md:w-1/2 lg:w-[45%] bg-white rounded shadow-md p-4 border lg:flex lg:flex-col lg:flex-grow">
           <h2 className="text-xl font-semibold text-center">Notice Board</h2>
           <div>
-          <Divider />
+          {/* <Divider /> */}
+          {/* Divider  */}
+          <div className="w-full  border-t border-gray-300 h-[.5px] my-3"></div>
           {notices.map((items, index) => (
             <div key={index} >
 
@@ -133,7 +149,9 @@ const EventNotice = () => {
                     <ClockIcon className="w-4 h-4" />
                     <h1>{items.date}</h1>
                   </div>
-                  <Divider className="py-1"/>
+                  {/* <Divider className="py-1"/> */}
+                  {/* Divider  */}
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
                   <p className="text-gray-700 text-justify">{items.description}</p>
                   <div className="flex gap-2 pt-2">
                     <button className="flex btn gap-2 content-center text-center items-center"><PrinterIcon className="w-5 h-5" />প্রিন্ট করুন</button>
@@ -156,7 +174,9 @@ const EventNotice = () => {
                   <ClockIcon className="h-4 w-4"/>
                   <h1>{items.date}</h1>
                 </div> */}
-              <Divider />
+              {/* <Divider /> */}
+              {/* Divider  */}
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-[13px]"></div>
             </div>
           ))}
           </div>

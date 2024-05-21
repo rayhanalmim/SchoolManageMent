@@ -1,6 +1,6 @@
 import AdministrationSidebar from "@/components/shared/Administration/AdministrationSidebar/AdministrationSidebar";
 import teacher from "../../../../../public/assests/20112319132256.jpg"
-import { Divider } from "antd";
+ 
 import Image from "next/image";
 import supportingStaff1 from "../../../../../public/assests/administration/supportingStaff/13.jpeg";
 import supportingStaff2 from "../../../../../public/assests/administration/supportingStaff/14.jpg";
@@ -68,7 +68,8 @@ const supportingStaff = () => {
                   Supporting Staff
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800">
                 <div className="container  mx-auto lg:space-y-16 p-2 lg:p-4">
@@ -76,9 +77,9 @@ const supportingStaff = () => {
                     <h3 className="text-2xl font-bold leading-none lg:text-4xl text-center py-4 md:my-2 lg:py-0">সাপোর্টিং স্টাফ</h3>
 
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full  gap-x-3 gap-y-12 ">
+                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full  gap-x-3 gap-y-3 md:gap-y-5 lg:gap-y-10 px-4 md:px-1 lg:px-0 my-5 md:my-0 lg:my-0">
                     {supStaffs.map(items => (
-                      <div key={items.Name} className="border rounded w-full py-5">
+                      <div key={items.Name} className="border rounded w-full py-5 shadow-md">
                         <Image src={items.img} className="object-cover h-[230px] w-[300px] mx-auto mb-4 bg-center rounded px-3" alt="img" />
                         <div className="flex flex-col items-center">
                           <h4 className="text-xl font-semibold">{items.Name}</h4>

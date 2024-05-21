@@ -1,14 +1,14 @@
 import FacilitiesSidebar from "@/components/shared/FacilitiesSidebar/FacilitiesSidebar";
-import { Divider } from "antd";
+ 
 import Image from "next/image";
 import ictlab from "../../../../../public/assests/facilities/ictlab.jpg";
 
 const ictLab = () => {
   return (
     <>
-      <section className=" bg-gray-100  lg:py-12 text-gray-800">
+      <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
         <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
-          <div className="py-5 lg:pr-5">
+          <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
             <FacilitiesSidebar />
           </div>
           <div className="grid w-full ">
@@ -18,7 +18,8 @@ const ictLab = () => {
                   ICT Lab
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800">
                 <p className="text-xl text-justify">যুগোপযোগী শিক্ষার্থী তৈরিতে আইসিটি ক্লাব গুরুত্বপূর্ণ ভূমিকা পালন করতে পারে। প্রতিষ্ঠানের আইসিটি ল্যাবের প্রধান উদ্দেশ্য শিক্ষার্থীদের তথ্য-প্রযুক্তি শিক্ষায় উৎসাহিত করা ও হাতে কলমে তথ্য-প্রযুক্তি সম্পর্কে ধারণা দেওয়া। </p>

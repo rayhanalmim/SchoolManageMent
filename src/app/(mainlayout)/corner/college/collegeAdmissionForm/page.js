@@ -1,4 +1,4 @@
-import { Divider } from "antd";
+ 
 
 import CollegeAdmissionForm from '@/components/shared/Admission/CollegeAdmissionForm/CollegeAdmissionForm';
 import CollegeSidebar from "@/components/shared/Corner/CollegeSidebar/CollegeSidebar";
@@ -18,7 +18,8 @@ const collegeAdmissionForm = () => {
                                     College Admission Form
                                 </h3>
                             </div>
-                            <Divider className="bg-gray-300" />
+                            {/* Divider  */}
+                            <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
                             <CollegeAdmissionForm />
                         </div>
                     </div>

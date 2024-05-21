@@ -9,13 +9,13 @@ const nonActiveStyle = 'text-black';
 const SchoolSidebar = () => {
 	const currentRoute = usePathname();
 	return (
-		<div>
-			<div className="w-64 mx-auto py-2">
-				<h3 className="text-lg font-semibold  pl-3 py-2">
+		<div className="pt-[70px] lg:pt-0">
+			<div className="w-full lg:w-64 lg:mx-auto lg:py-2 text-center md:text-left lg:text-start">
+				<h3 className="text-sm md:text-base lg:text-lg font-semibold lg:pl-3 lg:py-2">
 					School Corner
 				</h3>
 			</div>
-			<div className="w-64 flex justify-center py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded">
+			<div className="p-2 w-64 lg:flex justify-center lg:py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded items-center content-center text-sm md:text-base lg:text-base">
 				<Link href={"/corner/school/schoolInfo"} className={`${currentRoute === "/corner/school/schoolInfo" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>School Info</Link>
 				<div className="border lg:w-full"></div>
 				<Link href={"/corner/school/schoolAdmissionInfo"} className={`${currentRoute === "/corner/school/schoolAdmissionInfo" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>

@@ -1,4 +1,4 @@
-import { Divider } from "antd";
+ 
 import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
 import Events from "@/components/shared/About/Events/Events";
 import Image from "next/image";
@@ -66,7 +66,8 @@ const events = () => {
                   Events
                 </h3>
               </div>
-              <Divider className="bg-gray-300" />
+              {/* Divider  */}
+              <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
               {/* <Events /> */}
               <div>
                 <section className=" border  rounded text-gray-800 lg:w-auto p-4 bg-white">
