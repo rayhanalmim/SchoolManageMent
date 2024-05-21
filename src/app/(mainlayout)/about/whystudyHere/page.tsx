@@ -81,7 +81,7 @@ const whystudyHere = () => {
                     <div className="lg:grid items-center gap-2 xl:grid-cols-5">
                       <div className="lg:max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
                         <h2 className="text-3xl font-bold">Our Benefits</h2>
-                        <p className="text-md text-gray-500 text-justify">
+                        <p className="text-base text-gray-500 text-justify">
                           Pri ex magna scaevola moderatius. Nullam accommodare no vix,
                           est ei diceret alienum, et sit cetero malorum. Et sea iudico
                           consequat, est sanctus adipisci ex.

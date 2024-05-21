@@ -183,7 +183,7 @@ const schoolResult = () => {
                 {/* Divider  */}
                 <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
                 {/* -------first section--------- */}
-                <div className="lg:w-full text-xs md:text-md lg:text-base">
+                <div className="lg:w-full text-xs md:text-base lg:text-base">
                   <table className="border-collapse border border-gray-400 lg:w-full">
                     <thead>
                       <tr className="bg-gray-100">
@@ -232,7 +232,7 @@ const schoolResult = () => {
                 </div>
                 {/* --------second section-------- */}
                 <h2 className="text-xl md:text-2xl lg:text-2xl text-center py-5">Subject Wise grade / marks</h2>
-                <div className="lg:w-full text-xs md:text-md lg:text-base">
+                <div className="lg:w-full text-xs md:text-base lg:text-base">
                   <table className=" border border-gray-400  lg:w-full">
                     <tbody>
                       <tr className="text-center bg-green-500 text-white font-bold">

@@ -42,7 +42,7 @@ const AdmissionInfo = () => {
                 <div className=" bg-white-100  text-gray-800">
                     <div className="py-5 md:py-8 lg:py-8">
                         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center sm:text-4xl underline mb-10">প্রতিটি ক্লাসের ভর্তি তথ্য নিচে দেওয়া হল</h1>
-                        <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-5 px-0 md:px-5 lg:px-8 text-center items-center text-xs md:text-md lg:text-xl">
+                        <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-5 px-0 md:px-5 lg:px-8 text-center items-center text-xs md:text-base lg:text-xl">
                             <button className="p-2 md:py-8 lg:py-12 border-b-[2px] border-r-[2px]" onClick={openModal}>KG</button>
                             {dialog} 
                             <button className="p-2 md:py-8 lg:py-12 border-b-[2px] border-r-[2px]" onClick={openModal}>Play Ground</button>

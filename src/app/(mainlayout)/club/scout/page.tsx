@@ -51,7 +51,7 @@ const scout = () => {
                                                     </div>
                                                     <div className="ml-4">
                                                         <h4 className="text-lg leading-6  text-gray-900 font-bold">প্রতিষ্ঠাকাল: ২০০১ খ্রি.</h4>
-                                                        <p className="mt-2  text-gray-600 text-sm md:text-md lg:text-base">স্কাউট গ্রুপ ২০০১ সালের ১৮ ফেব্রুয়ারি বাংলাদেশ স্কাউটস, ঢাকা মেট্রোপলিটনের ৩৮০ নং দল হিসেবে বাংলাদেশ স্কাউটস, ঢাকা অঞ্চলের রেজিস্টারভুক্ত হয়।</p>
+                                                        <p className="mt-2  text-gray-600 text-sm md:text-base lg:text-base">স্কাউট গ্রুপ ২০০১ সালের ১৮ ফেব্রুয়ারি বাংলাদেশ স্কাউটস, ঢাকা মেট্রোপলিটনের ৩৮০ নং দল হিসেবে বাংলাদেশ স্কাউটস, ঢাকা অঞ্চলের রেজিস্টারভুক্ত হয়।</p>
                                                     </div>
                                                 </div>
                                                 <div className="flex">
@@ -64,7 +64,7 @@ const scout = () => {
                                                     </div>
                                                     <div className="ml-4">
                                                         <h4 className="text-lg font-bold leading-6  text-gray-900">সভাপতি ও সম্পাদক</h4>
-                                                        <p className="mt-2  text-gray-600 text-sm md:text-md lg:text-base">সভাপতি : প্রিন্সিপাল মো. মাহবুবর রহমান মোল্লা<br />
+                                                        <p className="mt-2  text-gray-600 text-sm md:text-base lg:text-base">সভাপতি : প্রিন্সিপাল মো. মাহবুবর রহমান মোল্লা<br />
                                                             সম্পাদক: মো. ইসমাইল হোসেন জাবেদ</p>
                                                     </div>
                                                 </div>
@@ -78,7 +78,7 @@ const scout = () => {
                                                     </div>
                                                     <div className="ml-4">
                                                         <h4 className="text-lg font-bold leading-6  text-gray-900">স্কাউট শাখা</h4>
-                                                        <p className="mt-2 text-gray-600 text-sm md:text-md lg:text-base">শাখা: কাব স্কাউট,  স্কাউট,  রোভার স্কাউট</p>
+                                                        <p className="mt-2 text-gray-600 text-sm md:text-base lg:text-base">শাখা: কাব স্কাউট,  স্কাউট,  রোভার স্কাউট</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -94,7 +94,7 @@ const scout = () => {
                                     <section className="text-gray-800">
 
                                         <h3 className="text-2xl font-bold tracking-tight sm:text-3xl  text-gray-900 text-center mt-3 md:mt-3 lg:mt-0">আমাদের অর্জন</h3>
-                                        <p className="mt-3 text-sm md:text-md lg:text-lg  text-gray-600">সামসুল হক খান স্কুল অ্যান্ড কলেজ স্কাউট গ্রুপের ৯২ জন স্কাউট ও স্কাউট নেতা বিশ্বের ৯টি দেশে বিভিন্ন স্কাউট প্রোগ্রামে বাংলাদেশ স্কাউটসের প্রতিনিধিত্ব করার গৌরব অর্জন করেছেন। স্কাউট শিক্ষার্থীদের শারীরিক, মানসিক ও আধ্যাত্মিকভাবে গড়ে তোলার লক্ষ্যে ২০ বছর ধরে গ্রুপ পর্যায়ে ৫ দিন ব্যাপী গ্রুপ ক্যাম্পের আয়োজন করা হয়ে থাকে। এছাড়া প্রতি বছর সমাজ উন্নয়ন ও সেবামূলক কার্যক্রম সম্পাদন করে, যেমন: ফ্রি রক্তের গ্রুপিং কার্যক্রম, পরিষ্কার পরিচ্ছন্নতা অভিযান, শীতবস্ত্র বিতরণ, ডেঙ্গু সচেতনতা উদ্বুদ্ধকরণ, শিশু স্বাস্থ্য পরিচর্যা, করোনা মহামারীতে বিভিন্ন সময়ে দুস্থ্য অসহায় মানুষদের খাদ্য সামগ্রী, হ্যান্ড স্যানিটাইজেশন এবং মাস্ক বিতরন করে। ইতোমধ্যে সামসুল হক খান স্কুল অ্যান্ড কলেজ স্কাউট গ্রুপ থেকে ৬৪ জন কাব স্কাউট শিক্ষার্থী শাপলা অ্যাওয়ার্ড (কাব স্কাউটিংয়ের সর্বোচ্চ অ্যাওয়ার্ড); ১৪৫ জন স্কাউট শিক্ষার্থী প্রেসিডেন্ট’স স্কাউট অ্যাওয়ার্ড (স্কাউটিংয়ের সর্বোচ্চ অ্যাওয়ার্ড/স্বীকৃতি) এবং ১৫২ জন শিক্ষার্থী সমাজ উন্নয়ন অ্যাওয়ার্ড (দ্বিতীয় সর্বোচ্চ অ্যাওয়ার্ড) অর্জন করেছে। গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের শিক্ষা মন্ত্রণালয় কর্তৃক আয়োজিত জাতীয় শিক্ষা সপ্তাহ ২০১৭; ২০১৮; ২০১৯ ;২০২২; ২০২৩ সালে বিচারক মন্ডলীদের সার্বিক বিবেচনায় সামসুল হক খান স্কুল অ্যান্ড কলেজ স্কাউট গ্রুপকে দেশের শ্রেষ্ঠ স্কাউট গ্রুপ হিসেবে নির্বাচন করে শ্রেষ্ঠত্বের মর্যাদা প্রদান করেন। এসব অর্জন সামসুল হক খান স্কুল অ্যান্ড কলেজ স্কাউট গ্রুপকে দিয়েছে বাংলাদেশ স্কাউটস এর অন্যতম সেরা স্কাউট গ্রুপের মর্যাদা।</p>
+                                        <p className="mt-3 text-sm md:text-base lg:text-lg  text-gray-600">সামসুল হক খান স্কুল অ্যান্ড কলেজ স্কাউট গ্রুপের ৯২ জন স্কাউট ও স্কাউট নেতা বিশ্বের ৯টি দেশে বিভিন্ন স্কাউট প্রোগ্রামে বাংলাদেশ স্কাউটসের প্রতিনিধিত্ব করার গৌরব অর্জন করেছেন। স্কাউট শিক্ষার্থীদের শারীরিক, মানসিক ও আধ্যাত্মিকভাবে গড়ে তোলার লক্ষ্যে ২০ বছর ধরে গ্রুপ পর্যায়ে ৫ দিন ব্যাপী গ্রুপ ক্যাম্পের আয়োজন করা হয়ে থাকে। এছাড়া প্রতি বছর সমাজ উন্নয়ন ও সেবামূলক কার্যক্রম সম্পাদন করে, যেমন: ফ্রি রক্তের গ্রুপিং কার্যক্রম, পরিষ্কার পরিচ্ছন্নতা অভিযান, শীতবস্ত্র বিতরণ, ডেঙ্গু সচেতনতা উদ্বুদ্ধকরণ, শিশু স্বাস্থ্য পরিচর্যা, করোনা মহামারীতে বিভিন্ন সময়ে দুস্থ্য অসহায় মানুষদের খাদ্য সামগ্রী, হ্যান্ড স্যানিটাইজেশন এবং মাস্ক বিতরন করে। ইতোমধ্যে সামসুল হক খান স্কুল অ্যান্ড কলেজ স্কাউট গ্রুপ থেকে ৬৪ জন কাব স্কাউট শিক্ষার্থী শাপলা অ্যাওয়ার্ড (কাব স্কাউটিংয়ের সর্বোচ্চ অ্যাওয়ার্ড); ১৪৫ জন স্কাউট শিক্ষার্থী প্রেসিডেন্ট’স স্কাউট অ্যাওয়ার্ড (স্কাউটিংয়ের সর্বোচ্চ অ্যাওয়ার্ড/স্বীকৃতি) এবং ১৫২ জন শিক্ষার্থী সমাজ উন্নয়ন অ্যাওয়ার্ড (দ্বিতীয় সর্বোচ্চ অ্যাওয়ার্ড) অর্জন করেছে। গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের শিক্ষা মন্ত্রণালয় কর্তৃক আয়োজিত জাতীয় শিক্ষা সপ্তাহ ২০১৭; ২০১৮; ২০১৯ ;২০২২; ২০২৩ সালে বিচারক মন্ডলীদের সার্বিক বিবেচনায় সামসুল হক খান স্কুল অ্যান্ড কলেজ স্কাউট গ্রুপকে দেশের শ্রেষ্ঠ স্কাউট গ্রুপ হিসেবে নির্বাচন করে শ্রেষ্ঠত্বের মর্যাদা প্রদান করেন। এসব অর্জন সামসুল হক খান স্কুল অ্যান্ড কলেজ স্কাউট গ্রুপকে দিয়েছে বাংলাদেশ স্কাউটস এর অন্যতম সেরা স্কাউট গ্রুপের মর্যাদা।</p>
                                         <div className="container max-w-5xl px-1 md:px-2 lg:px-4 py-4 mx-auto">
                                             <div className="grid gap-4  lg:mx-4 sm:grid-cols-12">
                                                 <div className="col-span-12 sm:col-span-5">
@@ -108,7 +108,7 @@ const scout = () => {
                                                         <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600">
                                                             <h3 className="text-lg md:text-xl lg:text-xl font-semibold tracking-wide">২০২১ সালে জাতীয় অ্যাওয়ার্ড: </h3>
                                                             {/* <time className="text-xs tracking-wide uppercase   text-gray-600">Dec 2020</time> */}
-                                                            <p className="mt-2  text-gray-600 text-sm md:text-md lg:text-base">
+                                                            <p className="mt-2  text-gray-600 text-sm md:text-base lg:text-base">
                                                                 <span className="font-bold"> মেডেল অব মেরিট:<br /></span>
                                                                 স্কাউটার মোঃ আব্দুল মতিন, সহ-সভাপতি, <br />
                                                                 স্কাউটার সালমা কবির, কাব স্কাউট লিডার,<br />
@@ -128,7 +128,7 @@ const scout = () => {
                                                             <h3 className="text-xl font-semibold tracking-wide">২০২০ সালে জাতীয় অ্যাওয়ার্ড:</h3>
 
                                                             {/* <time className="text-xs tracking-wide uppercase   text-gray-600">Jul 2019</time> */}
-                                                            <p className="mt-2  text-gray-600 text-sm md:text-md lg:text-lg">
+                                                            <p className="mt-2  text-gray-600 text-sm md:text-base lg:text-lg">
                                                                 <span className="font-bold">বার টু দি মেডেল অব মেরিট:<br /></span>
                                                                 স্কাউটার মোঃ ইসমাইল হোসেন (উডব্যাজার), গ্রুপ স্কাউট লিডার, <br />
 
@@ -137,7 +137,7 @@ const scout = () => {
                                                         </div>
                                                         <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600">
                                                             <h3 className="text-xl font-semibold tracking-wide">২০১৭ সালে জাতীয় অ্যাওয়ার্ড:</h3>
-                                                            <p className="mt-3 text-sm md:text-md lg:text-lg">
+                                                            <p className="mt-3 text-sm md:text-base lg:text-lg">
                                                                 <span className="font-bold"> সিএনসি’স অ্যাওয়ার্ড</span><br />
                                                                 স্কাউটার মো. মাহবুবুর রহমান মোল্লা (উডব্যাজার), প্রিন্সিপাল<br />
 
@@ -151,7 +151,7 @@ const scout = () => {
                                                         </div>
                                                         <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600">
                                                             <h3 className="text-xl font-semibold tracking-wide">২০১৫ সালে জাতীয় অ্যাওয়ার্ড:</h3>
-                                                            <p className="mt-3 text-sm md:text-md lg:text-lg">
+                                                            <p className="mt-3 text-sm md:text-base lg:text-lg">
                                                                 <span className="font-bold">সভাপতি অ্যাওয়ার্ড</span><br />
                                                                 স্কাউটার মো. মাহবুবুর রহমান মোল্লা, প্রিন্সিপাল, <br />
 
@@ -162,7 +162,7 @@ const scout = () => {
                                                         </div>
                                                         <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600">
                                                             <h3 className="text-xl font-semibold tracking-wide"> শাপলা কাব অ্যাওয়ার্ড:</h3>
-                                                            <p className="mt-3 text-sm md:text-md lg:text-lg">
+                                                            <p className="mt-3 text-sm md:text-base lg:text-lg">
 
 
                                                                 ২০১৩ সালে ০৬ জন<br />
@@ -178,7 +178,7 @@ const scout = () => {
                                                         </div>
                                                         <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600">
                                                             <h3 className="text-xl font-semibold tracking-wide">প্রেসিডেন্ট’স স্কাউট অ্যাওয়ার্ড:</h3>
-                                                            <p className="mt-3 text-sm md:text-md lg:text-lg">
+                                                            <p className="mt-3 text-sm md:text-base lg:text-lg">
                                                                 ২০১১ সালে ০৩ জন<br />
                                                                 ২০১২ সালে ০৬ জন<br />
                                                                 ২০১৩ সালে ০৭ জন<br />
@@ -194,7 +194,7 @@ const scout = () => {
                                                         </div>
                                                         <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600">
                                                             <h3 className="text-xl font-semibold tracking-wide">সমাজ উন্নয়ন অ্যাওয়ার্ড:</h3>
-                                                            <p className="mt-3 text-sm md:text-md lg:text-lg">
+                                                            <p className="mt-3 text-sm md:text-base lg:text-lg">
                                                                 ২০১৫ সালে ১৮ জন<br />
                                                                 ২০১৬ সালে ১৬ জন<br />
                                                                 ২০১৭ সালে ৪০ জন<br />

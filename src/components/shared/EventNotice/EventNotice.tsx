@@ -106,7 +106,7 @@ const EventNotice = () => {
                   <h1>{items.date}</h1>
                 </div>
                 <h2 className="font-bold lg:text-2xl pt-2">{items.heading}</h2>
-                <p className="text-sm lg:text-md text-gray-400">{items.description}</p>
+                <p className="text-sm lg:text-base text-gray-400">{items.description}</p>
                 <div className="">
                   <button className="btn btn-sm bg-gray-300 p-2 rounded text-black mt-2">
                     Read More
