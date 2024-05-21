@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import envir1 from "../../../../public/assests/environment/about-1.webp"
 import envir2 from "../../../../public/assests/environment/about-2.webp"
@@ -9,6 +8,7 @@ import envir6 from "../../../../public/assests/environment/icon-2.webp"
 import envir7 from "../../../../public/assests/environment/icon-3.webp"
 import envir8 from "../../../../public/assests/environment/icon-4.webp"
 import './Environment.css'
+
 const Environment = () => {
     return (
         <div className=" lg:w-[1260px] mx-auto md:flex lg:flex  lg:justify-between items-center mt-5 md:mt-14 lg:mt-14 mb-5 md:mb-48 lg:mb-48 text-center md:text-left lg:text-left">

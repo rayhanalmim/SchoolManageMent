@@ -13,7 +13,7 @@ const corners = [
     id: 1,
     name: "Principle Corner",
     icon: principle,
-    link: "/corner/principle/message"
+    link: "/corner/principle/bio"
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ const Corner = () => {
             <div
               className="border border-gray-300 rounded-lg shadow-md p-2 lg:h-48 lg:w-48 bg-opacity-20  bg-gray-300 flex flex-col items-center justify-center gap-3">
               <Image src={item.icon} alt={item.name} className="h-20 w-20"/>
-              <h1 className="text-md md:text-lg lg:text-xl font-bold text-blue-500 text-center content-center">
+              <h1 className="text-base md:text-lg lg:text-xl font-bold text-blue-500 text-center content-center">
                 {item.name}
               </h1>
             </div>
