@@ -7,6 +7,7 @@ import envir5 from "../../../../public/assests/environment/icon-1.webp"
 import envir6 from "../../../../public/assests/environment/icon-2.webp"
 import envir7 from "../../../../public/assests/environment/icon-3.webp"
 import envir8 from "../../../../public/assests/environment/icon-4.webp"
+import './Environment.css'
 
 const Environment = () => {
     return (
