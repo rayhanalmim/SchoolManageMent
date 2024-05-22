@@ -102,17 +102,15 @@ const EventNotice = () => {
 
           {news.map(items=>(
             <div className=" bg-base-100 lg:px-6" key={items.date}>
-              <figure>
-                <Image src={items.img} className="h-[150px] md:h-[200px] lg:h-[260px] w-full" alt="" />
-              </figure>
+              <Image src={items.img} className="h-[150px] md:h-[200px] lg:h-[260px] w-full mt-2 md:mt-4 lg:mt-2" alt="" />             
 
               <div className="mt-2 space-y-[4px]">
                 <div className="flex flex-row items-center h-4 gap-1 text-sm text-gray-500">
                   <ClockIcon className="h-4 w-4"/>
                   <h1>{items.date}</h1>
                 </div>
-                <h2 className="font-bold lg:text-2xl pt-2">{items.heading}</h2>
-                <p className="text-sm lg:text-base text-gray-400">{items.description}</p>
+                <h2 className="font-bold md:text-xl lg:text-2xl pt-2">{items.heading}</h2>
+                <p className="text-sm md:text-sm lg:text-base text-gray-400">{items.description}</p>
                 <div className="">
                   <button className="btn btn-sm bg-gray-300 p-2 rounded text-black mt-2">
                     Read More
@@ -120,8 +118,8 @@ const EventNotice = () => {
                 </div>
               </div>
               
-              {/* Divider  */}
-              <div className="w-full  border-t border-gray-300 md:my-[8px] lg:my-[13px]"></div>
+              {/* Divider last */}
+              <div className="w-full  border-t border-gray-300 md:my-[12px] lg:my-[14px]"></div>
             </div>
           ))}
                 
@@ -138,7 +136,7 @@ const EventNotice = () => {
           <h2 className="text-xl font-semibold text-center">Notice Board</h2>
                     
           {/* Divider  */}
-          <div className="w-full  border-t border-gray-300 md:my-1 lg:my-[20px]"></div>
+          <div className="w-full  border-t border-gray-300 md:my-1 lg:my-[6px]"></div>
 
           {notices.map((items, index) => (
             <div key={index} >
@@ -175,8 +173,8 @@ const EventNotice = () => {
                 <h1>{items.date}</h1>
               </div>
               
-              {/* Divider  */}
-              <div className="w-full  border-t border-gray-300 md:my-[9px] lg:my-[13px]"></div>
+              {/* Divider last */}
+              <div className="w-full  border-t border-gray-300 md:my-[9px] lg:my-[11px]"></div>
             </div>
           ))}
           

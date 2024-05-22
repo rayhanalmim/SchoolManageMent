@@ -57,11 +57,9 @@ const SchoolFeatures = () => {
                                 <p className="mt-1  text-gray-400 text-justify text-thin">{items.description}</p>
                             </div>
                         ))}
-
                     </div>
                 </div>
             </section>
-            
         </div>
     );
 };
