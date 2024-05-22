@@ -68,7 +68,7 @@ const schoolResult = () => {
   return (
     <>
       <section className="bg-gray-100 lg:py-12 text-gray-800 ">
-        <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
+        <div className="xl:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
           <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
             <ResultSidebar />
           </div>
@@ -184,7 +184,7 @@ const schoolResult = () => {
                 <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
                 {/* -------first section--------- */}
                 <div className="lg:w-full text-xs md:text-base lg:text-base">
-                  <table className="border-collapse border border-gray-400 lg:w-full">
+                  <table className="border-collapse border border-gray-400 lg:w-full mx-auto">
                     <thead>
                       <tr className="bg-gray-100">
                         <td className="border border-gray-400 p-2">Roll No.</td>
@@ -233,7 +233,7 @@ const schoolResult = () => {
                 {/* --------second section-------- */}
                 <h2 className="text-xl md:text-2xl lg:text-2xl text-center py-5">Subject Wise grade / marks</h2>
                 <div className="lg:w-full text-xs md:text-base lg:text-base">
-                  <table className=" border border-gray-400  lg:w-full">
+                  <table className=" border border-gray-400  lg:w-full mx-auto">
                     <tbody>
                       <tr className="text-center bg-green-500 text-white font-bold">
                         <td className="border border-gray-400 p-2">Subject Code</td>
