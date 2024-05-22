@@ -91,7 +91,6 @@ object-fit: cover;
     position: absolute;
     z-index: 9;
     width: 1200px;
-    padding-right: 40px;
     justify-content: center;
     top: 50%;
     left: 50;
@@ -125,7 +124,7 @@ object-fit: cover;
     font-size: 10px !important;
   }
   .header-content {
-    width: 70%;
+    width: 64%;
     padding-right: 0px;
     margin: 0 auto;
 

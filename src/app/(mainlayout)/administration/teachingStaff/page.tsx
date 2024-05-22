@@ -72,8 +72,8 @@ const teachers = [
 const teachingStaff = () => {
   return (
     <>
-      <section className=" bg-gray-100  lg:pb-4 text-gray-800 ">
-        <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-0">
+      <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
+        <div className="xl:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
           <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
             <AdministrationSidebar />
           </div>
@@ -107,7 +107,7 @@ const teachingStaff = () => {
                     </div>
                   </div>
                   {/* all teacher */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full  gap-x-3 gap-y-3 md:gap-y-5 lg:gap-y-10 px-4 md:px-1 lg:px-0 my-5 md:my-0 lg:my-0">
+                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 w-full  gap-x-3 gap-y-3 md:gap-y-5 lg:gap-y-10 px-4 md:px-1 lg:px-0 my-5 md:my-0 lg:my-0">
                     {teachers.map(items => (
                       <div key={items.Name} className="border rounded w-full py-2 lg:py-5 shadow-md">
                         <Image src={items.img} className="object-cover lg:h-[210px] lg:w-[420px] mx-auto mb-4 bg-center rounded px-3" alt="img" />
