@@ -49,31 +49,31 @@ const WhyChoose = () => {
   ];
 
   return (
-    <Container>
-      <h1 className="text-3xl font-semibold ">কেন আমাদের স্কুলে আসবেন?</h1>
-      <div className="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 gap-10 place-items-center ">
+    <Container className="my-2 md:my-4 lg:my-12">
+      <h1 className="text-2xl md:text-3xl font-semibold ">কেন আমাদের স্কুলে আসবেন?</h1>
+      <div className="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 gap-8 place-items-center ">
         {chooseData.map((data, i) => (
           <div key={data.id}>
-            <div className="chooseCard flex justify-between mt-16">
-              <div className="mr-5">
+            <div className="chooseCard flex justify-between mt-10">
+              <div className="mr-6">
                 <div className="">
                   {i === 0 ? (
-                    <Image className="w-40" src={hero} alt="hero" />
+                    <Image className="w-32 md:w-40" src={hero} alt="hero" />
                   ) : i === 1 ? (
-                    <Image className="w-40" src={hero2} alt="hero" />
+                    <Image className="w-32 md:w-40" src={hero2} alt="hero" />
                   ) : i === 2 ? (
-                    <Image className="w-40" src={hero3} alt="hero" />
+                    <Image className="w-32 md:w-40" src={hero3} alt="hero" />
                   ) : i === 3 ? (
-                    <Image className="w-40" src={hero4} alt="hero" />
+                    <Image className="w-32 md:w-40" src={hero4} alt="hero" />
                   ) : i === 4 ? (
-                    <Image className="w-40" src={hero6} alt="hero" />
+                    <Image className="w-32 md:w-40" src={hero6} alt="hero" />
                   ) : i === 5 ? (
-                    <Image className="w-40" src={hero5} alt="hero" />
+                    <Image className="w-32 md:w-40" src={hero5} alt="hero" />
                   ) : null}
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold ">{data.title}</h3>
+                <h3 className="text-xl md:text-2xl font-semibold ">{data.title}</h3>
                 <p className="leading-8">{data.text}</p>
               </div>
             </div>

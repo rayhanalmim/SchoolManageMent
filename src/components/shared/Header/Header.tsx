@@ -120,41 +120,41 @@ const Header = () => {
 
 
   return (
-    <nav className="bg-white h-16 md:h-20 z-10 shadow-md pb-1 w-full fixed">
-      <div className="lg:w-[1260px] lg:h-20 mx-auto items-center justify-between lg:flex ">
-        <Link href="/">
+    <nav className="bg-white h-10 md:h-20 z-10 shadow-md pb-1 w-full ">
+      <div className="w-full  lg:h-20 mx-auto items-center justify-center lg:flex ">
+        {/* <Link href="/">
           <h2 className="text-2xl font-bold -mt-14 lg:-mt-0">SoftyEdu</h2>
-        </Link>
+        </Link> */}
         <div className="lg:flex hidden" >
         
           {navMenu}
 
       
         </div>
-        <Link href="/login">
+        {/* <Link href="/login">
           <h2 className="hidden lg:flex gap-2 items-center">Log In <FaArrowRightLong /></h2>
-        </Link>
+        </Link> */}
 
-        <div className="lg:hidden flex justify-between px-2">
-          <Link href="/">
+        <div className="lg:hidden  px-2">
+          {/* <Link href="/">
             <h2 className="text-2xl font-bold">SoftyEdu</h2>
-          </Link>
+          </Link> */}
           <button className="p-2" onClick={toggleNavbar}>
-            {isClick ? <GrClose /> : <GiHamburgerMenu />}
+            {isClick ? <GrClose size={25} /> : <GiHamburgerMenu size={25} />}
           </button>
         </div>
       </div >
       {isClick && (
 
-        <nav className=" h-20 z-10 shadow-md pb-1 w-full fixed lg:hidden ">
+        <nav className=" h-20 z-[99999999] shadow-md pb-1 w-full absolute lg:hidden ">
           <div className="bg-white" >
 
          
             {navMenu}
             <div className="lg:hidden flex justify-center">
-            <Link href="/login">
+            {/* <Link href="/login">
               <h2 className="flex gap-2 items-center">Log In <FaArrowRightLong /></h2>
-            </Link>
+            </Link> */}
             </div>
           </div>
         </nav>

@@ -1,37 +1,42 @@
 "use client"
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import slide1 from "../../../../public/assests/s1.jpg";
-import slide2 from "../../../../public/assests/s2.jpg";
-import slide3 from "../../../../public/assests/s3.jpg";
-import slide4 from "../../../../public/assests/s4.jpg";
-import slide5 from "../../../../public/assests/s5.jpg";
+// import slide1 from "../../../../public/assests/s1.jpg";
+// import slide2 from "../../../../public/assests/s2.jpg";
+// import slide3 from "../../../../public/assests/s3.jpg";
+// import slide4 from "../../../../public/assests/s4.jpg";
+// import slide5 from "../../../../public/assests/s5.jpg";
+import slide1 from "../../../../public/assests/doctorsCare/slider/2.jpg";
+import slide2 from "../../../../public/assests/doctorsCare/slider/6.jpg";
+import slide3 from "../../../../public/assests/doctorsCare/slider/3.jpg";
+import slide4 from "../../../../public/assests/doctorsCare/slider/4.jpg";
+import slide5 from "../../../../public/assests/doctorsCare/slider/5.jpg";
 import Image from 'next/image';
 
 const schools = [
   {
-    name: "SoftyEdu",
-    est: "Est. 1946",
+    name: "Doctors Care Model School",
+    est: "Est. 2021",
     img: slide1,
   },
   {
-    name: "SoftyEdu ",
-    est: "Est. 1946",
+    name: "Doctors Care Model School ",
+    est: "Est. 2021",
     img: slide2,
   },
   {
-    name: "SoftyEdu",
-    est: "Est. 1946",
+    name: "Doctors Care Model School",
+    est: "Est. 2021",
     img: slide3,
   },
   {
-    name: "SoftyEdu",
-    est: "Est. 1946",
+    name: "Doctors Care Model School",
+    est: "Est. 2021",
     img: slide4,
   },
   {
-    name: "SoftyEdu",
-    est: "Est. 1946",
+    name: "Doctors Care Model School",
+    est: "Est. 2021",
     img: slide5,
   },
 ];

@@ -11,17 +11,16 @@ import Overview from "@/components/shared/Overview/Overview";
 import HeroSection from "@/components/ui/HomePage/HeroSection/HeroSection";
 import Hero from "@/components/ui/HomePage/Hero/Hero";
 import WhyChoose from "@/components/ui/HomePage/WhyChoose/WhyChoose";
-import Header from "@/components/shared/Header/Header";
+
 
 export default function Home() {
   return (
     <main>
       {/* <HeroSection/> */}
       <NotificationSlider />
-      <HeroSection />
-      <Header />
-      <Hero />
-      <WhyChoose />
+      <HeroSection/>
+      <Hero/>
+      <WhyChoose/>
       {/* <Slider /> */}
       <Corner />
 

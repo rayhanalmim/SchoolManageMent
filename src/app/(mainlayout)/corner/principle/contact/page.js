@@ -14,23 +14,23 @@ const principle = () => {
           <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
             <PrincipleSidebar />
           </div>
-          <div className="grid w-full">
+          <div className="grid w-full px-2 md:px-0 lg:px-0 pb-2 md:pb-0 lg:pb-0">
             <div className="lg:w-auto lg:mt-2">
               <div className="w-full md:w-64 lg:w-64 md:pt-4 lg:pt-4">
                 <h3 className="text-2xl font-semibold text-center md:text-left lg:text-left">
-                  Contact with Principle
+                  Contact with Principle 
                 </h3>
               </div>
               {/* Divider  */}
               <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
               <div className="lg:w-auto border rounded p-4 bg-white">
                 <section className="p-0 lg:p-2 text-gray-800">
-                  <div className="container mx-auto space-y-8">
+                  <div className="container mx-auto lg:space-y-5">
                     <div>
                       <div className="lg:w-auto lg:mx-auto lg:my-5">
-                        <div className="flex lg:gap-5 justify-between lg:px-8 items-center content-center text-center mb-5 lg:mb-0 space-y-4 lg:space-y-0">
+                        <div className="lg:flex lg:gap-5 justify-between lg:px-8 items-center content-center text-center mb-5 lg:mb-0 space-y-4 lg:space-y-0">
                           {/* first */}
-                          <div className="lg:px-2 py-6 lg:pt-7 space-y-2 lg:space-y-2">
+                          <div className="lg:px-2 py-4 md:py-6 lg:pt-7 space-y-2 lg:space-y-2">
                             <div className="flex content-center items-center justify-center text-center">
                               <Image src={contact} className="h-10 w-10" alt="" />
                             </div>
@@ -46,7 +46,7 @@ const principle = () => {
                           <div className="w-auto border-t md:border-l lg:border-l mx-2 lg:h-32 bg-gray-500"></div>
 
                           {/* second */}
-                          <div className="lg:px-2 py-6 lg:pt-7 space-y-2 lg:space-y-2">
+                          <div className="lg:px-2 py-4 lg:pt-7 space-y-2 lg:space-y-2">
                             <div className="flex content-center items-center justify-center text-center">
                               <Image src={email} className="h-10 w-10" alt="" />
                             </div>
@@ -62,7 +62,7 @@ const principle = () => {
                           <div className="w-auto border-t md:border-l lg:border-l mx-2 lg:h-32 bg-gray-500"></div>
 
                           {/* third */}
-                          <div className="lg:px-2 py-6 lg:pt-7 space-y-2 lg:space-y-2">
+                          <div className="lg:px-2 py-4 lg:pt-7 space-y-2 lg:space-y-2">
                             <div className="flex content-center items-center justify-center text-center">
                               <Image src={worktime} className="h-10 w-10" alt="" />
                             </div>

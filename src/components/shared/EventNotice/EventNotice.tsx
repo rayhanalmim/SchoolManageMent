@@ -3,20 +3,22 @@
  
 import Image from "next/image";
 import React from "react";
-import scienceimg from "../../../../public/assests/scienceclub.jpg";
+// import scienceimg from "../../../../public/assests/scienceclub.jpg";
+import events1 from "../../../../public/assests/doctorsCare/events/21stFeb.jpg";
+import events2 from "../../../../public/assests/doctorsCare/events/2ndTerm.jpg";
 import { ClockIcon, PrinterIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { MdDownload } from "react-icons/md";
 
 const news = [
   {
-    img:scienceimg,
+    img:events1,
     date:"২৮ মার্চ, ২০২৪", 
     heading:"৪র্থ অন্ত:স্কুল বিজ্ঞান মেলা এবং কুইজ লীগ: সিজন-২",
     description:"চতুর্থবারের মত অন্ত:স্কুল বিজ্ঞান মেলা এবং কুইজ লীগ: সিজন-২ গত ২৮ মার্চ অনুষ্ঠিত হয়....",
   },
   {
-    img:scienceimg,
+    img:events2,
     date:"২৮ মার্চ, ২০২৪", 
     heading:"৪র্থ অন্ত:স্কুল বিজ্ঞান মেলা এবং কুইজ লীগ: সিজন-২",
     description:"চতুর্থবারের মত অন্ত:স্কুল বিজ্ঞান মেলা এবং কুইজ লীগ: সিজন-২ গত ২৮ মার্চ অনুষ্ঠিত হয়....",
@@ -25,6 +27,11 @@ const news = [
 
 const notices = [
   
+  {
+    text: "মৌখিক-পরীক্ষার-নোটিশ-বাংলা-মাধ্যম",
+    date: "২৫ এপ্রিল ২০২৪",
+    description: "প্রিয় ছাত্র-ছাত্রীবৃন্দ, আমরা এই নোটিশ জানাতে চাই যে, পরিস্কুল/পরিকলেজ পরীক্ষার তারিখ সম্পর্কে প্রাধিকৃত নির্দেশনা প্রদান করা হল। আপনারা সময় পরীক্ষার প্রস্তুতি করতে শুরু করুন এবং নির্দিষ্ট সময়ে পরীক্ষা দেতে সাজুক থাকুন। পরীক্ষার সময় এবং স্থান জানতে, প্রতিষ্ঠানের বোর্ড বা শিক্ষকের সাথে যোগাযোগ করুন।"
+  },
   {
     text: "মৌখিক-পরীক্ষার-নোটিশ-বাংলা-মাধ্যম",
     date: "২৫ এপ্রিল ২০২৪",
@@ -93,11 +100,11 @@ const EventNotice = () => {
           <div>
           {/* <Divider /> */}
           {/* Divider  */}
-          <div className="w-full  border-t border-gray-300 h-[.5px] my-3"></div>
+          <div className="w-full  border-t border-gray-300 my-[6px]"></div>
           {news.map(items=>(
             <div className=" bg-base-100 lg:px-6" key={items.date}>
               <figure>
-                <Image src={scienceimg} className="h-[150px] md:h-[200px] lg:h-[260px] w-full" alt="" />
+                <Image src={items.img} className="h-[150px] md:h-[200px] lg:h-[260px] w-full" alt="" />
               </figure>
 
               <div className="mt-2 space-y-[4px]">
@@ -115,7 +122,7 @@ const EventNotice = () => {
               </div>
               {/* <Divider /> */}
               {/* Divider  */}
-              <div className="w-full  border-t border-gray-300 h-[.5px] my-[13px]"></div>
+              <div className="w-full  border-t border-gray-300 my-[13px]"></div>
             </div>
           ))}
           </div>
@@ -135,7 +142,7 @@ const EventNotice = () => {
           <div>
           {/* <Divider /> */}
           {/* Divider  */}
-          <div className="w-full  border-t border-gray-300 h-[.5px] my-3"></div>
+          <div className="w-full  border-t border-gray-300 my-[20px]"></div>
           {notices.map((items, index) => (
             <div key={index} >
 

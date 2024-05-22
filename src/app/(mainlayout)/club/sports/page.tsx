@@ -1,10 +1,15 @@
 import ClubSidebar from "@/components/shared/ClubSidebar/ClubSidebar";
  
 import Image from "next/image";
-import logo from "../../../../../public/assests/club/sports.png"
-import debate1 from "../../../../../public/assests/club/sports1.webp"
-import debate2 from "../../../../../public/assests/club/sports2.jpg"
-import debate3 from "../../../../../public/assests/club/sports3.jpg"
+import logo from "../../../../../public/assests/doctorsCare/club/sports/logo.png"
+import debate1 from "../../../../../public/assests/doctorsCare/club/sports/sports.jpg"
+import debate2 from "../../../../../public/assests/doctorsCare/club/sports/sports2.jpg"
+import debate3 from "../../../../../public/assests/doctorsCare/club/sports/sports4.jpg"
+
+// import logo from "../../../../../public/assests/club/sports.png"
+// import debate1 from "../../../../../public/assests/club/sports1.webp"
+// import debate2 from "../../../../../public/assests/club/sports2.jpg"
+// import debate3 from "../../../../../public/assests/club/sports3.jpg"
 
 const sports = () => {
     return (
