@@ -70,9 +70,6 @@
   content: 'prev';
   font-size: 22px !important;
 }
-
-
-
   .header-content {
     display: flex;
     position: absolute;
@@ -86,14 +83,12 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  .welcome-heading {
-    color: #0685FF;
-  }
+  
   .left-side {
     width: 100%;
   }
   .left-side h1 {
-    font-size: 40px;
+    /* font-size: 40px; */
     margin-bottom: 0px;
     animation: animate_left 2s 1 ease;
   }
@@ -104,14 +99,5 @@
     color: #fff;
   }
 
-  /* .right-side img {
-    width: 500px;
-  } */
-  /* @media only screen and (max-width:1024px){
-    .header-content {
-      width: 100%;
-      padding-left: 40px;
-  }
-  }
-   */
+  
  

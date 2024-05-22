@@ -53,7 +53,7 @@ const corners = [
 const Corner = () => {
   return (
     <div className=" lg:w-[1260px] mx-1 lg:mx-auto flex justify-center mt-6 lg:mt-5 lg:px-0">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0 md:gap-4 lg:gap-6 mx-auto justify-between lg:my-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 md:gap-4 lg:gap-6 mx-auto justify-between lg:my-4">
         {corners.map((item) => (
           <div key={item.id}>
           <Link href={item.link}> 

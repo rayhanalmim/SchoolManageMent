@@ -46,8 +46,8 @@ const Footer = () => {
       <div className="lg:w-[1260px] container mx-auto px-6 pb-8 pt-5 lg:px-0 lg:pt-10">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8 mb-3 lg:mb-2">
           <div className="max-w-full lg:max-w-lg  mx-auto">
-            <div className="space-y-4 flex flex-col items-center md:items-start lg:items-start justify-between">
-              <div className="text-center md:text-left">
+            <div className="space-y-4 flex flex-col items-center lg:items-start justify-between">
+              <div className="text-center md:text-center lg:text-left">
                 <Link href={"/"}>
                   <h2 className="font-bold text-2xl">Doctors Care Model School </h2>
                 </Link>
@@ -150,17 +150,19 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="grid justify-center pt-6 lg:justify-between border-t border-gray-900/10">
-          <div className="lg:flex lg:gap-4 items-center">
+        <div className="md:flex lg:flex justify-center content-center md:justify-between lg:justify-between border-t border-gray-900/10 pt-2">
+          <div className="md:flex lg:flex md:gap-3 lg:gap-4 justify-center items-center content-center">
             <span className="mb-2 lg:mb-0">&copy; {new Date().getFullYear()} SoftEdu. All rights reserved.</span>
-            <Link href="#" className="lg:flex text-center">
-              <span>Privacy policy</span>
-            </Link>
-            <Link href="#" className="text-center">
-              <span>Terms of service</span>
-            </Link>
+            <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center content-center text-center gap-1 md:gap-2 lg:gap-4">
+              <Link href="#" >
+                <span>Privacy policy</span>
+              </Link>
+              <Link href="#" >
+                <span>Terms of service</span>
+              </Link>
+            </div>
           </div>
-          <div className="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
+          <div className="flex justify-center pt-4 md:pt-0 lg:pt-0 space-x-4  lg:col-end-13">
             <Link rel="noopener noreferrer" href="#" title="Facebook" className="flex items-center p-1">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-5 h-5 fill-current">
                 <path d="M32 16c0-8.839-7.167-16-16-16-8.839 0-16 7.161-16 16 0 7.984 5.849 14.604 13.5 15.803v-11.177h-4.063v-4.625h4.063v-3.527c0-4.009 2.385-6.223 6.041-6.223 1.751 0 3.584 0.312 3.584 0.312v3.937h-2.021c-1.984 0-2.604 1.235-2.604 2.5v3h4.437l-0.713 4.625h-3.724v11.177c7.645-1.199 13.5-7.819 13.5-15.803z"></path>
@@ -178,8 +180,6 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-
-
       </div>
     </footer>
   );

@@ -32,10 +32,10 @@ const HeroSection = () => {
           <div className="header">
             <div className="header-content capitalize">
               <div className="left-side">
-                <h1 className="welcome-heading text-2xl font-bold text-[#0685FF]">
+                <h1 className="welcome-heading text-base md:text-base lg:text-2xl font-bold text-[#0685FF]">
                 "Doctor's Care Model School: "
                 </h1>
-                <p className="mt-3 text-xl font-semibold welcome-paragraph ">
+                <p className="mt-3 text-xs md:text-base lg:text-xl font-semibold welcome-paragraph ">
                 Nurturing Minds, Inspiring Futures.
                 </p>
               </div>
@@ -47,10 +47,10 @@ const HeroSection = () => {
           <div className="header">
             <div className="header-content capitalize">
               <div className="left-side">
-                <h1 className="welcome-heading text-2xl  font-bold text-[#0685FF]">
+                <h1 className="welcome-heading text-lg md:text-base lg:text-2xl font-bold text-[#0685FF]">
                 "Doctor's Care Model School: "
                 </h1>
-                <p className="mt-3 text-xl font-semibold welcome-paragraph ">
+                <p className="mt-3 text-xs md:text-base lg:text-xl font-semibold welcome-paragraph ">
                 Cultivating Excellence, Shaping Tomorrow's Leaders.
                 </p>
               </div>
@@ -61,10 +61,10 @@ const HeroSection = () => {
           <div className="header">
             <div className="header-content capitalize">
               <div className="left-side">
-                <h1 className="welcome-heading text-2xl font-bold text-[#0685FF]">
+                <h1 className="welcome-heading text-base md:text-base lg:text-2xl font-bold text-[#0685FF]">
                 "Doctor's Care Model School: "
                 </h1>
-                <p className="mt-3 text-xl font-semibold welcome-paragraph md:text-3xl">
+                <p className="mt-3 text-xs md:text-base lg:text-xl font-semibold welcome-paragraph ">
                  Every Student is a Masterpiece in the Making.
                 </p>
               </div>

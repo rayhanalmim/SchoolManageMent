@@ -50,11 +50,11 @@ const WhyChoose = () => {
 
   return (
     <Container className="my-2 md:my-4 lg:my-12">
-      <h1 className="text-3xl font-semibold ">কেন আমাদের স্কুলে আসবেন?</h1>
+      <h1 className="text-2xl md:text-3xl lg:text-3xl font-semibold my-10 md:my-10 lg:my-0 text-center md:text-left lg:text-left">কেন আমাদের স্কুলে আসবেন?</h1>
       <div className="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 gap-8 place-items-center ">
         {chooseData.map((data, i) => (
           <div key={data.id}>
-            <div className="chooseCard flex justify-between mt-10">
+            <div className="chooseCard flex justify-between lg:mt-10">
               <div className="mr-6">
                 <div className="">
                   {i === 0 ? (
@@ -73,7 +73,7 @@ const WhyChoose = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold ">{data.title}</h3>
+                <h3 className="text-lg md:text-xl lg:text-2xl font-semibold ">{data.title}</h3>
                 <p className="leading-8">{data.text}</p>
               </div>
             </div>
