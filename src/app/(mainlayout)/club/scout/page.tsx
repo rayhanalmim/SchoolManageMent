@@ -24,11 +24,11 @@ const scout = () => {
                                     Scout Club
                                 </h3>
                             </div>
-                            {/* Divider  */}
-                            
+
+                            {/* Divider  */}                            
                             <div className="w-full  border-t border-gray-300 my-3 md:my-6 lg:my-6"></div>
                             <section className=" lg:w-auto border rounded p-2 bg-white text-gray-800 text-justify">
-                                <div className="container  mx-auto lg:space-y-24 px-2 lg:px-8 max-w-auto lg:max-w-7xl">
+                                <div className="container  mx-auto lg:space-y-10 px-2 lg:px-8 max-w-auto lg:max-w-7xl">
                                     <div>
                                         <Image
                                             src={scoutimg}
@@ -218,9 +218,8 @@ const scout = () => {
                                 <div  >
                                     <h2 className="text-2xl font-bold text-center">ছবি সমূহ:</h2>
                                     <section className="py-6  text-gray-900">
-                                        <div className="container grid grid-cols-2 gap-1 md:gap-2 lg:gap-4 p-1 md:p-2 lg:p-4 mx-auto md:grid-cols-4">
-
-                                            <Image src={scout5} className="object-cover h-auto mx-auto bg-center rounded-lg shadow-lg  bg-gray-500 w-full col-span-2 row-span-2   lg:min-h-96 md:col-start-3 md:row-start-1   aspect-square" alt="img" />
+                                        <div className="container grid grid-cols-2 gap-1 md:gap-2 lg:gap-2 p-1 md:p-2 lg:p-4 mx-auto md:grid-cols-4">
+                                            <Image src={scout5} className="object-cover h-auto mx-auto bg-center rounded-lg shadow-lg bg-gray-500 w-full col-span-2 row-span-2   lg:min-h-96 md:col-start-3 md:row-start-1 aspect-square" alt="img" />
                                             <Image src={scout1} className="w-full h-full rounded shadow-sm lg:min-h-48  bg-gray-500 aspect-square" alt="img" />
                                             <Image src={scout2} className="w-full h-full rounded shadow-sm lg:min-h-48  bg-gray-500 aspect-square" alt="img" />
                                             <Image src={scout3} className="w-full h-full rounded shadow-sm lg:min-h-48  bg-gray-500 aspect-square" alt="img" />
@@ -234,8 +233,6 @@ const scout = () => {
                                     </section>
                                 </div>
                             </section>
-
-                            <h1>this is for commit</h1>
                         </div>
                     </div>
                 </div>
