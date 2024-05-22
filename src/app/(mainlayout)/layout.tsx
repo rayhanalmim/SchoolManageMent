@@ -1,12 +1,11 @@
-import DashBoardSidebar from "@/components/shared/DashBoard/DashBoardSidebar/DashBoardSidebar";
 import React, { ReactNode } from "react";
-import Header from "@/components/shared/Header/Header";
 import Footer from "@/components/shared/Footer/Footer";
+import NavBar from "@/components/shared/NavBar/NavBar";
 
 const layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
-      <Header />
+     <NavBar/>
       {children}
       <Footer />
     </>

@@ -40,7 +40,7 @@ const Environment = () => {
                         <Image src={envir4} className="hmd:h-[140px] lg:h-[140px] md:w-[140px] lg:w-[140px] rotate-45 rounded-xl ml-10 sm:ml-14 md:-ml-[139px] lg:-ml-[139px] md:-mt-[125px] lg:-mt-[125px]  imgResponsive" alt="this is img" />
                     </div>
                     <div>
-                        <div className='bg-sky-500 md:h-[290px] lg:h-[290px] md:w-[290px] lg:w-[290px] rotate-45 rounded-xl md:ml-[32px] lg:ml-[32px] md:-mt-[100px] lg:-mt-[100px]'></div>
+                        <div className='bg-yellow-300 md:h-[290px] lg:h-[290px] md:w-[290px] lg:w-[290px] rotate-45 rounded-xl md:ml-[32px] lg:ml-[32px] md:-mt-[100px] lg:-mt-[100px]'></div>
                         <Image src={envir1} className="md:h-[290px] lg:h-[290px] md:w-[290px] lg:w-[290px] rotate-45 rounded-xl  ml-[50px] md:ml-0 lg:ml-0 md:-mt-[290px] lg:-mt-[290px] imgResponsive" alt="this is img" />
                     </div>
                     <div>
@@ -48,7 +48,7 @@ const Environment = () => {
                         <Image src={envir3} className="lg:h-[190px] lg:w-[190px] rotate-45 rounded-xl lg:-ml-[250px] ml-10 sm:ml-14 lg:-mt-[190px] imgResponsive" alt="this is img" />
                     </div>
                     <div>
-                        <div className='bg-[#27b8a7] lg:h-[225px] lg:w-[225px] rotate-45 rounded-xl lg:-ml-[120px] lg:-mt-[3px]'></div>
+                        <div className='bg-[#8d5afb] lg:h-[225px] lg:w-[225px] rotate-45 rounded-xl lg:-ml-[120px] lg:-mt-[3px]'></div>
                         <Image src={envir2} className="lg:h-[225px] lg:w-[225px] rotate-45 rounded-xl lg:-ml-[120px] ml-10 sm:ml-14 lg:-mt-[249px] imgResponsive" alt="this is img" />
                     </div>
                 </div>  

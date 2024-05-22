@@ -1,0 +1,9 @@
+.navList{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin:15px 0;
+}
+/* .navList li{
+border:1px 
+} */

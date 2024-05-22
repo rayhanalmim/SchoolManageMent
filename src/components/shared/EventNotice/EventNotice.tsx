@@ -82,6 +82,11 @@ const notices = [
     date: "২৫ এপ্রিল ২০২৪",
     description: "প্রিয় ছাত্র-ছাত্রীবৃন্দ, আমরা এই নোটিশ জানাতে চাই যে, পরিস্কুল/পরিকলেজ পরীক্ষার তারিখ সম্পর্কে প্রাধিকৃত নির্দেশনা প্রদান করা হল। আপনারা সময় পরীক্ষার প্রস্তুতি করতে শুরু করুন এবং নির্দিষ্ট সময়ে পরীক্ষা দেতে সাজুক থাকুন। পরীক্ষার সময় এবং স্থান জানতে, প্রতিষ্ঠানের বোর্ড বা শিক্ষকের সাথে যোগাযোগ করুন।"
   },
+  {
+    text: "মৌখিক-পরীক্ষার-নোটিশ-বাংলা-মাধ্যম",
+    date: "২৫ এপ্রিল ২০২৪",
+    description: "প্রিয় ছাত্র-ছাত্রীবৃন্দ, আমরা এই নোটিশ জানাতে চাই যে, পরিস্কুল/পরিকলেজ পরীক্ষার তারিখ সম্পর্কে প্রাধিকৃত নির্দেশনা প্রদান করা হল। আপনারা সময় পরীক্ষার প্রস্তুতি করতে শুরু করুন এবং নির্দিষ্ট সময়ে পরীক্ষা দেতে সাজুক থাকুন। পরীক্ষার সময় এবং স্থান জানতে, প্রতিষ্ঠানের বোর্ড বা শিক্ষকের সাথে যোগাযোগ করুন।"
+  },
 
 ];
 
@@ -95,7 +100,7 @@ const EventNotice = () => {
           <div>
           {/* <Divider /> */}
           {/* Divider  */}
-          <div className="w-full  border-t border-gray-300 my-[13px]"></div>
+          <div className="w-full  border-t border-gray-300 my-[6px]"></div>
           {news.map(items=>(
             <div className=" bg-base-100 lg:px-6" key={items.date}>
               <figure>
@@ -117,7 +122,7 @@ const EventNotice = () => {
               </div>
               {/* <Divider /> */}
               {/* Divider  */}
-              <div className="w-full  border-t border-gray-300 h-[.5px] my-[11px]"></div>
+              <div className="w-full  border-t border-gray-300 my-[13px]"></div>
             </div>
           ))}
           </div>
@@ -137,7 +142,7 @@ const EventNotice = () => {
           <div>
           {/* <Divider /> */}
           {/* Divider  */}
-          <div className="w-full  border-t border-gray-300 my-[13px]"></div>
+          <div className="w-full  border-t border-gray-300 my-[20px]"></div>
           {notices.map((items, index) => (
             <div key={index} >
 

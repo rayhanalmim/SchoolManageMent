@@ -1,0 +1,20 @@
+.iconWraps {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1eaaf1;
+  color: #fff;
+}
+
+.chooseCard {
+  width: 400px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .chooseCard {
+    width: 100%;
+  }
+}
