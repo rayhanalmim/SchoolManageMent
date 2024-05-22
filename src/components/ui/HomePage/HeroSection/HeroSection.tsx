@@ -1,7 +1,9 @@
 "use client";
 
 /* eslint-disable react/no-unescaped-entities */
-import "swiper/swiper-bundle.min.css";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import "./HeroSection.css";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -32,11 +34,11 @@ const HeroSection = () => {
           <div className="header ">
             <div className="header-content capitalize">
               <div className="left-side">
-                <h1 className="welcome-heading text-xl font-bold text-[#0685FF]">
-                  "Doctor's Care Model School: "
+                <h1 className="welcome-heading text-sm md:text-2xl lg:text-4xl font-bold text-[#0685FF]">
+                Education is the passport to the future, 
                 </h1>
-                <p className="mt-3 text-sm md:text-xl font-semibold welcome-paragraph ">
-                  Nurturing Minds, Inspiring Futures.
+                <p className="mt-3 text-[10px] md:text-xl font-semibold welcome-paragraph ">
+                for tomorrow belongs to those who prepare for it today.
                 </p>
               </div>
             </div>
@@ -46,12 +48,12 @@ const HeroSection = () => {
         <SwiperSlide>
           <div className="header header2">
             <div className="header-content capitalize">
-              <div className="left-side">
-                <h1 className="welcome-heading lg:text-5xl text-xl  font-bold text-[#0685FF]">
-                  Doctor's Care Model School
+            <div className="left-side">
+                <h1 className="welcome-heading text-sm md:text-2xl lg:text-4xl font-bold text-[#0685FF]">
+                Education is the passport to the future, 
                 </h1>
-                <p className="mt-3 text-sm lg:text-3xl font-semibold welcome-paragraph ">
-                  Cultivating Excellence, Shaping Tomorrow's Leaders.
+                <p className="mt-3 text-sm md:text-xl font-semibold welcome-paragraph ">
+                for tomorrow belongs to those who prepare for it today.
                 </p>
               </div>
             </div>
@@ -60,12 +62,12 @@ const HeroSection = () => {
         <SwiperSlide>
           <div className="header header2">
             <div className="header-content capitalize">
-              <div className="left-side">
-                <h1 className="welcome-heading lg:text-5xl text-xl font-bold text-[#0685FF]">
-                  "Doctor's Care Model School: "
+            <div className="left-side">
+                <h1 className="welcome-heading text-sm md:text-2xl lg:text-4xl font-bold text-[#0685FF]">
+                Education is the passport to the future, 
                 </h1>
-                <p className="mt-3 text-sm lg:text-3xl font-semibold welcome-paragraph">
-                  Every Student is a Masterpiece in the Making.
+                <p className="mt-3 text-sm md:text-xl font-semibold welcome-paragraph ">
+                for tomorrow belongs to those who prepare for it today.
                 </p>
               </div>
             </div>

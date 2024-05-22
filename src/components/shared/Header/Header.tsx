@@ -120,7 +120,7 @@ const Header = () => {
 
 
   return (
-    <nav className="bg-white h-10 md:h-20 z-10 shadow-md pb-1 w-full ">
+    <nav className="bg-white h-10 lg:h-20 z-10 shadow-md pb-1 w-full ">
       <div className="w-full  lg:h-20 mx-auto items-center justify-center lg:flex ">
         {/* <Link href="/">
           <h2 className="text-2xl font-bold -mt-14 lg:-mt-0">SoftyEdu</h2>

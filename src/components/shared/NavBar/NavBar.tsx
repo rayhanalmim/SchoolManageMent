@@ -4,12 +4,14 @@ import Image from "next/image";
 import React from "react";
 import logo from "../../../../src/assets/images/logo4.png";
 import "./NavBar.css";
+import Link from "next/link";
 const NavBar = () => {
   return (
     <>
       <header className="h-auto lg:h-28 py-2 shadow-lg bg-[#1EAAF1] text-white ">
         <Container>
           <div className="flex flex-col gap-3 md:gap-0 md:flex-row items-center justify-between ">
+            <Link href='/'>
             <div className="logo">
               <Image
                 src={logo}
@@ -17,6 +19,7 @@ const NavBar = () => {
                 className=" w-20 h-20 md:w-24 md:h-24 rounded-full object-fit "
               />
             </div>
+            </Link>
             <div className="text-center ">
               <h1 className="text-2xl md:text-3xl font-semibold text-[#ff]">
                 ডক্টরস কেয়ার মডেল স্কুল

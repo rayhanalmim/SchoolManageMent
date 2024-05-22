@@ -48,28 +48,43 @@ const govorningBody = [
     Name: "Leroy Jenkins",
     Subject: "Governing Body",
     img: governing6,
-  }
+  },
 ];
 
 const socialIcon = (
-            <div className="flex gap-1 mt-2 ">
-              <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-600">
-                <FaFacebookF className="w-4 h-4" />
-              </a>
-              <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-600 ">
-                <FaXTwitter className="w-4 h-4" />
-              </a>
-              <a rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-600 ">
-                <FaLinkedinIn className="w-4 h-4" />
-              </a>
-            </div>
-)
+  <div className="flex gap-1 mt-2 ">
+    <a
+      rel="noopener noreferrer"
+      href="#"
+      title="Twitter"
+      className="text-gray-600"
+    >
+      <FaFacebookF className="w-4 h-4" />
+    </a>
+    <a
+      rel="noopener noreferrer"
+      href="#"
+      title="LinkedIn"
+      className="text-gray-600 "
+    >
+      <FaXTwitter className="w-4 h-4" />
+    </a>
+    <a
+      rel="noopener noreferrer"
+      href="#"
+      title="GitHub"
+      className="text-gray-600 "
+    >
+      <FaLinkedinIn className="w-4 h-4" />
+    </a>
+  </div>
+);
 
 const governingBody = () => {
   return (
     <>
-      <section className=" bg-gray-100  lg:pb-4 text-gray-800 ">
-        <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-0">
+      <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
+        <div className="xl:w-[1260px] mx-auto lg:flex gap-1 ">
           <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
             <AdministrationSidebar />
           </div>
@@ -94,12 +109,11 @@ const governingBody = () => {
                     <div className="flex flex-col items-center pb-3">
                       <h4 className="text-xl font-semibold">Leroy Jenkins</h4>
                       <p className="text-sm text-gray-600">Chairmen</p>
-                      
+
                       {socialIcon}
-                      
                     </div>
                   </div>
-                  <div className="grid w-full grid-cols-1 gap-x-3 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+                  <div className="grid w-full grid-cols-1 gap-x-3 gap-y-12 sm:grid-cols-2 xl:grid-cols-3">
                     {govorningBody.map((items) => (
                       <div
                         key={items.Name}
