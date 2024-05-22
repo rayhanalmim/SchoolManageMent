@@ -7,8 +7,8 @@ import common_room from "../../../../public/assests/facilities/common_room.jpg";
 const videos = () => {
   return (
     <>
-      <section className="bg-gray-100 lg:py-12 text-gray-800">
-        <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
+      <section className="bg-gray-100 lg:pb-4 text-gray-800">
+        <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-0">
           <div className="py-5 lg:pr-5 px-5 md:px-0 lg:px-0">
             <GallerySidebar />
           </div>

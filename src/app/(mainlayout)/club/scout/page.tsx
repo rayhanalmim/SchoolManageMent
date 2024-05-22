@@ -12,8 +12,8 @@ import Image from "next/image";
 const scout = () => {
     return (
         <>
-            <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
-                <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
+            <section className=" bg-gray-100  lg:pb-4 text-gray-800 ">
+                <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-0">
                     <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
                         <ClubSidebar />
                     </div>
@@ -25,6 +25,7 @@ const scout = () => {
                                 </h3>
                             </div>
                             {/* Divider  */}
+                            
                             <div className="w-full  border-t border-gray-300 my-3 md:my-6 lg:my-6"></div>
                             <section className=" lg:w-auto border rounded p-2 bg-white text-gray-800 text-justify">
                                 <div className="container  mx-auto lg:space-y-24 px-2 lg:px-8 max-w-auto lg:max-w-7xl">
@@ -233,6 +234,8 @@ const scout = () => {
                                     </section>
                                 </div>
                             </section>
+
+                            <h1>this is for commit</h1>
                         </div>
                     </div>
                 </div>

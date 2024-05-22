@@ -15,7 +15,7 @@ import { TProps } from '@/types';
 const moreImage = ({params}:TProps) => {
 	console.log(params);
     return (
-        <div className='lg:w-[1260px] mx-auto lg:pt-24'>
+        <div className='lg:w-[1260px] mx-auto lg:pt-0'>
            
             <section className="border rounded mx-auto py-6  bg-gray-100  text-gray-900 mb-5">
 	<div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
