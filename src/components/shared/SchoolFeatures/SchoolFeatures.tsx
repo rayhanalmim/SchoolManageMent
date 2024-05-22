@@ -61,7 +61,7 @@ const SchoolFeatures = () => {
                     </div>
                 </div>
             </section>
-            
+            <h1>this is for amrge</h1>
         </div>
     );
 };
