@@ -2,9 +2,9 @@ import GallerySidebar from "@/components/shared/GallerySidebar/GallerySidebar";
 import Image from "next/image";
 import common_room from "../../../../../public/assests/facilities/common_room.jpg";
 import scienceimg from "../../../../../public/assests/scienceclub.jpg";
-import historyImg from "../../../../../public/assests/historyImg.jpg";
+import historyImg from "../../../../../public/assests/doctorsCare/images/21.jpg";
 import student from "../../../../../public/assests/student.jpg";
-import annual from "../../../../../public/assests/img/annual.jpg";
+import annual from "../../../../../public/assests/doctorsCare/images/20.jpg";
 import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
 
 import Link from "next/link";
