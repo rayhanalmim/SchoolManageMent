@@ -115,18 +115,6 @@
   color: #fff;
 }
 
-.left-side h1 {
-  margin-bottom: 0px;
-  animation: animate_left 2s 1 ease, maintain_font_size 10s infinite;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.left-side p {
-  animation: animate_right 2s 1 ease 1s, maintain_font_size 10s infinite;
-  font-size: 8px;
-  line-height: 12px;
-}
 
 
 @media only screen and (max-width: 500px) {
@@ -148,5 +136,18 @@
   .header {
     height: 35vh;
   }
+  .left-side h1 {
+    margin-bottom: 0px;
+    animation: animate_left 2s 1 ease, maintain_font_size 10s infinite;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
+  .left-side p {
+    animation: animate_right 2s 1 ease 1s, maintain_font_size 10s infinite;
+    font-size: 8px;
+    line-height: 12px;
+  }
+  
  
 }

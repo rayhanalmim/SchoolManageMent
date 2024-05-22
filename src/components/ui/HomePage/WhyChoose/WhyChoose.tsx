@@ -50,7 +50,7 @@ const WhyChoose = () => {
 
   return (
     <Container className="my-2 md:my-4 lg:my-12">
-      <h1 className="text-2xl md:text-3xl font-semibold ">কেন আমাদের স্কুলে আসবেন?</h1>
+      <h1 className="text-xl md:text-3xl font-semibold mb-5 md:mb-2 text-center">কেন আমাদের স্কুলে আসবেন?</h1>
       <div className="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 gap-8 place-items-center ">
         {chooseData.map((data, i) => (
           <div key={data.id}>
@@ -73,7 +73,7 @@ const WhyChoose = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl md:text-2xl font-semibold ">{data.title}</h3>
+                <h3 className=" md:text-2xl font-semibold ">{data.title}</h3>
                 <p className="leading-8">{data.text}</p>
               </div>
             </div>
