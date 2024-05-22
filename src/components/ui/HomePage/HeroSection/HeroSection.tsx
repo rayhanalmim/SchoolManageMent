@@ -18,7 +18,7 @@ const HeroSection = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 5000,
+          delay: 500000000000000000000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -27,7 +27,7 @@ const HeroSection = () => {
         navigation={true}
         loop={true} // Enable looping for smooth transitions
         modules={[Autoplay, Pagination, Navigation]}
-        speed={1500} // Set the transition speed to 1000ms (1 second)
+        speed={15000000000000000000} // Set the transition speed to 1000ms (1 second)
         className="mySwiper"
       >
         <SwiperSlide>

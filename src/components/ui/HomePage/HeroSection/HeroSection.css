@@ -139,14 +139,16 @@
   .left-side h1 {
     margin-bottom: 0px;
     animation: animate_left 2s 1 ease, maintain_font_size 10s infinite;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 15px;
+    line-height: 16px;
+    color: #fff;
   }
   
   .left-side p {
     animation: animate_right 2s 1 ease 1s, maintain_font_size 10s infinite;
-    font-size: 8px;
+    font-size: 10px;
     line-height: 12px;
+    margin-top: 5px;
   }
   
  
