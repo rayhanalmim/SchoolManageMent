@@ -1,7 +1,9 @@
 "use client";
 
 /* eslint-disable react/no-unescaped-entities */
-import "swiper/swiper-bundle.min.css";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import "./HeroSection.css";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
