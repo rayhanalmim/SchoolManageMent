@@ -170,7 +170,7 @@ const englishVersionResult = () => {
                   </label>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <button className="btn btn-neutral btn-wide mt-5">Submit</button>
+                  <button className="btn btn-neutral md:btn-wide lg:btn-wide mt-5">Submit</button>
                 </div>
               </section>
 
@@ -184,47 +184,47 @@ const englishVersionResult = () => {
                 <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
                 {/* -------first section--------- */}
                 <div className="lg:w-full text-xs md:text-base lg:text-base">
-                  <table className="border-collapse border border-gray-400 lg:w-full mx-auto file:">
+                  <table className="border-collapse border border-gray-400 lg:w-full mx-auto">
                     <thead>
-                      <tr className="bg-gray-100">
-                        <td className="border border-gray-400 p-2">Roll No.</td>
-                        <td className="border border-gray-400 p-2">12345</td>
-                        <td className="border border-gray-400 p-2">Class</td>
-                        <td className="border border-gray-400 p-2">4</td>
+                      <tr className="bg-gray-100 text-center">
+                        <td className="border border-gray-400 p-[2px] md:p-1p-2">Roll No.</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">12345</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Class</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">4</td>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td className="border border-gray-400 p-2">Student Name</td>
-                        <td className="border border-gray-400 p-2" colSpan="3">Mr. Chamal </td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Student Name</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2" colSpan="3">Mr. Chamal </td>
                       </tr>
                       <tr className="bg-gray-100">
-                        <td className="border border-gray-400 p-2">Father Name</td>
-                        <td className="border border-gray-400 p-2" colSpan="3">Mr. Chamal </td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Father Name</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2" colSpan="3">Mr. Chamal </td>
 
                       </tr>
                       <tr>
-                        <td className="border border-gray-400 p-2">Mother Name</td>
-                        <td className="border border-gray-400 p-2" colSpan="3">Mr. Chamal </td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Mother Name</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2" colSpan="3">Mr. Chamal </td>
 
                       </tr>
                       <tr className="bg-gray-100">
-                        <td className="border border-gray-400 p-2">Board</td>
-                        <td className="border border-gray-400 p-2">Rajshahi</td>
-                        <td className="border border-gray-400 p-2">Session</td>
-                        <td className="border border-gray-400 p-2">2023-2024</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Board</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Rajshahi</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Session</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">2023-2024</td>
                       </tr>
                       <tr>
-                        <td className="border border-gray-400 p-2">Group</td>
-                        <td className="border border-gray-400 p-2">Science</td>
-                        <td className="border border-gray-400 p-2">Type</td>
-                        <td className="border border-gray-400 p-2">Regular</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Group</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Science</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Type</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Regular</td>
                       </tr>
                       <tr className="bg-gray-100">
-                        <td className="border border-gray-400 p-2">Result</td>
-                        <td className="border border-gray-400 p-2">GPA = 4.00</td>
-                        <td className="border border-gray-400 p-2">Date of Birth</td>
-                        <td className="border border-gray-400 p-2">16-05-1996</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Result</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">GPA = 4.00</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Date of Birth</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">16-05-1996</td>
                       </tr>
 
                     </tbody>
@@ -233,20 +233,20 @@ const englishVersionResult = () => {
                 {/* --------second section-------- */}
                 <h2 className="text-xl md:text-2xl lg:text-2xl text-center py-5">Subject Wise grade / marks</h2>
                 <div className="lg:w-full text-xs md:text-base lg:text-base">
-                  <table className=" border border-gray-400  lg:w-full mx-auto ">
+                  <table className=" border border-gray-400  lg:w-full mx-auto">
                     <tbody>
                       <tr className="text-center bg-green-500 text-white font-bold">
-                        <td className="border border-gray-400 p-2">Subject Code</td>
-                        <td className="border border-gray-400 p-2">Subject Name</td>
-                        <td className="border border-gray-400 p-2">Marks</td>
-                        <td className="border border-gray-400 p-2">Grade</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Subject Code</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Subject Name</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Marks</td>
+                        <td className="border border-gray-400 p-[2px] md:p-2 lg:p-2">Grade</td>
                       </tr>
                       {tables.map((items, index) => (
                         <tr key={items.name}>
-                          <td className={`border border-gray-400 p-2 text-center ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>{items.subCode}</td>
-                          <td className={`border border-gray-400 p-2 uppercase ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>{items.name}</td>
-                          <td className={`border border-gray-400 p-2 text-center ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>{items.marks}</td>
-                          <td className={`border border-gray-400 p-2 text-center ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>{items.grade}</td>
+                          <td className={`border border-gray-400 p-[2px] md:p-2 lg:p-2 text-center ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>{items.subCode}</td>
+                          <td className={`border border-gray-400 p-[2px] md:p-2 lg:p-2 uppercase ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>{items.name}</td>
+                          <td className={`border border-gray-400 p-[2px] md:p-2 lg:p-2 text-center ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>{items.marks}</td>
+                          <td className={`border border-gray-400 p-[2px] md:p-2 lg:p-2 text-center ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>{items.grade}</td>
                         </tr>
                       ))}
                     </tbody>
