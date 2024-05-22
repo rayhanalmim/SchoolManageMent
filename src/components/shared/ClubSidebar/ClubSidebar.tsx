@@ -15,7 +15,7 @@ const ClubSidebar = () => {
 					Club
 				</h3>
 			</div>
-			<div className="p-2 w-64 lg:flex justify-center lg:py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded items-center content-center text-sm md:text-base lg:text-base">
+			<div className="p-2 lg:w-64 lg:flex justify-center lg:py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded items-center content-center text-sm md:text-base lg:text-base">
 				<Link href={"/club/scout"} className={`${currentRoute === "/club/scout" ? activeStyle : nonActiveStyle} px-2 `}>Scout Club</Link>
 				{/* <div className="border lg:w-full"></div> */}
 				<div className="w-full  border-t border-gray-300 "></div>

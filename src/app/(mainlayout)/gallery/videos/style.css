@@ -1,0 +1,39 @@
+@media only screen and (max-width:1040px){
+    .videos{
+      width:100% !important;
+    }
+  }    
+@media only screen and (max-width:768px){
+    .videos{
+      width:100% !important;
+    }
+  }    
+@media only screen and (max-width:500px){
+    .videos{
+      width:408px !important;
+    }
+  }    
+@media only screen and (max-width:425px){
+    .videos{
+      width:360px !important;
+    }
+  }    
+  @media only screen and (max-width:375px){
+    .videos{
+      width:350px !important;
+    }
+  }    
+  @media only screen and (max-width:320px){
+    .videos{
+      width:304px !important;
+    }
+  }    
+  
+  @media only screen and (max-width:275px){
+    .videos{
+        width:235px !important;
+    }
+    .smallImg{
+        display: none !important;
+    }
+}     

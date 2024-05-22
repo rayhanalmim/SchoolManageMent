@@ -15,7 +15,7 @@ const FacilitiesSidebar = () => {
 					Facilities
 					</h3>
 				</div>
-				<div className="p-2 w-64 lg:flex justify-center lg:py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded items-center content-center text-sm md:text-base lg:text-base">				
+				<div className="p-2 lg:w-64 lg:flex justify-center lg:py-2 col-span-full md:col-span-1 md:flex-col md:justify-start md:items-start bg-white gap-2 rounded items-center content-center text-sm md:text-base lg:text-base">				
 					<Link href={"/facilities/scienceLab"} className={`${currentRoute === "/facilities/scienceLab" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>Science Lab</Link>
 					<div className="border lg:w-full"></div>
 					<Link href={"/facilities/ictLab"} className={`${currentRoute === "/facilities/ictLab" ? activeStyle : nonActiveStyle} px-2 text-sm md:text-basic lg:text-basic`}>
