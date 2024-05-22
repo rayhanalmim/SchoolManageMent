@@ -49,13 +49,13 @@ const WhyChoose = () => {
   ];
 
   return (
-    <Container>
+    <Container className="my-2 md:my-4 lg:my-12">
       <h1 className="text-3xl font-semibold ">কেন আমাদের স্কুলে আসবেন?</h1>
-      <div className="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 gap-10 place-items-center ">
+      <div className="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 gap-8 place-items-center ">
         {chooseData.map((data, i) => (
           <div key={data.id}>
-            <div className="chooseCard flex justify-between mt-16">
-              <div className="mr-5">
+            <div className="chooseCard flex justify-between mt-10">
+              <div className="mr-6">
                 <div className="">
                   {i === 0 ? (
                     <Image className="w-40" src={hero} alt="hero" />

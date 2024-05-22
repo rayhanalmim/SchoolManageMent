@@ -38,10 +38,10 @@
 
 .header {
   position: relative;
-  height: 50vh;
-  background-image: url(../../../../../public/assests/s1.jpg);
+  height: 60vh;
+  background-image: url(../../../../../public/assests/doctorsCare/slider/4.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   transition: all 0.5s ease-in-out;
   animation: zoom 10s;
 }

@@ -20,7 +20,7 @@ const HeroSection = () => {
           disableOnInteraction: false,
         }}
         pagination={{
-          clickable: true,
+          clickable: true, 
         }}
         navigation={true}
         loop={true} // Enable looping for smooth transitions

@@ -135,6 +135,9 @@ const Header = () => {
           <h2 className="hidden lg:flex gap-2 items-center">Log In <FaArrowRightLong /></h2>
         </Link>
 
+
+        {/* mobile menu */}
+
         <div className="lg:hidden flex justify-between px-2">
           <Link href="/">
             <h2 className="text-2xl font-bold">SoftyEdu</h2>
