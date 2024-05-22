@@ -56,18 +56,18 @@ const Hero = () => {
               >
                 <div className="iconWrap">
                   {i === 0 ? (
-                    <FaUserTie size={80} />
+                    <FaUserTie className="learningIcon" />
                   ) : i === 1 ? (
-                    <FaUserMd size={80} />
+                    <FaUserMd className="learningIcon" />
                   ) : i === 2 ? (
-                    <HiOutlineBookOpen size={80} />
+                    <HiOutlineBookOpen className="learningIcon" />
                   ) : i === 3 ? (
-                    <FaFileAlt size={80} />
+                    <FaFileAlt className="learningIcon" />
                   ) : null}
                 </div>
                 <div className="my-3 space-y-3">
-                  <h2 className="text-2xl font-semibold">{data.title}</h2>
-                  <p>{data.text}</p>
+                  <h2 className="text-xl md:text-2xl font-semibold ">{data.title}</h2>
+                  <p className="sm:text-sm ">{data.text}</p>
                 </div>
               </div>
             </div>

@@ -51,15 +51,15 @@ const SeeImgandVideos = () => {
             <div className="lg:my-16">
                 <div className="lg:w-[1260px] lg:mx-auto bg-gray-100 text-gray-900 lg:flex ">
                     <div className="lg:w-[550px] lg:px-10 bg-blue-900">
-                        <div className="relative lg:mx-1 p-4 lg:pt-5 lg:h-[410px] lg:w-[580px]">
-                            <div className="carousel lg:mb-20 h-[240px] lg:h-[340px] lg:w-[800px]">
+                        <div className="relative lg:mx-1 p-4 lg:pt-5 h-[220px] md:h-[440px] lg:h-[410px] md:w-[760px] lg:w-[580px]">
+                            <div className="carousel lg:mb-20 h-[240px] md:h-[380px] lg:h-[340px] lg:w-[800px]">
                                 {slides.map((slide, index) => (
                                     <div
                                         key={index}
                                         className={`slide ${currentIndex === index ? "block" : "hidden"
                                             } lg:space-y-2`}
                                     >
-                                        <Image src={slide.img} alt={`campus-${index}`} className='h-[220px] lg:h-[340px] lg:w-[580px]' />
+                                        <Image src={slide.img} alt={`campus-${index}`} className='h-[220px] md:h-[380px] lg:h-[340px] md:w-[720px] lg:w-[580px]' />
                                     </div>
                                 ))}
                             </div>

@@ -83,7 +83,7 @@ const login = () => {
   //   };
   return (
     <div className="bg-gray-100  ">
-      <div className="lg:w-[1260px]  py-8 pt-20 lg:pt-24 mx-auto ">
+      <div className="lg:w-[1260px]  py-8 pt-20 lg:pt-0 mx-auto ">
         <div className="shadow-xl mx-2 lg:mx-48 my-5 bg-white rounded-lg p-4 lg:p-8">
           <div className="grid md:grid-cols-2">
             <div className="flex flex-col items-center space-y-5">

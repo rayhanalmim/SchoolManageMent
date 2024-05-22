@@ -20,7 +20,7 @@ const HeroSection = () => {
           disableOnInteraction: false,
         }}
         pagination={{
-          clickable: true, 
+          clickable: true,
         }}
         navigation={true}
         loop={true} // Enable looping for smooth transitions
@@ -29,43 +29,43 @@ const HeroSection = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="header">
+          <div className="header ">
             <div className="header-content capitalize">
               <div className="left-side">
-                <h1 className="welcome-heading text-2xl font-bold text-[#0685FF]">
-                "Doctor's Care Model School: "
+                <h1 className="welcome-heading text-xl font-bold text-[#0685FF]">
+                  "Doctor's Care Model School: "
                 </h1>
-                <p className="mt-3 text-xl font-semibold welcome-paragraph ">
-                Nurturing Minds, Inspiring Futures.
+                <p className="mt-3 text-sm md:text-xl font-semibold welcome-paragraph ">
+                  Nurturing Minds, Inspiring Futures.
                 </p>
               </div>
             </div>
           </div>
         </SwiperSlide>
-       
+
         <SwiperSlide>
-          <div className="header">
+          <div className="header header2">
             <div className="header-content capitalize">
               <div className="left-side">
-                <h1 className="welcome-heading text-2xl  font-bold text-[#0685FF]">
-                "Doctor's Care Model School: "
+                <h1 className="welcome-heading lg:text-5xl text-xl  font-bold text-[#0685FF]">
+                  Doctor's Care Model School
                 </h1>
-                <p className="mt-3 text-xl font-semibold welcome-paragraph ">
-                Cultivating Excellence, Shaping Tomorrow's Leaders.
+                <p className="mt-3 text-sm lg:text-3xl font-semibold welcome-paragraph ">
+                  Cultivating Excellence, Shaping Tomorrow's Leaders.
                 </p>
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="header">
+          <div className="header header2">
             <div className="header-content capitalize">
               <div className="left-side">
-                <h1 className="welcome-heading text-2xl font-bold text-[#0685FF]">
-                "Doctor's Care Model School: "
+                <h1 className="welcome-heading lg:text-5xl text-xl font-bold text-[#0685FF]">
+                  "Doctor's Care Model School: "
                 </h1>
-                <p className="mt-3 text-xl font-semibold welcome-paragraph md:text-3xl">
-                 Every Student is a Masterpiece in the Making.
+                <p className="mt-3 text-sm lg:text-3xl font-semibold welcome-paragraph">
+                  Every Student is a Masterpiece in the Making.
                 </p>
               </div>
             </div>

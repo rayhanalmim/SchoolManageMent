@@ -10,7 +10,7 @@ import { TProps } from '@/types';
 const teacherDetails = ({ params }:TProps) => {
   console.log(params);
   return (
-    <div className="lg:w-[1260px] lg:pt-24 mx-auto lg:pb-5 ">
+    <div className="lg:w-[1260px] lg:pt-0 mx-auto lg:pb-5 ">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:flex-row gap-2 border broder-gray-800 rounded px-10 ">
         {/* img,social icon */}
         <div className="flex mx-auto py-10 items-center content-center ">

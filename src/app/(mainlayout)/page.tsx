@@ -20,11 +20,9 @@ export default function Home() {
       <NotificationSlider />
       <HeroSection/>
       <Hero/>
-
-      <Corner />
       <WhyChoose/>
       {/* <Slider /> */}
-      
+      <Corner />
 
       <EventNotice />
       <Environment />
