@@ -8,7 +8,7 @@ const contact = () => {
   return (
     <>
 
-      <div className="lg:w-[1260px] items-center justify-center content-center pt-16 mx-2 md:mx-0 lg:mx-auto">
+      <div className="lg:w-[1260px] items-center justify-center content-center  mx-2 md:mx-0 lg:mx-auto">
 
         {/* email */}
         <div className="w-64 mx-auto py-6 md:py-8 lg:py-10">
@@ -140,7 +140,6 @@ const contact = () => {
                 </h1>
                 <div className="space-y-4">
                   <p className="flex justify-center items-center">
-
                     <span>softedu@softedu.com</span>
                   </p>
                 </div>

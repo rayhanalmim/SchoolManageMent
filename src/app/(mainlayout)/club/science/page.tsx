@@ -9,8 +9,8 @@ import science3 from "../../../../../public/assests/club/science3.jpg"
 const science = () => {
     return (
         <>            
-            <section className=" bg-gray-100  lg:py-12 text-gray-800 ">
-        <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-9">
+            <section className=" bg-gray-100  lg:pb-4 text-gray-800 ">
+        <div className="lg:w-[1260px] mx-auto lg:flex gap-1 lg:mt-0">
           <div className="py-5 pr-8 lg:pr-5 pl-8 md:pl-0 lg:pl-0 ">
                         <ClubSidebar />
                     </div>

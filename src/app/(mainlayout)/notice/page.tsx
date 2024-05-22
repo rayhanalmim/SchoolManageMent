@@ -50,8 +50,7 @@ const notices = [
 ];
 const notice = () => {
     return (
-        <div className="lg:pt-24 lg:mx-auto bg-gray-100">
-      
+        <div className="lg:pt-0 lg:mx-auto bg-gray-100">      
         
         <NoticeBoard/>
      
