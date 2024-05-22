@@ -21,14 +21,21 @@
   justify-content: center;
   align-items: center;
   background: #fff;
-  color:#1EAAF1;
+  color: #1EAAF1;
   margin: 0 auto;
   position: relative;
   margin-top: -70px;
   z-index: 99;
+  transition: all .5s cubic-bezier(0.41, 0.4, 0.62, 0.58);
+  scale: 1;
 }
 .learningIcon{
   font-size: 70px;
+}
+.heroCard:hover .iconWrap{
+  background:#1EAAF1;
+  color:#fff;
+  scale: 1.2;
 }
 
 

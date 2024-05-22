@@ -42,15 +42,15 @@ const Hero = () => {
               <div
                 className={
                   i === 0
-                    ? "heroCard bg-[#9145B6]"
+                    ? "heroCard bg-[#9145B6] transition-colors duration-500 ease-in-out hover:bg-[#4942E4] cursor-pointer"
                     : i === 1
-                    ? "heroCard bg-[#5D50C6]"
+                    ? "heroCard bg-[#5D50C6] transition-colors duration-500 ease-in-out hover:bg-[#8CC152] cursor-pointer "
                     : i === 2
-                    ? "heroCard bg-[#F1453D]"
+                    ? "heroCard bg-[#F1453D] transition-colors duration-500 ease-in-out hover:bg-[#9145B6] cursor-pointer "
                     : i === 3
-                    ? "heroCard bg-[#8CC152] "
+                    ? "heroCard bg-[#8CC152] transition-colors duration-500 ease-in-out hover:bg-[#F1453D] cursor-pointer "
                     : i === 5
-                    ? "heroCard bg-[#4942E4]"
+                    ? "heroCard bg-[#4942E4] transition-colors duration-500 ease-in-out hover:bg-[#9145B6] cursor-pointer"
                     : ""
                 }
               >

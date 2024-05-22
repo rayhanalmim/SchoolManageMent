@@ -16,7 +16,7 @@ const HeroSection = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 50000000000000000000000000000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -25,7 +25,7 @@ const HeroSection = () => {
         navigation={true}
         loop={true} // Enable looping for smooth transitions
         modules={[Autoplay, Pagination, Navigation]}
-        speed={2000000000000000000} // Set the transition speed to 1000ms (1 second)
+        speed={2000} // Set the transition speed to 1000ms (1 second)
         className="mySwiper"
       >
         <SwiperSlide>
@@ -35,7 +35,7 @@ const HeroSection = () => {
                 <h1 className="welcome-heading text-sm md:text-2xl lg:text-4xl font-bold text-[#0685FF]">
                 Education is the passport to the future, 
                 </h1>
-                <p className="mt-3 text-sm md:text-xl font-semibold welcome-paragraph ">
+                <p className="mt-3 text-[10px] md:text-xl font-semibold welcome-paragraph ">
                 for tomorrow belongs to those who prepare for it today.
                 </p>
               </div>
