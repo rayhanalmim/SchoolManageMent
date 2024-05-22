@@ -1,12 +1,17 @@
 import ClubSidebar from "@/components/shared/ClubSidebar/ClubSidebar";
 
 import Image from "next/image";
-import logo from "../../../../../public/assests/club/artnculture1.png"
-import scout1 from "../../../../../public/assests/club/artnculture2.png";
-import scout2 from "../../../../../public/assests/club/artnculture3.jpeg";
-import scout3 from "../../../../../public/assests/club/artnculture5.png";
-import scout4 from "../../../../../public/assests/club/artnculture6.jpg";
-import scout5 from "../../../../../public/assests/club/artnculture7.jpeg";
+import logo from "../../../../../public/assests/doctorsCare/club/artNculture/logo.jpg"
+import art1 from "../../../../../public/assests/doctorsCare/club/artNculture/art2.jpg";
+import art2 from "../../../../../public/assests/doctorsCare/club/artNculture/art3.jpg";
+import art3 from "../../../../../public/assests/doctorsCare/club/artNculture/art4.jpg";
+import art4 from "../../../../../public/assests/doctorsCare/club/artNculture/art.jpg";
+import art5 from "../../../../../public/assests/doctorsCare/club/artNculture/art2.jpg";
+// import art1 from "../../../../../public/assests/club/artnculture2.png";
+// import art2 from "../../../../../public/assests/club/artnculture3.jpeg";
+// import art3 from "../../../../../public/assests/club/artnculture5.png";
+// import art4 from "../../../../../public/assests/club/artnculture6.jpg";
+// import art5 from "../../../../../public/assests/club/artnculture7.jpeg";
 
 const artNculture = () => {
     return (
@@ -59,11 +64,11 @@ const artNculture = () => {
                                     <h2 className="text-2xl font-bold text-center">ছবি সমূহ:</h2>
                                     <section className="py-6  text-gray-900">
                                         <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
-                                            <Image src={scout5} className="object-cover h-auto mx-auto bg-center rounded-lg shadow-lg  bg-gray-500 w-full col-span-2 row-span-2   min-h-96 md:col-start-3 md:row-start-1 aspect-square" alt="img" />
-                                            <Image src={scout1} className="w-full h-full rounded shadow-sm min-h-48  bg-gray-500 aspect-square" alt="img" />
-                                            <Image src={scout2} className="w-full h-full rounded shadow-sm min-h-48  bg-gray-500 aspect-square" alt="img" />
-                                            <Image src={scout3} className="w-full h-full rounded shadow-sm min-h-48  bg-gray-500 aspect-square" alt="img" />
-                                            <Image src={scout4} className="w-full h-full rounded shadow-sm min-h-48  bg-gray-500 aspect-square" alt="img" />
+                                            <Image src={art5} className="object-cover h-auto mx-auto bg-center rounded-lg shadow-lg  bg-gray-500 w-full col-span-2 row-span-2   min-h-96 md:col-start-3 md:row-start-1 aspect-square" alt="img" />
+                                            <Image src={art1} className="w-full h-full rounded shadow-sm min-h-48  bg-gray-500 aspect-square" alt="img" />
+                                            <Image src={art2} className="w-full h-full rounded shadow-sm min-h-48  bg-gray-500 aspect-square" alt="img" />
+                                            <Image src={art3} className="w-full h-full rounded shadow-sm min-h-48  bg-gray-500 aspect-square" alt="img" />
+                                            <Image src={art4} className="w-full h-full rounded shadow-sm min-h-48  bg-gray-500 aspect-square" alt="img" />
 
                                         </div>
                                     </section>

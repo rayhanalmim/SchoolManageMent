@@ -12,7 +12,7 @@ const OnlineApplication = () => {
 
                 <div className="hero-content text-center text-bold text-black">
                     <div className="">
-                        <p className="mb-5">SoftyEdu তে নির্ভরযোগ্য ও স্বল্প খরছে দ্রুত সময়ের মধ্যে ভর্তি হতে আজই অনলাইনে আবেদন করুন। </p>
+                        <p className="mb-5">Doctors Care Model School এ নির্ভরযোগ্য ও স্বল্প খরছে দ্রুত সময়ের মধ্যে ভর্তি হতে আজই অনলাইনে আবেদন করুন। </p>
                         <Link href="/admission/schoolAdmission">
                         <button className="btn btn-warning">Online Apply</button></Link>
                     </div>

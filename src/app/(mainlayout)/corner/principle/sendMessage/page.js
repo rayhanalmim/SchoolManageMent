@@ -1,5 +1,5 @@
 import PrincipleSidebar from "@/components/shared/Corner/PrincipleSidebar/PrincipleSidebar";
- 
+
 import Image from "next/image";
 import award from "../../../../../../public/assests/191010-0697-web.jpg";
 
@@ -21,18 +21,17 @@ const principle = () => {
               </div>
               {/* Divider  */}
               <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
-              <div className="lg:w-auto border rounded p-4 bg-white ">
+              <div className="lg:w-auto border rounded p-1 md:p-2 lg:p-4 bg-white ">
                 <section className="p-0 lg:p-2  text-gray-800 ">
-                  <div className="container mx-auto space-y-8">
-
+                  <div className="container mx-auto lg:space-y-8">
                     <section className="text-gray-900">
                       <div className="border">
                         <div className="p-3 border-b-[1px] pl-6">
-                          <h1 className=" text-xl">Feel Free to Send Any Feedback</h1>
+                          <h1 className=" lg:text-xl">Feel Free to Send Any Feedback</h1>
                         </div>
 
-                        <form noValidate="" className="p-6">
-                          <div className="flex gap-2 w-full ">
+                        <form className="p-2 md:p-4 lg:p-6">
+                          <div className="lg:flex gap-2 w-full ">
                             <label className=" w-full">
                               <span className="mb-1 font-light text-gray-500">First Name*</span>
                               <input type="text" className="border w-full p-2" />
@@ -43,16 +42,16 @@ const principle = () => {
                             </label>
                           </div>
                           <div className="my-5">
-                          <label className="">
-                            <span className="mb-1 font-light text-gray-500">Email*</span>
-                            <input type="email" className="border p-2 w-full" />
-                          </label>
+                            <label className="">
+                              <span className="mb-1 font-light text-gray-500">Email*</span>
+                              <input type="email" className="border p-2 w-full" />
+                            </label>
                           </div>
                           <div className="my-5">
-                          <label className="">
-                            <span className="mb-1 font-light text-gray-500">Message*</span>
-                            <textarea rows="3" className="border w-full p-2" />
-                          </label>
+                            <label className="">
+                              <span className="mb-1 font-light text-gray-500">Message*</span>
+                              <textarea rows="3" className="border w-full p-2" />
+                            </label>
                           </div>
                           <button type="button" className="self-center px-8 py-3 text-lg   hover:ring focus:ring-opacity-75  bg-[#2d76b2]  text-gray-50 ">Submit</button>
                         </form>

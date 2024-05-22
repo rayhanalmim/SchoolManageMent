@@ -1,6 +1,80 @@
 "use client"
 import Image from "next/image";
-import prospectus from "../../../../../public/assests/admission/prospectus.png";
+// import prospectus from "../../../../../public/assests/admission/prospectus.png";
+// import prospectus1 from "../../../../../public/assests/doctorsCare/admission/1.jpg";
+// import prospectus2 from "../../../../../public/assests/doctorsCare/admission/2.jpg";
+// import prospectus3 from "../../../../../public/assests/doctorsCare/admission/3.jpg";
+import prospectus4 from "../../../../../public/assests/doctorsCare/admission/4.jpg";
+// import prospectus5 from "../../../../../public/assests/doctorsCare/admission/5.jpg";
+// import prospectus6 from "../../../../../public/assests/doctorsCare/admission/1.jpg";
+// import prospectus7 from "../../../../../public/assests/doctorsCare/admission/2.jpg";
+// import prospectus8 from "../../../../../public/assests/doctorsCare/admission/3.jpg";
+// import prospectus9 from "../../../../../public/assests/doctorsCare/admission/4.jpg";
+// import prospectus10 from "../../../../../public/assests/doctorsCare/admission/5.jpg";
+// import prospectus11 from "../../../../../public/assests/doctorsCare/admission/1.jpg";
+// import prospectus12 from "../../../../../public/assests/doctorsCare/admission/2.jpg";
+// import prospectus13 from "../../../../../public/assests/doctorsCare/admission/3.jpg";
+// import prospectus14 from "../../../../../public/assests/doctorsCare/admission/4.jpg";
+import { ListItemSecondaryAction } from "@mui/material";
+
+// const prospectus =[
+//     {
+//         id:1,
+//         img:prospectus1
+//     },
+//     {
+//         id:1,
+//         img:prospectus2
+//     },
+//     {
+//         id:1,
+//         img:prospectus3
+//     },
+//     {
+//         id:1,
+//         img:prospectus4
+//     },
+//     {
+//         id:1,
+//         img:prospectus5
+//     },
+//     {
+//         id:1,
+//         img:prospectus6
+//     },
+//     {
+//         id:1,
+//         img:prospectus7
+//     },
+//     {
+//         id:1,
+//         img:prospectus8
+//     },
+//     {
+//         id:1,
+//         img:prospectus9
+//     },
+//     {
+//         id:1,
+//         img:prospectus10
+//     },
+//     {
+//         id:1,
+//         img:prospectus11
+//     },
+//     {
+//         id:1,
+//         img:prospectus12
+//     },
+//     {
+//         id:1,
+//         img:prospectus13
+//     },
+//     {
+//         id:1,
+//         img:prospectus14
+//     },
+// ]
 
 const AdmissionInfo = () => {
     const dialog = (
@@ -11,7 +85,11 @@ const AdmissionInfo = () => {
                         <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                     </form>
                 </div>
-                <Image src={prospectus} className="h-auto w-auto" alt="this is prospectus" />
+                {/* {prospectus.map(items=>(
+                <div key={items.id}> */}
+                <Image src={prospectus4} className="h-auto w-auto" alt="this is prospectus" />
+                {/* </div>
+                ))} */}
             </div>
         </dialog>
     );

@@ -47,7 +47,7 @@ const SchoolFeatures = () => {
                 <div className="container flex flex-col justify-center p-4 mx-auto md:p-8 lg:p-0 lg:pt-16">
                     <h2 className="text-3xl font-normal leading-none text-center sm:text-5xl pb-4">School Features</h2>
                     <p className="mt-1 text-center text-gray-400 lg:mx-52 pb-5 md:pb-10 lg:pb-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, fugit? Aspernatur, ullam enim, odit eaque quia rerum ipsum voluptatem consequatur ratione.</p>
-                    <div className="grid gap-16 md:gap-8 lg:gap-16 sm:p-3 md:grid-cols-3 lg:px-0 xl:px-0">
+                    <div className="grid gap-6 md:gap-8 lg:gap-16 sm:p-3 md:grid-cols-3 lg:px-0 xl:px-0">
                         {sFeatures.map(items => (
                             <div key={items.title}>
                                 <div className="flex items-end gap-2 pb-2">

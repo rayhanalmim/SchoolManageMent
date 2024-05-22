@@ -1,8 +1,11 @@
 import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
 import Image from "next/image";
-import award from "../../../../../public/assests/achievment/achievement1.jpg";
-import award1 from "../../../../../public/assests/achievment/achievement3.jpg";
-import award2 from "../../../../../public/assests/achievment/achievement4.jpg";
+import award from "../../../../../public/assests/doctorsCare/achievement/1.jpg";
+import award1 from "../../../../../public/assests/doctorsCare/achievement/2.jpg";
+import award2 from "../../../../../public/assests/doctorsCare/achievement/3.jpg";
+// import award from "../../../../../public/assests/achievment/achievement1.jpg";
+// import award1 from "../../../../../public/assests/achievment/achievement3.jpg";
+// import award2 from "../../../../../public/assests/achievment/achievement4.jpg";
 
 const achievement = () => {
   return (
