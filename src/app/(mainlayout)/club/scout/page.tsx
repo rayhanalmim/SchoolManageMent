@@ -25,6 +25,7 @@ const scout = () => {
                                 </h3>
                             </div>
                             {/* Divider  */}
+                            
                             <div className="w-full  border-t border-gray-300 my-3 md:my-6 lg:my-6"></div>
                             <section className=" lg:w-auto border rounded p-2 bg-white text-gray-800 text-justify">
                                 <div className="container  mx-auto lg:space-y-24 px-2 lg:px-8 max-w-auto lg:max-w-7xl">
@@ -233,6 +234,8 @@ const scout = () => {
                                     </section>
                                 </div>
                             </section>
+
+                            <h1>this is for commit</h1>
                         </div>
                     </div>
                 </div>
