@@ -1,6 +1,5 @@
 "use client"
 
- 
 import Image from "next/image";
 import React from "react";
 // import scienceimg from "../../../../public/assests/scienceclub.jpg";
@@ -97,10 +96,10 @@ const EventNotice = () => {
         {/* news and events */}
         <div className="h-full w-full md:w-1/2 lg:w-[45%] bg-white rounded shadow-md p-4 border lg:flex lg:flex-col lg:flex-grow">
           <h2 className="text-xl font-semibold text-center">News & Events</h2>
-          <div>
-          {/* <Divider /> */}
+                   
           {/* Divider  */}
-          <div className="w-full  border-t border-gray-300 my-[6px]"></div>
+          <div className="w-full  border-t border-gray-300 md:my-1 lg:my-[6px]"></div>
+
           {news.map(items=>(
             <div className=" bg-base-100 lg:px-6" key={items.date}>
               <figure>
@@ -120,29 +119,27 @@ const EventNotice = () => {
                   </button>
                 </div>
               </div>
-              {/* <Divider /> */}
+              
               {/* Divider  */}
-              <div className="w-full  border-t border-gray-300 my-[13px]"></div>
+              <div className="w-full  border-t border-gray-300 md:my-[8px] lg:my-[13px]"></div>
             </div>
           ))}
-          </div>
-        
-            <Link href={"/about/events"}>
+                
+          <Link href={"/about/events"}>
               <button className="btn bg-gray-200 w-full rounded p-2">
                 See More
               </button>                       
-            </Link>  
-                 
+          </Link>                   
         </div>
 
 
         {/* notice board */}
         <div className="h-full w-full md:w-1/2 lg:w-[45%] bg-white rounded shadow-md p-4 border lg:flex lg:flex-col lg:flex-grow">
           <h2 className="text-xl font-semibold text-center">Notice Board</h2>
-          <div>
-          {/* <Divider /> */}
+                    
           {/* Divider  */}
-          <div className="w-full  border-t border-gray-300 my-[20px]"></div>
+          <div className="w-full  border-t border-gray-300 md:my-1 lg:my-[20px]"></div>
+
           {notices.map((items, index) => (
             <div key={index} >
 
@@ -177,17 +174,16 @@ const EventNotice = () => {
                 <ClockIcon className="h-4 w-4"/>
                 <h1>{items.date}</h1>
               </div>
-              {/* <div className="flex flex-row items-center h-4 gap-1 text-sm text-gray-500">
-                  <ClockIcon className="h-4 w-4"/>
-                  <h1>{items.date}</h1>
-                </div> */}
-              {/* <Divider /> */}
+              
               {/* Divider  */}
-              <div className="w-full  border-t border-gray-300 h-[.5px] my-[13px]"></div>
+              <div className="w-full  border-t border-gray-300 md:my-[9px] lg:my-[13px]"></div>
             </div>
           ))}
-          </div>
-          <Link href="/notice" ><button className="btn bg-gray-200 w-full rounded p-2">View All Notices</button></Link>
+          
+
+          <Link href="/notice" >
+            <button className="btn bg-gray-200 w-full rounded p-2">View All Notices</button>
+          </Link>
         </div>
       </div>
 

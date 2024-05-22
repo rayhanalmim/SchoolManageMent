@@ -7,12 +7,12 @@ const OnlineApplication = () => {
         <div>
             <div className="hero my-10 lg:w-[1260px] mx-auto">
                 <div className="hero-overlay bg-opacity-60">
-                <Image src={apply} className="h-full lg:h-52 w-full" alt="this is img icon" />
+                <Image src={apply} className="h-full lg:h-52 lg:w-full" alt="this is img icon" />
                 </div>
 
                 <div className="hero-content text-center text-bold text-black">
                     <div className="">
-                        <p className="mb-5">Doctors Care Model School এ নির্ভরযোগ্য ও স্বল্প খরছে দ্রুত সময়ের মধ্যে ভর্তি হতে আজই অনলাইনে আবেদন করুন। </p>
+                        <p className="mb-2 md:mb-3 lg:mb-5 text-sm md:text-base lg:text-base">Doctors Care Model School এ নির্ভরযোগ্য ও স্বল্প খরছে দ্রুত সময়ের মধ্যে ভর্তি হতে আজই অনলাইনে আবেদন করুন। </p>
                         <Link href="/admission/schoolAdmission">
                         <button className="btn btn-warning">Online Apply</button></Link>
                     </div>

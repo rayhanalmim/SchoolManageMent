@@ -54,7 +54,7 @@ const WhyChoose = () => {
       <div className="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 gap-8 place-items-center ">
         {chooseData.map((data, i) => (
           <div key={data.id}>
-            <div className="chooseCard flex justify-between mt-10">
+            <div className="chooseCard flex justify-between lg:mt-10">
               <div className="mr-6">
                 <div className="">
                   {i === 0 ? (

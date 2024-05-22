@@ -86,9 +86,6 @@ object-fit: cover;
   content: 'prev';
   font-size: 22px !important;
 }
-
-
-
   .header-content {
     display: flex;
     position: absolute;
@@ -102,9 +99,7 @@ object-fit: cover;
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  .welcome-heading {
-    color: #0685FF;
-  }
+  
   .left-side {
     width: 100%;
   }

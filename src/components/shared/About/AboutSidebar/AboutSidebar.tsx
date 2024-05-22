@@ -7,6 +7,7 @@ const nonActiveStyle = "text-black";
 
 const AboutSidebar = () => {
   const currentRoute = usePathname();
+  
   return (
     <div className="pt-[70px] lg:pt-0">
       <div className="w-full lg:w-64 lg:mx-auto lg:py-2 text-center md:text-left lg:text-start">
