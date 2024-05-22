@@ -11,7 +11,7 @@ import { IoMdPerson } from "react-icons/io";
 const signup = () => {
   return (
     <div className="bg-gray-100  ">
-      <div className="lg:w-[1260px]  py-8 pt-20 lg:pt-24 mx-auto ">
+      <div className="lg:w-[1260px]  py-8 pt-20 lg:pt-0 mx-auto ">
         <div className="shadow-xl mx-2 lg:mx-48 my-5 bg-white rounded-lg p-1 lg:p-8">
           <div className="grid md:grid-cols-2 ">              
             <div className="w-auto space-y-8 mt-2 lg:mt-5 mx-auto">
