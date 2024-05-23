@@ -22,7 +22,7 @@ const qipSMS = () => {
               <div className="w-full  border-t border-gray-300 h-[.5px] my-3 md:my-6 lg:my-6"></div>
 
               <section className="lg:w-auto border rounded p-4 bg-white text-gray-800 flex flex-col items-center">
-                <p className="text-2xl text-justify lg:my-10">Quick Information Provider SMS Service </p>
+                <p className="text-md md:text-lg lg:text-2xl text-justify my-2 md:my-5 lg:my-10">Quick Information Provider SMS Service </p>
                 <h2 className="lg:text-xl text-justify">
                   শিক্ষার্থীদের ও তাদের অভিভাবকদের  উদ্দেশ্যে প্রতিষ্ঠানের তাৎক্ষণিক যাবতীয় তথ্য পৌঁছে দেওয়া হয় মোবাইলের মেসেজ সার্ভিসের মাধ্যমে।  এই মেসেজ  সেবা কুইক ইনফরমেশন প্রোভাইডার নামে অভিহিত। কিউইপি শিক্ষার্থীর অনুপস্থিতির তথ্য, উত্তরপত্র বাসায় পাঠানোর তথ্য, পরীক্ষার ফল প্রকাশ ও অভিভাবককে আমন্ত্রণের তথ্য, ধর্মীয় ও সামাজিক উৎসব উপলক্ষে শিক্ষার্থীদের শুভেচ্ছা জ্ঞাপন ও প্রতিষ্ঠানের সাময়িক ও দীর্ঘ ছুটির তথ্যসহ বিভিন্ন তথ্য কিউইপি শিক্ষার্থী ও অভিভাবকদের  মেসেজের মাধ্যমে দ্রুত পৌঁছে দেয়।
 
