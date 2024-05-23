@@ -1,0 +1,39 @@
+@media only screen and (max-width:1040px){
+    .corner{
+      width:100% !important;
+    }
+  }    
+@media only screen and (max-width:768px){
+    .corner{
+      width:100% !important;
+    }
+  }    
+@media only screen and (max-width:500px){
+    .corner{
+      width:408px !important;
+    }
+  }    
+@media only screen and (max-width:425px){
+    .corner{
+      width:360px !important;
+    }
+  }    
+  @media only screen and (max-width:375px){
+    .corner{
+      width:350px !important;
+    }
+  }    
+  @media only screen and (max-width:320px){
+    .corner{
+      width:304px !important;
+    }
+  }    
+  
+  @media only screen and (max-width:275px){
+    .corner{
+        width:235px !important;
+    }
+    .smallImg{
+        display: none !important;
+    }
+}     

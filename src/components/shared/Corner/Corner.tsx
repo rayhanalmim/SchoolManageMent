@@ -6,7 +6,7 @@ import school from "../../../../public/assests/corner/school.png";
 import admission from "../../../../public/assests/corner/admission.png";
 import Image from "next/image";
 import Link from "next/link";
-
+import "./style.css"
 
 const corners = [
   {
@@ -52,15 +52,15 @@ const corners = [
 
 const Corner = () => {
   return (
-    <div className=" lg:w-[1260px] mx-1 lg:mx-auto flex justify-center mt-6 lg:mt-5 lg:px-0">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 md:gap-4 lg:gap-6 mx-auto justify-between lg:my-4">
+    <div className=" lg:w-[1260px] mx-auto flex justify-center mt-6 lg:mt-5 lg:px-0">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[1px] md:gap-6 lg:gap-6 mx-auto justify-between lg:my-4">
         {corners.map((item) => (
           <div key={item.id}>
           <Link href={item.link}> 
             <div
-              className="border border-gray-300 rounded-lg shadow-md p-1 lg:p-2 lg:h-48 lg:w-48 bg-opacity-20  bg-gray-300 flex flex-col items-center justify-center gap-1 md:gap-3 lg:gap-3">
-              <Image src={item.icon} alt={item.name} className="h-14 md:h-16 lg:h-20 w-14 md:w-16 lg:w-20"/>
-              <h1 className="text-sm md:text-lg lg:text-xl font-bold text-blue-500 text-center content-center">
+              className="border border-gray-300 rounded-lg shadow-md p-2 md:p-2 lg:p-2 h-auto md:h-48 lg:h-48 w-auto md:w-48 lg:w-48 bg-opacity-20  bg-gray-300 flex flex-col items-center justify-center gap-1 md:gap-3 lg:gap-3">
+              <Image src={item.icon} alt={item.name} className="h-[60px] md:h-20 lg:h-20 w-[60px] md:w-20 lg:w-20"/>
+              <h1 className="text-sm md:text-xl lg:text-xl md:font-bold lg:font-bold text-blue-500 text-center content-center">
                 {item.name}
               </h1>
             </div>
