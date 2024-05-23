@@ -6,20 +6,111 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
-import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+//-----------------icons---------------
 
-const drawerWidth = 240;
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import MailIcon from '@mui/icons-material/Mail';
+import MenuIcon from '@mui/icons-material/Menu';
+import HomeIcon from '@mui/icons-material/Home';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+import PersonIcon from '@mui/icons-material/Person';
+import Person4Icon from '@mui/icons-material/Person4';
+import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import InfoIcon from '@mui/icons-material/Info';
+import Groups2Icon from '@mui/icons-material/Groups2';
+import ArticleIcon from '@mui/icons-material/Article';
+import DonutLargeIcon from '@mui/icons-material/DonutLarge';
+import CollectionsIcon from '@mui/icons-material/Collections';
+import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import LogoutIcon from '@mui/icons-material/Logout';
 
+// ---------profile-----------
+import Avatar from '@mui/material/Avatar';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import Tooltip from '@mui/material/Tooltip';
+import PersonAdd from '@mui/icons-material/PersonAdd';
+import Settings from '@mui/icons-material/Settings';
+import Logout from '@mui/icons-material/Logout';
 
+const drawerWidth = 200;
+
+const sidebarMenuItems = [
+  {
+    id: 1,
+    name: "Home",
+    icon: <HomeIcon />
+  },
+  {
+    id: 2,
+    name: "Admin",
+    icon: <AdminPanelSettingsIcon />
+  },
+  {
+    id: 3,
+    name: "Teachers",
+    icon: <PersonIcon />
+  },
+  {
+    id: 4,
+    name: "Students",
+    icon: <Person4Icon />
+  },
+  {
+    id: 5,
+    name: "Admissions",
+    icon: <MedicalInformationIcon />
+  },
+  {
+    id: 6,
+    name: "Finance",
+    icon: <AttachMoneyIcon />
+  },
+  {
+    id: 7,
+    name: "About Us",
+    icon: <InfoIcon />
+  },
+  {
+    id: 8,
+    name: "Administration",
+    icon: <Groups2Icon />
+  },
+  {
+    id: 9,
+    name: "Result",
+    icon: <ArticleIcon />
+  },
+  {
+    id: 10,
+    name: "Facilities",
+    icon: <DonutLargeIcon />
+  },
+  {
+    id: 11,
+    name: "Gallery",
+    icon: <CollectionsIcon />
+  },
+  {
+    id: 12,
+    name: "Contact",
+    icon: <PermContactCalendarIcon />
+  },
+  {
+    id: 13,
+    name: "Notice",
+    icon: <NotificationsIcon />
+  },
+]
 export default function DashboardDrawer({ children }: { children: React.ReactNode }) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [isClosing, setIsClosing] = React.useState(false);
@@ -44,24 +135,24 @@ export default function DashboardDrawer({ children }: { children: React.ReactNod
       <Toolbar />
       <Divider />
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
+        {sidebarMenuItems.map((items, index) => (
+          <ListItem key={items.id} disablePadding>
             <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              <ListItemIcon sx={{ minWidth:36 }}>
+                {items.icon} 
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={items.name} sx={{ marginLeft: 0 }}/>
             </ListItemButton>
           </ListItem>
         ))}
       </List>
       <Divider />
       <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
+        {['Log Out'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {index % 2 === 0 ? <LogoutIcon /> : ""}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -72,17 +163,27 @@ export default function DashboardDrawer({ children }: { children: React.ReactNod
   );
 
 
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
+    <>
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar
+      <AppBar     
         position="fixed"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
-        }}
+        }} flexItem 
       >
-        <Toolbar>
+        <Toolbar sx={{justifyContent:'space-between'}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -93,9 +194,92 @@ export default function DashboardDrawer({ children }: { children: React.ReactNod
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Responsive drawer
+            Dash Board
           </Typography>
+
+         
+            <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
+              <Typography sx={{ minWidth: 100 }}>Contact</Typography>
+              <Typography sx={{ minWidth: 100 }}>Profile</Typography>
+              <Tooltip title="Account settings">
+                <IconButton
+                  onClick={handleClick}
+                  size="small"
+                  sx={{ ml: 2 }}
+                  aria-controls={open ? 'account-menu' : undefined}
+                  aria-haspopup="true"
+                  aria-expanded={open ? 'true' : undefined}
+                >
+                  <Avatar sx={{ width: 32, height: 32 }}>M</Avatar>
+                </IconButton>
+              </Tooltip>
+            </Box>
+            <Menu
+              anchorEl={anchorEl}
+              id="account-menu"
+              open={open}
+              onClose={handleClose}
+              onClick={handleClose}
+              PaperProps={{
+                elevation: 0,
+                sx: {
+                  overflow: 'visible',
+                  filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
+                  mt: 1.5,
+                  '& .MuiAvatar-root': {
+                    width: 32,
+                    height: 32,
+                    ml: -0.5,
+                    mr: 1,
+                  },
+                  '&::before': {
+                    content: '""',
+                    display: 'block',
+                    position: 'absolute',
+                    top: 0,
+                    right: 14,
+                    width: 10,
+                    height: 10,
+                    bgcolor: 'background.paper',
+                    transform: 'translateY(-50%) rotate(45deg)',
+                    zIndex: 0,
+                  },
+                },
+              }}
+              transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+              anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+            >
+              <MenuItem onClick={handleClose}>
+                <Avatar /> Profile
+              </MenuItem>
+              <MenuItem onClick={handleClose}>
+                <Avatar /> My account
+              </MenuItem>
+              <Divider />
+              <MenuItem onClick={handleClose}>
+                <ListItemIcon>
+                  <PersonAdd fontSize="small" />
+                </ListItemIcon>
+                Add another account
+              </MenuItem>
+              <MenuItem onClick={handleClose}>
+                <ListItemIcon>
+                  <Settings fontSize="small" />
+                </ListItemIcon>
+                Settings
+              </MenuItem>
+              <MenuItem onClick={handleClose}>
+                <ListItemIcon>
+                  <Logout fontSize="small" />
+                </ListItemIcon>
+                Logout
+              </MenuItem>
+            </Menu>
+       
         </Toolbar>
+       
+
+
       </AppBar>
       <Box
         component="nav"
@@ -104,7 +288,6 @@ export default function DashboardDrawer({ children }: { children: React.ReactNod
       >
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Drawer
-     
           variant="temporary"
           open={mobileOpen}
           onTransitionEnd={handleDrawerTransitionEnd}
@@ -164,5 +347,8 @@ export default function DashboardDrawer({ children }: { children: React.ReactNod
         </Typography>
       </Box>
     </Box>
+    
+
+  </>
   );
 }

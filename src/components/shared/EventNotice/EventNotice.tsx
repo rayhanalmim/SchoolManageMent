@@ -91,7 +91,7 @@ const notices = [
 
 const EventNotice = () => {
   return (
-    <div className="lg:w-[1260px] mx-4 lg:mx-auto  py-10 ">
+    <div className="lg:w-[1260px] mx-2 md:mx-4 lg:mx-auto  py-10 ">
       <div className="md:flex lg:flex  mx-auto space-y-5 md:space-y-0 lg:space-y-0 lg:justify-center md:gap-3 lg:gap-5 ">
         {/* news and events */}
         <div className="h-full w-full md:w-1/2 lg:w-[45%] bg-white rounded shadow-md p-4 border lg:flex lg:flex-col lg:flex-grow">
@@ -119,7 +119,7 @@ const EventNotice = () => {
               </div>
               
               {/* Divider last */}
-              <div className="w-full  border-t border-gray-300 md:my-[12px] lg:my-[14px]"></div>
+              <div className="w-full  border-t border-gray-300 my-1 md:my-[12px] lg:my-[14px]"></div>
             </div>
           ))}
                 
@@ -142,7 +142,7 @@ const EventNotice = () => {
             <div key={index} >
 
               <Link href="#" onClick={() => document.getElementById('my_modal_5').showModal()}>
-                <p className=" text-gray-700 lg:pl-6">{items.text}</p>
+                <p className=" text-gray-700 lg:pl-6 text-sm md:text-base lg:test-base">{items.text}</p>
               </Link>
               <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
@@ -174,7 +174,7 @@ const EventNotice = () => {
               </div>
               
               {/* Divider last */}
-              <div className="w-full  border-t border-gray-300 md:my-[9px] lg:my-[11px]"></div>
+              <div className="w-full  border-t border-gray-300 my-1 md:my-[9px] lg:my-[11px]"></div>
             </div>
           ))}
           
