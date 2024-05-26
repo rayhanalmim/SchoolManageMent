@@ -4,6 +4,7 @@ import teacher from "../../../../../../public/assests/teacher/teacher10.jpg"
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
+import Link from 'next/link';
 
 
 const teacherDetails = ({ params }) => {
@@ -17,17 +18,17 @@ const teacherDetails = ({ params }) => {
           <div className="flex gap-4 -ml-[230px] -mt-20">
             {/* social icon */}
             <div className="mt-[190px] space-y-8">
-              <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-600 border p-2 rounded-full shadow-md bg-white">
+              <Link rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-600 border p-2 rounded-full shadow-md bg-white">
               <FaFacebookF className="w-4 h-4"/>
-              </a>
+              </Link>
 
-              <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-600 border p-2 rounded-full shadow-md bg-white">
+              <Link rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-600 border p-2 rounded-full shadow-md bg-white">
                 <FaXTwitter className="w-4 h-4"/>
-              </a>
+              </Link>
 
-              <a rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-600 border p-2 rounded-full shadow-md bg-white">              
+              <Link rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-600 border p-2 rounded-full shadow-md bg-white">              
               <FaLinkedinIn className="w-4 h-4"/>                
-              </a>
+              </Link>
             </div>
             {/* image */}
             <Image src={teacher} className="h-[400px] w-[270px] bg-gray-100 border shadow-md" alt="Teacher Img" />

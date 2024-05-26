@@ -14,7 +14,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 //-----------------icons---------------
-
+import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -32,6 +32,12 @@ import CollectionsIcon from '@mui/icons-material/Collections';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import LogoutIcon from '@mui/icons-material/Logout';
+import student from '../../../../public/assests/dashboard/sidebar/student.png';
+import teacher from '../../../../public/assests/dashboard/sidebar/teacher.png';
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { PiStudent } from "react-icons/pi";
+import HorizontalSplitIcon from '@mui/icons-material/HorizontalSplit';
+import MenuIcon from '@mui/icons-material/Menu';
 
 // ---------profile-----------
 import Avatar from '@mui/material/Avatar';
@@ -41,6 +47,7 @@ import Tooltip from '@mui/material/Tooltip';
 import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
+import Link from 'next/link';
 
 const drawerWidth = 200;
 
@@ -48,69 +55,100 @@ const sidebarMenuItems = [
   {
     id: 1,
     name: "Home",
-    icon: <HomeIcon />
+    icon: <HomeIcon />,
+    href: "/dashboard"
   },
   {
     id: 2,
     name: "Admin",
-    icon: <AdminPanelSettingsIcon />
+    icon: <AdminPanelSettingsIcon />,
+    href: "/admin"
+  },
+  {
+    id: 2,
+    name: "Header",
+    icon: <CalendarViewDayIcon />,
+    href: "/dashboard/header"
+  },
+  {
+    id: 2,
+    name: "Footer",
+    icon: <HorizontalSplitIcon/>,
+    href: "/admin"
+  },
+  {
+    id: 2,
+    name: "Navbar",
+    icon: <MenuIcon />,
+    href: "/admin"
   },
   {
     id: 3,
     name: "Teachers",
-    icon: <PersonIcon />
+    icon: <FaChalkboardTeacher className="w-6 h-6"/>,
+    href: "/dashboard/administration/teacher"
   },
   {
     id: 4,
     name: "Students",
-    icon: <Person4Icon />
+    icon: <PiStudent className="w-6 h-6" />,
+    href: "/students"
   },
   {
     id: 5,
     name: "Admissions",
-    icon: <MedicalInformationIcon />
+    icon: <MedicalInformationIcon />,
+    href: "/admissions"
   },
   {
     id: 6,
     name: "Finance",
-    icon: <AttachMoneyIcon />
+    icon: <AttachMoneyIcon />,
+    href: "/finance"
   },
   {
     id: 7,
     name: "About Us",
-    icon: <InfoIcon />
+    icon: <InfoIcon />,
+    href: "/about"
   },
   {
     id: 8,
     name: "Administration",
-    icon: <Groups2Icon />
+    icon: <Groups2Icon />,
+    href: "/administration"
   },
   {
     id: 9,
     name: "Result",
-    icon: <ArticleIcon />
+    icon: <ArticleIcon />,
+    href: "/result"
   },
   {
     id: 10,
     name: "Facilities",
-    icon: <DonutLargeIcon />
+    icon: <DonutLargeIcon />,
+    href: "/facilities"
   },
   {
     id: 11,
     name: "Gallery",
-    icon: <CollectionsIcon />
+    icon: <CollectionsIcon />,
+    href: "/gallery"
   },
   {
     id: 12,
     name: "Contact",
-    icon: <PermContactCalendarIcon />
+    icon: <PermContactCalendarIcon />,
+    href: "/contact"
   },
   {
     id: 13,
     name: "Notice",
-    icon: <NotificationsIcon />
+    icon: <NotificationsIcon />,
+    href: "/notice"
   },
-]
+];
 export default function DashboardDrawer({ children }: { children: React.ReactNode }) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [isClosing, setIsClosing] = React.useState(false);
@@ -137,13 +175,18 @@ export default function DashboardDrawer({ children }: { children: React.ReactNod
       <List>
         {sidebarMenuItems.map((items, index) => (
           <ListItem key={items.id} disablePadding>
-            <ListItemButton>
-              <ListItemIcon sx={{ minWidth:36 }}>
-                {items.icon} 
-              </ListItemIcon>
-              <ListItemText primary={items.name} sx={{ marginLeft: 0 }}/>
+            <ListItemButton >
+              <Link href={items.href} passHref >
+                <div className='flex items-center content-center'>
+                  <ListItemIcon >
+                    {items.icon}
+                  </ListItemIcon>
+                  <ListItemText primary={items.name} sx={{ marginLeft: -2 }} />
+                </div>
+              </Link>
             </ListItemButton>
           </ListItem>
+
         ))}
       </List>
       <Divider />
@@ -174,30 +217,31 @@ export default function DashboardDrawer({ children }: { children: React.ReactNod
 
   return (
     <>
-    <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
-      <AppBar     
-        position="fixed"
+      <Box sx={{ display: 'flex',  background: "#F2F4F4 " }}> 
+      
+        <CssBaseline />
+        <AppBar
+          position="fixed"
         // sx={{
         //   width: { sm: `calc(100% - ${drawerWidth}px)` },
         //   ml: { sm: `${drawerWidth}px` },
         // }} flexItem 
-      >
-        <Toolbar sx={{justifyContent:'space-between'}}>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Dash Board
-          </Typography>
+        >
+          <Toolbar sx={{ justifyContent: 'space-between' }}>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: 'none' } }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6" noWrap component="div">
+              Dash Board
+            </Typography>
 
-         
+
             <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
               <Typography sx={{ minWidth: 100 }}>Contact</Typography>
               <Typography sx={{ minWidth: 100 }}>Profile</Typography>
@@ -275,80 +319,55 @@ export default function DashboardDrawer({ children }: { children: React.ReactNod
                 Logout
               </MenuItem>
             </Menu>
-       
-        </Toolbar>
-       
+
+          </Toolbar>
 
 
-      </AppBar>
-      <Box
-        component="nav"
-        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-        aria-label="mailbox folders"
-      >
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-        <Drawer
-          variant="temporary"
-          open={mobileOpen}
-          onTransitionEnd={handleDrawerTransitionEnd}
-          onClose={handleDrawerClose}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-          }}
+
+        </AppBar>
+        <Box
+          component="nav"
+          sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+          aria-label="mailbox folders"
         >
-          {drawer}
-        </Drawer>
-        <Drawer
-          variant="permanent"
-          sx={{
-            display: { xs: 'none', sm: 'block' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-          }}
-          open
+          {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+          <Drawer
+            variant="temporary"
+            open={mobileOpen}
+            onTransitionEnd={handleDrawerTransitionEnd}
+            onClose={handleDrawerClose}
+            ModalProps={{
+              keepMounted: true, // Better open performance on mobile.
+            }}
+            sx={{
+              display: { xs: 'block', sm: 'none' },
+              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            }}
+          >
+            {drawer}
+          </Drawer>
+          <Drawer
+            variant="permanent"
+            sx={{
+              display: { xs: 'none', sm: 'block' },
+              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            }}
+            open
+          >
+            {drawer}
+          </Drawer>
+        </Box>
+        <Box
+          component="main"
+          sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)`, background: "#F2F4F4 ", } }}
         >
-          {drawer}
-        </Drawer>
-      </Box>
-      <Box
-        component="main"
-        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
-      >
-        <Toolbar />
-        <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non
-          enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus
-          imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus.
-          Convallis convallis tellus id interdum velit laoreet id donec ultrices.
-          Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra
-          nibh cras. Metus vulputate eu scelerisque felis imperdiet proin fermentum
-          leo. Mauris commodo quis imperdiet massa tincidunt. Cras tincidunt lobortis
-          feugiat vivamus at augue. At augue eget arcu dictum varius duis at
-          consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa
-          sapien faucibus et molestie ac.
-        </Typography>
-        <Typography paragraph>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
-          eget nulla facilisi etiam dignissim diam. Pulvinar elementum integer enim
-          neque volutpat ac tincidunt. Ornare suspendisse sed nisi lacus sed viverra
-          tellus. Purus sit amet volutpat consequat mauris. Elementum eu facilisis
-          sed odio morbi. Euismod lacinia at quis risus sed vulputate odio. Morbi
-          tincidunt ornare massa eget egestas purus viverra accumsan in. In hendrerit
-          gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem
-          et tortor. Habitant morbi tristique senectus et. Adipiscing elit duis
-          tristique sollicitudin nibh sit. Ornare aenean euismod elementum nisi quis
-          eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
-          posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
-      </Box>
-    </Box>
-    
+          <Toolbar />
 
-  </>
+          {children}
+        </Box>
+      </Box>
+
+
+    </>
   );
 }
