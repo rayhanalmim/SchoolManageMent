@@ -11,6 +11,7 @@ import Image from "next/image";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
 
 const govorningBody = [
   {
@@ -53,30 +54,30 @@ const govorningBody = [
 
 const socialIcon = (
   <div className="flex gap-1 mt-2 ">
-    <a
+    <Link
       rel="noopener noreferrer"
       href="#"
       title="Twitter"
       className="text-gray-600"
     >
       <FaFacebookF className="w-4 h-4" />
-    </a>
-    <a
+    </Link>
+    <Link
       rel="noopener noreferrer"
       href="#"
       title="LinkedIn"
       className="text-gray-600 "
     >
       <FaXTwitter className="w-4 h-4" />
-    </a>
-    <a
+    </Link>
+    <Link
       rel="noopener noreferrer"
       href="#"
       title="GitHub"
       className="text-gray-600 "
     >
       <FaLinkedinIn className="w-4 h-4" />
-    </a>
+    </Link>
   </div>
 );
 

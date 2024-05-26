@@ -9,6 +9,7 @@ import atAGlance6 from "../../../../../public/assests/doctorsCare/ataglance/resu
 // import historyImg from "../../../../../public/assests/historyImg.jpg";
 // import student from "../../../../../public/assests/student.jpg";
 import AboutSidebar from "@/components/shared/About/AboutSidebar/AboutSidebar";
+import Link from "next/link";
  
 
 const events = [
@@ -67,9 +68,9 @@ const ataglance = () => {
                       {events.map(items=>(
                         <div key={items.Name}>
                       <article className="flex flex-col  bg-gray-100 rounded-lg">
-                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <Link rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
                           <Image src={items.img} className="object-cover w-full h-52 rounded-t" alt="" />
-                        </a>
+                        </Link>
                         <div className="flex flex-col flex-1 p-2 gap-1"> 
                           <h3 className="text-2xl font-base">{items.Name}</h3>
                           {/* <h2 className="text-sm text-gray-400">{items.description}</h2> */}

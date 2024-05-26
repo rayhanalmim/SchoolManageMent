@@ -117,15 +117,15 @@ const teachingStaff = () => {
                           </Link>
                           <p className="text-sm text-gray-600">{items.Subject}</p>
                           <div className="flex gap-1 mt-1 ">
-                            <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-600">
+                            <Link rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-600">
                             <FaFacebookF className="w-4 h-4"/>
-                            </a>
-                            <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-600 ">
+                            </Link>
+                            <Link rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-600 ">
                               <FaXTwitter className="w-4 h-4"/>
-                            </a>
-                            <a rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-600 ">              
+                            </Link>
+                            <Link rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-600 ">              
                             <FaLinkedinIn className="w-4 h-4"/>                
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
