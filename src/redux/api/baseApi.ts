@@ -1,9 +1,18 @@
-
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-// Define a service using a base URL and expected endpoints
 export const baseApi = createApi({
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000/api/v1" }),
-  endpoints: () => ({}),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://softy-edu-server.vercel.app/api",
+  }),
+  endpoints: (builder) => ({
+    getHeaderData: builder.query({
+      query: (key) => `/header/get-data?key=${key}`,
+    }),
+    getFooterData: builder.query({
+      query: (key) => `/footer/get-data?key=${key}`,
+    }),
+  }),
 });
+
+export const { useGetHeaderDataQuery, useGetFooterDataQuery } = baseApi;
