@@ -4,7 +4,7 @@ const EnglishVersionAdmissionForm = () => {
     return (
         <div>
             {/* Student Information */}
-            <div className="rounded p-2 md:p-5 lg:p-5 shadow bg-white">
+            <div className="rounded p-2 md:p-5 lg:p-5 shadow bg-white mb-2">
                 <div className="divider">Students Information</div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
                     <label className=" w-full ">
@@ -82,7 +82,7 @@ const EnglishVersionAdmissionForm = () => {
                 </div>
             </div>
             {/* Guardians or Parents Information */}
-            <div className="rounded p-2 md:p-5 lg:p-5 shadow bg-white">
+            <div className="rounded p-2 md:p-5 lg:p-5 shadow bg-white mb-2">
                 <div className="divider">
                     Guardians or Parents Information
                 </div>
@@ -141,7 +141,7 @@ const EnglishVersionAdmissionForm = () => {
                 </div>
             </div>
             {/* Address */}
-            <div className="rounded p-2 md:p-5 lg:p-5 shadow bg-white">
+            <div className="rounded p-2 md:p-5 lg:p-5 shadow bg-white mb-2">
                 <div className="divider">Address</div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
                     <label className="form-control w-full ">

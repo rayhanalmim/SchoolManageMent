@@ -4,6 +4,7 @@ import headteacher from "../../../../../../public/assests/teacher/teachers-1.jpg
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
 
 
 const principle = () => {
@@ -32,15 +33,15 @@ const principle = () => {
                         <h4 className="text-xl font-semibold">মো. খুরশিদ আলম</h4>
                         <p className="text-sm text-gray-600">প্রধান শিক্ষক</p>
                         <div className="flex gap-1 mt-1 ">
-                            <a rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-600">
+                            <Link rel="noopener noreferrer" href="#" title="Twitter" className="text-gray-600">
                             <FaFacebookF className="w-4 h-4"/>
-                            </a>
-                            <a rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-600 ">
+                            </Link>
+                            <Link rel="noopener noreferrer" href="#" title="LinkedIn" className="text-gray-600 ">
                               <FaXTwitter className="w-4 h-4"/>
-                            </a>
-                            <a rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-600 ">              
+                            </Link>
+                            <Link rel="noopener noreferrer" href="#" title="GitHub" className="text-gray-600 ">              
                             <FaLinkedinIn className="w-4 h-4"/>                
-                            </a>
+                            </Link>
                           </div>
                       </div>
                     </div>
