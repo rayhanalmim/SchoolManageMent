@@ -131,9 +131,9 @@ const Header = () => {
 
       
         </div>
-        {/* <Link href="/login">
+        <Link href="/login">
           <h2 className="hidden lg:flex gap-2 items-center">Log In <FaArrowRightLong /></h2>
-        </Link> */}
+        </Link>
 
         <div className="lg:hidden  px-2">
           {/* <Link href="/">
@@ -152,9 +152,9 @@ const Header = () => {
          
             {navMenu}
             <div className="lg:hidden flex justify-center">
-            {/* <Link href="/login">
+            <Link href="/login">
               <h2 className="flex gap-2 items-center">Log In <FaArrowRightLong /></h2>
-            </Link> */}
+            </Link>
             </div>
           </div>
         </nav>
