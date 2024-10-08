@@ -1,32 +1,34 @@
+"use client";
 import Image from "next/image";
 import contactimg from "../../../../public/assests/contact/contactus.jpg";
 import contactIcon from "../../../../public/assests/contact/telephone.png";
 import emailIcon from "../../../../public/assests/contact/email.png";
 import locationIcon from "../../../../public/assests/contact/location.png";
-import "./style.css"
+import "./style.css";
+import Ludo from "@/components/Dashboard/luduLogic/Ludo";
 
 const contact = () => {
   return (
     <>
-
       <div className="lg:w-[1260px] items-center justify-center content-center  mx-2 md:mx-0 lg:mx-auto">
+        <div>
+          <Ludo></Ludo>
+        </div>
 
         {/* email */}
         <div className="md:w-64 lg:w-64 mx-auto py-4 md:py-8 lg:py-10">
-
           <h3 className="text-xl font-semibold border-y-4 text-center py-1 md:py-3 lg:py-3">
             Send Us a Email
           </h3>
         </div>
 
         <div className="grid lg:max-w-screen-xl grid-cols-1 lg:gap-5 mx-auto rounded-lg md:grid-cols-2 px-1 md:px-8 lg:px-10 py-1 md:py-5 lg:py-5  text-gray-800 border-[1px] shadow-md justify-center ">
-         
-            <Image
-              src={contactimg}
-              className="lg:h-[500px] w-auto"
-              alt="this is img"
-            />
-         
+          <Image
+            src={contactimg}
+            className="lg:h-[500px] w-auto"
+            alt="this is img"
+          />
+
           <form className="space-y-6">
             <div>
               <label className="text-sm">Full name</label>
@@ -87,7 +89,6 @@ const contact = () => {
           ></iframe>
         </div>
 
-
         {/* address */}
         <div>
           <div className="lg:w-[1260px] lg:mx-auto  lg:my-5 ">
@@ -100,32 +101,29 @@ const contact = () => {
               {/* first */}
               <div className=" lg:px-10 py-6 lg:pt-4  space-y-2 lg:space-y-2 ">
                 <div className="flex content-center items-center justify-center text-center">
-                  <Image src={locationIcon} className="w-10 h-10 " alt=""/>                  
+                  <Image src={locationIcon} className="w-10 h-10 " alt="" />
                 </div>
                 <h1 className="text-2xl font-bold text-blue-500 lg:mb-10 text-center">
                   Address
                 </h1>
                 <div className="space-y-4 ">
                   <p className="flex  justify-center items-center">
-
                     <span>Dhaka, Bangladesh.</span>
                   </p>
                 </div>
-
               </div>
               <div className="w-auto border-t md:border-l lg:border-l mx-2 lg:h-32 bg-gray-500"></div>
               {/* <Divider type="vertical" className=" " /> */}
               {/* second */}
               <div className="lg:px-10 py-6 lg:pt-4 space-y-2 lg:space-y-2">
                 <div className="flex content-center items-center justify-center text-center">
-                <Image src={contactIcon} className="w-10 h-10 " alt=""/>                  
+                  <Image src={contactIcon} className="w-10 h-10 " alt="" />
                 </div>
                 <h1 className="text-2xl font-bold text-blue-500 lg:mb-10 text-center">
                   Phone Number
                 </h1>
                 <div className="space-y-4">
                   <p className="flex justify-center items-center">
-
                     <span>+88012345678910</span>
                   </p>
                 </div>
@@ -134,7 +132,7 @@ const contact = () => {
               {/* third */}
               <div className="lg:px-10 py-6 lg:pt-4 space-y-2 lg:space-y-2">
                 <div className="flex content-center items-center justify-center text-center">
-                <Image src={emailIcon} className="w-10 h-10 " alt=""/>
+                  <Image src={emailIcon} className="w-10 h-10 " alt="" />
                 </div>
                 <h1 className="text-2xl font-bold text-blue-500 lg:mb-10 text-center">
                   E-Mail
@@ -144,12 +142,11 @@ const contact = () => {
                     <span>softedu@softedu.com</span>
                   </p>
                 </div>
-              </div> 
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </>
   );
 };

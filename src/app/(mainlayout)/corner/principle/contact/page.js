@@ -1,3 +1,4 @@
+"use client"
 import PrincipleSidebar from "@/components/shared/Corner/PrincipleSidebar/PrincipleSidebar";
  
 import Image from "next/image";

@@ -4,17 +4,14 @@ import { HeaderRoute } from "./app/modules/header/header.route";
 import { FooterRoute } from "./app/modules/footer/footer.route";
 import globalErrorHandler from "./app/middlewares/globalErrorhandler";
 import notFound from "./app/middlewares/notFound";
+import router from "./app/routes";
 const app: Application = express();
 
 app.use(express.json());
 app.use(cors());
 
-//applications route
-app.use("/api/header", HeaderRoute);
-app.use("/api/footer", FooterRoute);
-
 // application routes
-// app.use('/api/v1', router);
+app.use("/api/", router);
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello World!");
